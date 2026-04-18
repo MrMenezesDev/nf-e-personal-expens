@@ -1,21 +1,18 @@
 import { useMemo, useState } from 'react'
 import { Note, NoteItem } from '@/lib/types'
-import { Note, NoteItem } from '@/lib/types'
 import { formatCurrency, parseMonthFromDate, formatDate } from '@/lib/formatters'
-  YAxis, 
-  Tooltip, 
-  PieCh
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import {
+  PieChart,
+  Pie,
   Cell,
+  ResponsiveContainer,
+  AreaChart,
   Area,
-} from 'recharts'
-import { fi
-import { Button } from
-  Table,
-  Tabl
-  Table
-} from '@
-  Area,
-  AreaChart
+  XAxis,
+  YAxis,
+  Tooltip,
+  CartesianGrid
 } from 'recharts'
 import { usePeriodFilter } from '@/contexts/PeriodFilterContext'
 import { filterNotesByPeriod } from '@/lib/utils'
@@ -32,17 +29,14 @@ import {
 
 interface CategoriesPageProps {
   notes: Note[]
- 
+}
 
 const CHART_COLORS = [
   'oklch(0.45 0.12 200)',
-
+  'oklch(0.72 0.15 75)',
   'oklch(0.55 0.22 25)',
-  }, [notes, filter])
   'oklch(0.65 0.18 280)',
-    const items: ItemWit
   'oklch(0.60 0.14 180)',
-        items.push({
   'oklch(0.68 0.12 120)',
   'oklch(0.58 0.16 240)',
 ]
@@ -50,7 +44,7 @@ const CHART_COLORS = [
 interface ItemWithNote extends NoteItem {
   issued_date: string
   merchant_name: string
- 
+}
 
 export function CategoriesPage({ notes }: CategoriesPageProps) {
   const { filter } = usePeriodFilter()
@@ -58,7 +52,7 @@ export function CategoriesPage({ notes }: CategoriesPageProps) {
 
   const filteredNotes = useMemo(() => {
     return filterNotesByPeriod(notes, filter.startDate, filter.endDate)
-        categorizedCo
+  }, [notes, filter])
 
   const allItems = useMemo(() => {
     const items: ItemWithNote[] = []
@@ -70,9 +64,9 @@ export function CategoriesPage({ notes }: CategoriesPageProps) {
           merchant_name: note.merchant_name
         })
       })
-  cons
+    })
     return items
-    filteredItems.for
+  }, [filteredNotes])
 
   const filteredItems = useMemo(() => {
     if (!selectedCategory) return allItems
@@ -96,9 +90,9 @@ export function CategoriesPage({ notes }: CategoriesPageProps) {
       if (item.subcategory && item.subcategory !== 'Outros') {
         subcategories.add(item.subcategory)
       }
+    })
 
-
-      }
+    return {
       categoriesCount: categories.size,
       subcategoriesCount: subcategories.size,
       categorizedCount,
@@ -106,23 +100,23 @@ export function CategoriesPage({ notes }: CategoriesPageProps) {
     }
   }, [allItems])
 
-      .sort((a, b) => a[0].localeCompare(b
+  const categorySpending = useMemo(() => {
     const categoryTotals = new Map<string, number>()
 
     filteredItems.forEach(item => {
-        return entry
+      const category = item.category || 'Sem Categoria'
       const current = categoryTotals.get(category) || 0
       categoryTotals.set(category, current + item.line_total)
     })
 
     const data = Array.from(categoryTotals.entries())
-  }, [filteredItems, selectedCategory])
+      .map(([name, value]) => ({ name, value }))
       .sort((a, b) => b.value - a.value)
 
     const total = data.reduce((sum, item) => sum + item.value, 0)
 
     return { data, total }
-          <p classNam
+  }, [filteredItems])
 
   const subcategorySpending = useMemo(() => {
     const subcategoryTotals = new Map<string, number>()
@@ -136,7 +130,6 @@ export function CategoriesPage({ notes }: CategoriesPageProps) {
     return Array.from(subcategoryTotals.entries())
       .map(([name, value]) => ({ name, value }))
       .sort((a, b) => b.value - a.value)
-          <span cla
   }, [filteredItems])
 
   const categoryOverTime = useMemo(() => {
@@ -166,7 +159,7 @@ export function CategoriesPage({ notes }: CategoriesPageProps) {
         categories.forEach(category => {
           entry[category] = categoryMap.get(category) || 0
         })
-          </CardHead
+        return entry
       })
 
     return { data, categories }
@@ -178,7 +171,7 @@ export function CategoriesPage({ notes }: CategoriesPageProps) {
   }, [filteredItems, selectedCategory])
 
   if (filteredNotes.length === 0) {
-          </
+    return (
       <div className="flex items-center justify-center py-20">
         <div className="text-center space-y-2">
           <h3 className="text-xl font-semibold text-muted-foreground">
@@ -188,17 +181,17 @@ export function CategoriesPage({ notes }: CategoriesPageProps) {
             Ajuste o filtro de período para visualizar seus dados.
           </p>
         </div>
-            
+      </div>
     )
-   
+  }
 
   const renderCustomLabel = (entry: { name: string; value: number; percent: number }) => {
     return `${(entry.percent * 100).toFixed(1)}%`
-   
+  }
 
   return (
     <div className="space-y-8">
-           
+      <div>
         <h1 className="text-3xl font-bold tracking-tight">Categorias</h1>
         <p className="text-muted-foreground">Análise de gastos por categoria</p>
       </div>
@@ -214,246 +207,219 @@ export function CategoriesPage({ notes }: CategoriesPageProps) {
             variant="ghost"
             size="sm"
             onClick={() => setSelectedCategory(null)}
-                  x="50%"
+            className="ml-auto"
           >
-                  dominantBaseline
+            <X />
             Limpar Filtro
           </Button>
         </div>
-        
+      )}
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <Card>
-            <CardTitle>Gasto por Subcat
+          <CardHeader>
             <CardTitle className="text-sm font-medium text-muted-foreground">
-            <ResponsiveContain
+              Categorias Únicas
             </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-bold font-mono">{kpis.categoriesCount}</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-sm font-medium text-muted-foreground">
+              Subcategorias Únicas
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="text-3xl font-bold font-mono">{kpis.subcategoriesCount}</div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-sm font-medium text-muted-foreground">
+              Itens Categorizados
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="text-3xl font-bold font-mono">{kpis.categorizedCount}</div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-sm font-medium text-muted-foreground">
+              Itens Não Categorizados
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="text-3xl font-bold font-mono">{kpis.uncategorizedCount}</div>
+          </CardContent>
+        </Card>
+      </div>
+
+      <div className="grid gap-6 md:grid-cols-2">
+        <Card>
+          <CardHeader>
+            <CardTitle>Gasto por Categoria</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ResponsiveContainer width="100%" height={300}>
+              <PieChart>
+                <Pie
+                  data={categorySpending.data}
+                  dataKey="value"
+                  nameKey="name"
+                  cx="50%"
+                  cy="50%"
+                  outerRadius={100}
+                  label={renderCustomLabel}
+                  onClick={(data) => setSelectedCategory(data.name)}
+                  style={{ cursor: 'pointer' }}
+                >
+                  {categorySpending.data.map((entry, index) => (
+                    <Cell
+                      key={`cell-${index}`}
+                      fill={CHART_COLORS[index % CHART_COLORS.length]}
+                    />
+                  ))}
+                </Pie>
+                <Tooltip
+                  formatter={(value: number) => formatCurrency(value)}
+                />
+              </PieChart>
+            </ResponsiveContainer>
+
+            <div className="mt-6 space-y-2">
+              {categorySpending.data.map((item, index) => (
+                <div key={item.name} className="flex items-center justify-between text-sm">
+                  <div className="flex items-center gap-2">
+                    <div
+                      className="w-3 h-3 rounded-sm"
+                      style={{ backgroundColor: CHART_COLORS[index % CHART_COLORS.length] }}
+                    />
+                    <span>{item.name}</span>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <span className="font-mono text-muted-foreground">
+                      {((item.value / categorySpending.total) * 100).toFixed(1)}%
+                    </span>
+                    <span className="font-mono font-semibold">
+                      {formatCurrency(item.value)}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Gasto por Subcategoria</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-3 max-h-[400px] overflow-y-auto">
+              {subcategorySpending.map((item, index) => (
+                <div key={item.name} className="space-y-1">
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="font-medium">{item.name}</span>
+                    <span className="font-mono font-semibold">
+                      {formatCurrency(item.value)}
+                    </span>
+                  </div>
+                  <div className="h-2 bg-muted rounded-full overflow-hidden">
+                    <div
+                      className="h-full transition-all"
+                      style={{
+                        width: `${(item.value / subcategorySpending[0].value) * 100}%`,
+                        backgroundColor: CHART_COLORS[index % CHART_COLORS.length]
+                      }}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {categoryOverTime.data.length > 0 && (
+        <Card>
+          <CardHeader>
+            <CardTitle>Categorias ao Longo do Tempo</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ResponsiveContainer width="100%" height={300}>
+              <AreaChart data={categoryOverTime.data}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="month" />
+                <YAxis tickFormatter={(value) => formatCurrency(value)} />
+                <Tooltip
+                  formatter={(value: number) => formatCurrency(value)}
+                />
+                {categoryOverTime.categories.map((category, index) => (
+                  <Area
+                    key={category}
+                    type="monotone"
+                    dataKey={category}
+                    stackId="1"
+                    stroke={CHART_COLORS[index % CHART_COLORS.length]}
+                    fill={CHART_COLORS[index % CHART_COLORS.length]}
+                  />
+                ))}
+              </AreaChart>
+            </ResponsiveContainer>
+          </CardContent>
+        </Card>
+      )}
+
+      {selectedCategory && itemsForCategory.length > 0 && (
+        <Card>
+          <CardHeader>
+            <CardTitle>Itens em {selectedCategory}</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Data</TableHead>
+                  <TableHead>Estabelecimento</TableHead>
+                  <TableHead>Descrição</TableHead>
+                  <TableHead>Subcategoria</TableHead>
+                  <TableHead className="text-right">Qtd</TableHead>
+                  <TableHead className="text-right">Valor Unit.</TableHead>
+                  <TableHead className="text-right">Total</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {itemsForCategory.map((item, idx) => (
+                  <TableRow key={idx}>
+                    <TableCell className="font-mono text-sm">
+                      {formatDate(item.issued_date)}
+                    </TableCell>
+                    <TableCell className="text-sm">{item.merchant_name}</TableCell>
+                    <TableCell className="text-sm">{item.description}</TableCell>
+                    <TableCell className="text-sm">{item.subcategory || '-'}</TableCell>
+                    <TableCell className="text-right font-mono text-sm">
+                      {item.qty} {item.unit}
+                    </TableCell>
+                    <TableCell className="text-right font-mono text-sm">
+                      {formatCurrency(item.unit_price)}
+                    </TableCell>
+                    <TableCell className="text-right font-mono font-semibold text-sm">
+                      {formatCurrency(item.line_total)}
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+      )}
+    </div>
+  )
+}
