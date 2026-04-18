@@ -6,6 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import { MagnifyingGlass } from '@phosphor-icons/react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
+import { usePeriodFilter } from '@/contexts/PeriodFilterContext'
+import { filterNotesByPeriod } from '@/lib/utils'
 
 interface ItemsPageProps {
   notes: Note[]
@@ -18,6 +20,11 @@ interface ItemOccurrence {
 
 export function ItemsPage({ notes }: ItemsPageProps) {
   const [search, setSearch] = useState('')
+  const { filter } = usePeriodFilter()
+
+  const filteredNotes = useMemo(() => {
+    return filterNotesByPeriod(notes, filter.startDate, filter.endDate)
+  }, [notes, filter])
 
   const searchResults = useMemo(() => {
     if (!search || search.trim().length < 2) return []
@@ -25,7 +32,7 @@ export function ItemsPage({ notes }: ItemsPageProps) {
     const searchLower = search.toLowerCase()
     const occurrences: ItemOccurrence[] = []
 
-    notes.forEach(note => {
+    filteredNotes.forEach(note => {
       note.items.forEach(item => {
         if (item.description_norm.toLowerCase().includes(searchLower)) {
           occurrences.push({ item, note })
@@ -36,7 +43,7 @@ export function ItemsPage({ notes }: ItemsPageProps) {
     return occurrences.sort((a, b) => 
       a.note.issued_date.localeCompare(b.note.issued_date)
     )
-  }, [notes, search])
+  }, [filteredNotes, search])
 
   const priceStats = useMemo(() => {
     if (searchResults.length === 0) return null
@@ -60,8 +67,8 @@ export function ItemsPage({ notes }: ItemsPageProps) {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-3xl font-bold tracking-tight">Items & Prices</h1>
-        <p className="text-muted-foreground">Track price history for specific products</p>
+        <h1 className="text-3xl font-bold tracking-tight">Itens e Preços</h1>
+        <p className="text-muted-foreground">Acompanhe o histórico de preços de produtos específicos</p>
       </div>
 
       <div className="relative">
@@ -69,7 +76,7 @@ export function ItemsPage({ notes }: ItemsPageProps) {
         <Input
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search for a product (e.g., 'ovos', 'leite')..."
+          placeholder="Buscar por produto (ex: 'ovos', 'leite')..."
           className="pl-10"
           id="search-items"
         />
@@ -77,13 +84,13 @@ export function ItemsPage({ notes }: ItemsPageProps) {
 
       {search && search.trim().length < 2 && (
         <div className="text-center py-12 text-muted-foreground">
-          Type at least 2 characters to search
+          Digite pelo menos 2 caracteres para buscar
         </div>
       )}
 
       {search && search.trim().length >= 2 && searchResults.length === 0 && (
         <div className="text-center py-12 text-muted-foreground">
-          No items found matching "{search}"
+          Nenhum item encontrado com "{search}" no período selecionado
         </div>
       )}
 
@@ -92,7 +99,7 @@ export function ItemsPage({ notes }: ItemsPageProps) {
           <div className="grid gap-4 md:grid-cols-4">
             <Card>
               <CardHeader className="pb-3">
-                <CardTitle className="text-sm font-medium text-muted-foreground">Min Price</CardTitle>
+                <CardTitle className="text-sm font-medium text-muted-foreground">Preço Mínimo</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold font-mono text-success">{formatCurrency(priceStats.min)}</div>
@@ -101,7 +108,7 @@ export function ItemsPage({ notes }: ItemsPageProps) {
 
             <Card>
               <CardHeader className="pb-3">
-                <CardTitle className="text-sm font-medium text-muted-foreground">Max Price</CardTitle>
+                <CardTitle className="text-sm font-medium text-muted-foreground">Preço Máximo</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold font-mono text-destructive">{formatCurrency(priceStats.max)}</div>
@@ -110,7 +117,7 @@ export function ItemsPage({ notes }: ItemsPageProps) {
 
             <Card>
               <CardHeader className="pb-3">
-                <CardTitle className="text-sm font-medium text-muted-foreground">Avg Price</CardTitle>
+                <CardTitle className="text-sm font-medium text-muted-foreground">Preço Médio</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold font-mono text-primary">{formatCurrency(priceStats.avg)}</div>
@@ -119,7 +126,7 @@ export function ItemsPage({ notes }: ItemsPageProps) {
 
             <Card>
               <CardHeader className="pb-3">
-                <CardTitle className="text-sm font-medium text-muted-foreground">Occurrences</CardTitle>
+                <CardTitle className="text-sm font-medium text-muted-foreground">Ocorrências</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold font-mono">{priceStats.count}</div>
@@ -129,7 +136,7 @@ export function ItemsPage({ notes }: ItemsPageProps) {
 
           <Card>
             <CardHeader>
-              <CardTitle>Price Evolution</CardTitle>
+              <CardTitle>Evolução de Preço</CardTitle>
             </CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={300}>
@@ -168,18 +175,18 @@ export function ItemsPage({ notes }: ItemsPageProps) {
 
           <Card>
             <CardHeader>
-              <CardTitle>All Occurrences ({searchResults.length})</CardTitle>
+              <CardTitle>Todas as Ocorrências ({searchResults.length})</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="border rounded-lg">
                 <Table>
                   <TableHeader>
                     <TableRow>
-                      <TableHead>Date</TableHead>
-                      <TableHead>Description</TableHead>
-                      <TableHead>Merchant</TableHead>
-                      <TableHead className="text-right">Unit Price</TableHead>
-                      <TableHead className="text-right">Qty</TableHead>
+                      <TableHead>Data</TableHead>
+                      <TableHead>Descrição</TableHead>
+                      <TableHead>Estabelecimento</TableHead>
+                      <TableHead className="text-right">Preço Unit.</TableHead>
+                      <TableHead className="text-right">Qtd</TableHead>
                       <TableHead className="text-right">Total</TableHead>
                     </TableRow>
                   </TableHeader>

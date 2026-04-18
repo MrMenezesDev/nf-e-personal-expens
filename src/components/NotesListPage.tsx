@@ -7,6 +7,8 @@ import { MagnifyingGlass } from '@phosphor-icons/react'
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
+import { usePeriodFilter } from '@/contexts/PeriodFilterContext'
+import { filterNotesByPeriod } from '@/lib/utils'
 
 interface NotesListPageProps {
   notes: Note[]
@@ -15,15 +17,18 @@ interface NotesListPageProps {
 export function NotesListPage({ notes }: NotesListPageProps) {
   const [search, setSearch] = useState('')
   const [selectedNote, setSelectedNote] = useState<Note | null>(null)
+  const { filter } = usePeriodFilter()
 
   const filteredNotes = useMemo(() => {
-    if (!search) return notes
+    const periodFiltered = filterNotesByPeriod(notes, filter.startDate, filter.endDate)
+    
+    if (!search) return periodFiltered
 
     const searchLower = search.toLowerCase()
-    return notes.filter(note => 
+    return periodFiltered.filter(note => 
       note.merchant_name.toLowerCase().includes(searchLower)
     )
-  }, [notes, search])
+  }, [notes, filter, search])
 
   const sortedNotes = useMemo(() => {
     return [...filteredNotes].sort((a, b) => 
@@ -35,7 +40,7 @@ export function NotesListPage({ notes }: NotesListPageProps) {
     <div className="space-y-6">
       <div>
         <h1 className="text-3xl font-bold tracking-tight">Extrato</h1>
-        <p className="text-muted-foreground">Browse and search your fiscal notes</p>
+        <p className="text-muted-foreground">Navegue e busque suas notas fiscais</p>
       </div>
 
       <div className="relative">
@@ -43,7 +48,7 @@ export function NotesListPage({ notes }: NotesListPageProps) {
         <Input
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search by merchant name..."
+          placeholder="Buscar por nome do estabelecimento..."
           className="pl-10"
           id="search-notes"
         />
@@ -51,17 +56,19 @@ export function NotesListPage({ notes }: NotesListPageProps) {
 
       {sortedNotes.length === 0 ? (
         <div className="text-center py-12 text-muted-foreground">
-          No notes found matching your search
+          {search
+            ? 'Nenhuma nota encontrada com este critério de busca'
+            : 'Nenhuma nota encontrada para o período selecionado.'}
         </div>
       ) : (
         <div className="border rounded-lg">
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead>Date</TableHead>
-                <TableHead>Merchant</TableHead>
+                <TableHead>Data</TableHead>
+                <TableHead>Estabelecimento</TableHead>
                 <TableHead className="text-right">Total</TableHead>
-                <TableHead className="text-right">Items</TableHead>
+                <TableHead className="text-right">Itens</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -106,15 +113,15 @@ export function NotesListPage({ notes }: NotesListPageProps) {
                 <Separator />
 
                 <div>
-                  <h3 className="font-semibold mb-4 text-lg">Items ({selectedNote.items.length})</h3>
+                  <h3 className="font-semibold mb-4 text-lg">Itens ({selectedNote.items.length})</h3>
                   <div className="border rounded-lg overflow-hidden">
                     <Table>
                       <TableHeader>
                         <TableRow>
                           <TableHead className="w-12">#</TableHead>
-                          <TableHead>Description</TableHead>
-                          <TableHead className="text-right">Qty</TableHead>
-                          <TableHead className="text-right">Unit Price</TableHead>
+                          <TableHead>Descrição</TableHead>
+                          <TableHead className="text-right">Qtd</TableHead>
+                          <TableHead className="text-right">Preço Unit.</TableHead>
                           <TableHead className="text-right">Total</TableHead>
                         </TableRow>
                       </TableHeader>
@@ -145,11 +152,11 @@ export function NotesListPage({ notes }: NotesListPageProps) {
 
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div className="flex justify-between">
-                    <span>Note Number:</span>
+                    <span>Número da Nota:</span>
                     <span className="font-mono">{selectedNote.number}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Serie:</span>
+                    <span>Série:</span>
                     <span className="font-mono">{selectedNote.serie}</span>
                   </div>
                   <div className="flex justify-between">

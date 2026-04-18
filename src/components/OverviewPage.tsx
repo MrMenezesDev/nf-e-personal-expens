@@ -3,25 +3,33 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Note } from '@/lib/types'
 import { formatCurrency, parseMonthFromDate } from '@/lib/formatters'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line } from 'recharts'
+import { usePeriodFilter } from '@/contexts/PeriodFilterContext'
+import { filterNotesByPeriod } from '@/lib/utils'
 
 interface OverviewPageProps {
   notes: Note[]
 }
 
 export function OverviewPage({ notes }: OverviewPageProps) {
+  const { filter } = usePeriodFilter()
+
+  const filteredNotes = useMemo(() => {
+    return filterNotesByPeriod(notes, filter.startDate, filter.endDate)
+  }, [notes, filter])
+
   const stats = useMemo(() => {
-    const total = notes.reduce((sum, note) => sum + note.total_amount, 0)
-    const count = notes.length
+    const total = filteredNotes.reduce((sum, note) => sum + note.total_amount, 0)
+    const count = filteredNotes.length
     const average = count > 0 ? total / count : 0
-    const totalItems = notes.reduce((sum, note) => sum + note.items.length, 0)
+    const totalItems = filteredNotes.reduce((sum, note) => sum + note.items.length, 0)
 
     return { total, count, average, totalItems }
-  }, [notes])
+  }, [filteredNotes])
 
   const topMerchants = useMemo(() => {
     const merchantTotals = new Map<string, number>()
     
-    notes.forEach(note => {
+    filteredNotes.forEach(note => {
       const current = merchantTotals.get(note.merchant_name) || 0
       merchantTotals.set(note.merchant_name, current + note.total_amount)
     })
@@ -30,12 +38,12 @@ export function OverviewPage({ notes }: OverviewPageProps) {
       .map(([name, total]) => ({ name, total }))
       .sort((a, b) => b.total - a.total)
       .slice(0, 10)
-  }, [notes])
+  }, [filteredNotes])
 
   const monthlySpending = useMemo(() => {
     const monthTotals = new Map<string, number>()
     
-    notes.forEach(note => {
+    filteredNotes.forEach(note => {
       const month = parseMonthFromDate(note.issued_date)
       const current = monthTotals.get(month) || 0
       monthTotals.set(month, current + note.total_amount)
@@ -44,19 +52,34 @@ export function OverviewPage({ notes }: OverviewPageProps) {
     return Array.from(monthTotals.entries())
       .map(([month, total]) => ({ month, total }))
       .sort((a, b) => a.month.localeCompare(b.month))
-  }, [notes])
+  }, [filteredNotes])
+
+  if (filteredNotes.length === 0) {
+    return (
+      <div className="flex items-center justify-center py-20">
+        <div className="text-center space-y-2">
+          <h3 className="text-xl font-semibold text-muted-foreground">
+            Nenhuma nota encontrada para o período selecionado.
+          </h3>
+          <p className="text-sm text-muted-foreground">
+            Ajuste o filtro de período para visualizar seus dados.
+          </p>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-3xl font-bold tracking-tight">Overview</h1>
-        <p className="text-muted-foreground">Your expense analytics at a glance</p>
+        <h1 className="text-3xl font-bold tracking-tight">Visão Geral</h1>
+        <p className="text-muted-foreground">Análise das suas despesas</p>
       </div>
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <Card>
           <CardHeader className="pb-3">
-            <CardTitle className="text-sm font-medium text-muted-foreground">Total Spent</CardTitle>
+            <CardTitle className="text-sm font-medium text-muted-foreground">Total Gasto</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-bold font-mono text-primary">{formatCurrency(stats.total)}</div>
@@ -65,7 +88,7 @@ export function OverviewPage({ notes }: OverviewPageProps) {
 
         <Card>
           <CardHeader className="pb-3">
-            <CardTitle className="text-sm font-medium text-muted-foreground">Number of Notes</CardTitle>
+            <CardTitle className="text-sm font-medium text-muted-foreground">Nº de Notas</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-bold font-mono">{stats.count}</div>
@@ -74,7 +97,7 @@ export function OverviewPage({ notes }: OverviewPageProps) {
 
         <Card>
           <CardHeader className="pb-3">
-            <CardTitle className="text-sm font-medium text-muted-foreground">Average Ticket</CardTitle>
+            <CardTitle className="text-sm font-medium text-muted-foreground">Ticket Médio</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-bold font-mono text-accent">{formatCurrency(stats.average)}</div>
@@ -83,7 +106,7 @@ export function OverviewPage({ notes }: OverviewPageProps) {
 
         <Card>
           <CardHeader className="pb-3">
-            <CardTitle className="text-sm font-medium text-muted-foreground">Total Items</CardTitle>
+            <CardTitle className="text-sm font-medium text-muted-foreground">Total de Itens</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-bold font-mono">{stats.totalItems}</div>
@@ -93,7 +116,7 @@ export function OverviewPage({ notes }: OverviewPageProps) {
 
       <Card>
         <CardHeader>
-          <CardTitle>Top 10 Merchants by Spending</CardTitle>
+          <CardTitle>Top 10 Estabelecimentos por Gastos</CardTitle>
         </CardHeader>
         <CardContent>
           <ResponsiveContainer width="100%" height={400}>
@@ -117,7 +140,7 @@ export function OverviewPage({ notes }: OverviewPageProps) {
 
       <Card>
         <CardHeader>
-          <CardTitle>Monthly Spending Trend</CardTitle>
+          <CardTitle>Gastos Mensais</CardTitle>
         </CardHeader>
         <CardContent>
           <ResponsiveContainer width="100%" height={300}>
