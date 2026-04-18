@@ -136,9 +136,15 @@ Animations should emphasize data transitions and provide feedback without delayi
 - Tight groups: `gap-2` for related elements
 
 **Mobile**:
-- Stack KPI cards vertically on mobile (grid-cols-1)
-- Tables become horizontally scrollable with fixed first column
-- Charts reduce height and font sizes
-- Navigation converts to bottom tab bar or hamburger menu
-- Sheet panels take full screen width on mobile
-- Search moves to top with larger touch targets
+- Bottom tab bar with icons for primary navigation (< 768px)
+- Stack KPI cards in 2x2 grid on mobile
+- Tables convert to card layouts on mobile
+- Charts stack vertically, reduce height, and enable touch interactions
+- Navigation converts to bottom tab bar with icons + short labels
+- Sheet panels adapt for full-screen experience on mobile
+- Search moves to top with larger touch targets (min 44px)
+- Filter bar collapses into a drawer with a summary line and filter icon button
+- All interactive elements have minimum 44px touch targets
+- Font sizes: body 14px, headings 18px, KPI values 24px (vs 40px on desktop)
+- Padding: 16px horizontal on mobile (vs 24-32px on desktop)
+- Sticky filter bar and search inputs for easy access while scrolling

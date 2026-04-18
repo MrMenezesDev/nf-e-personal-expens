@@ -15,6 +15,12 @@
   }
 }
 
+@layer utilities {
+  .safe-area-inset-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
 :root {
   --background: oklch(0.98 0 0);
   --foreground: oklch(0.25 0.01 250);

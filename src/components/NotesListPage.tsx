@@ -43,61 +43,91 @@ export function NotesListPage({ notes }: NotesListPageProps) {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-3xl font-bold tracking-tight">Extrato</h1>
-        <p className="text-muted-foreground">Navegue e busque suas notas fiscais</p>
+        <h1 className="text-2xl md:text-3xl font-bold tracking-tight">Extrato</h1>
+        <p className="text-sm md:text-base text-muted-foreground">Navegue e busque suas notas fiscais</p>
       </div>
 
-      <div className="relative">
+      <div className="relative sticky top-28 md:top-32 z-30 bg-background pb-2">
         <MagnifyingGlass className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
         <Input
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Buscar por nome do estabelecimento..."
-          className="pl-10"
+          className="pl-10 h-12 md:h-10"
           id="search-notes"
         />
       </div>
 
       {sortedNotes.length === 0 ? (
-        <div className="text-center py-12 text-muted-foreground">
+        <div className="text-center py-12 text-muted-foreground text-sm md:text-base">
           {search
             ? 'Nenhuma nota encontrada com este critério de busca'
             : 'Nenhuma nota encontrada para o período selecionado.'}
         </div>
       ) : (
-        <div className="border rounded-lg">
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Data</TableHead>
-                <TableHead>Estabelecimento</TableHead>
-                <TableHead className="text-right">Total</TableHead>
-                <TableHead className="text-right">Itens</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {sortedNotes.map((note) => (
-                <TableRow 
-                  key={note.note_id}
-                  className="cursor-pointer hover:bg-muted/50 transition-colors"
-                  onClick={() => setSelectedNote(note)}
-                >
-                  <TableCell className="font-mono text-sm">{formatDate(note.issued_date)}</TableCell>
-                  <TableCell className="font-medium">{note.merchant_name}</TableCell>
-                  <TableCell className="text-right font-mono">
-                    {formatCurrency(getFilteredItemsTotal(note, filter.category, filter.subcategory))}
-                  </TableCell>
-                  <TableCell className="text-right">
-                    {isCategoryFiltered 
-                      ? note.items.filter(item => matchesCategoryFilter(item, filter.category, filter.subcategory)).length
-                      : note.items.length
-                    }
-                  </TableCell>
+        <>
+          <div className="hidden md:block border rounded-lg">
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Data</TableHead>
+                  <TableHead>Estabelecimento</TableHead>
+                  <TableHead className="text-right">Total</TableHead>
+                  <TableHead className="text-right">Itens</TableHead>
                 </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </div>
+              </TableHeader>
+              <TableBody>
+                {sortedNotes.map((note) => (
+                  <TableRow 
+                    key={note.note_id}
+                    className="cursor-pointer hover:bg-muted/50 transition-colors"
+                    onClick={() => setSelectedNote(note)}
+                  >
+                    <TableCell className="font-mono text-sm">{formatDate(note.issued_date)}</TableCell>
+                    <TableCell className="font-medium">{note.merchant_name}</TableCell>
+                    <TableCell className="text-right font-mono">
+                      {formatCurrency(getFilteredItemsTotal(note, filter.category, filter.subcategory))}
+                    </TableCell>
+                    <TableCell className="text-right">
+                      {isCategoryFiltered 
+                        ? note.items.filter(item => matchesCategoryFilter(item, filter.category, filter.subcategory)).length
+                        : note.items.length
+                      }
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </div>
+
+          <div className="md:hidden space-y-2">
+            {sortedNotes.map((note) => (
+              <button
+                key={note.note_id}
+                onClick={() => setSelectedNote(note)}
+                className="w-full text-left border rounded-lg p-4 bg-card hover:bg-muted/50 transition-colors active:scale-[0.98]"
+              >
+                <div className="font-semibold text-base truncate mb-1">
+                  {note.merchant_name}
+                </div>
+                <div className="flex justify-between items-center mb-2">
+                  <span className="text-sm font-mono text-muted-foreground">
+                    {formatDate(note.issued_date)}
+                  </span>
+                  <span className="text-base font-bold font-mono">
+                    {formatCurrency(getFilteredItemsTotal(note, filter.category, filter.subcategory))}
+                  </span>
+                </div>
+                <div className="text-xs text-muted-foreground">
+                  {isCategoryFiltered 
+                    ? `${note.items.filter(item => matchesCategoryFilter(item, filter.category, filter.subcategory)).length} itens`
+                    : `${note.items.length} itens`
+                  }
+                </div>
+              </button>
+            ))}
+          </div>
+        </>
       )}
 
       <Sheet open={!!selectedNote} onOpenChange={(open) => !open && setSelectedNote(null)}>
@@ -105,18 +135,18 @@ export function NotesListPage({ notes }: NotesListPageProps) {
           {selectedNote && (
             <>
               <SheetHeader>
-                <SheetTitle className="text-2xl">{selectedNote.merchant_name}</SheetTitle>
+                <SheetTitle className="text-xl md:text-2xl">{selectedNote.merchant_name}</SheetTitle>
               </SheetHeader>
               
-              <div className="space-y-6 mt-6">
-                <div className="flex items-center gap-4 flex-wrap">
-                  <Badge variant="outline" className="font-mono">
+              <div className="space-y-4 md:space-y-6 mt-4 md:mt-6">
+                <div className="flex items-center gap-3 md:gap-4 flex-wrap">
+                  <Badge variant="outline" className="font-mono text-xs md:text-sm">
                     {formatDate(selectedNote.issued_date)}
                   </Badge>
-                  <Badge variant="secondary">
+                  <Badge variant="secondary" className="text-xs md:text-sm">
                     {selectedNote.merchant_uf}
                   </Badge>
-                  <div className="text-2xl font-bold font-mono text-primary">
+                  <div className="text-xl md:text-2xl font-bold font-mono text-primary">
                     {formatCurrency(selectedNote.total_amount)}
                   </div>
                 </div>
@@ -124,10 +154,10 @@ export function NotesListPage({ notes }: NotesListPageProps) {
                 <Separator />
 
                 <div>
-                  <h3 className="font-semibold mb-4 text-lg">
+                  <h3 className="font-semibold mb-3 md:mb-4 text-base md:text-lg">
                     Itens ({selectedNote.items.length})
                     {isCategoryFiltered && (
-                      <span className="text-sm font-normal text-muted-foreground ml-2">
+                      <span className="text-xs md:text-sm font-normal text-muted-foreground ml-2">
                         ({selectedNote.items.filter(item => matchesCategoryFilter(item, filter.category, filter.subcategory)).length} correspondentes)
                       </span>
                     )}
@@ -136,11 +166,11 @@ export function NotesListPage({ notes }: NotesListPageProps) {
                     <Table>
                       <TableHeader>
                         <TableRow>
-                          <TableHead className="w-12">#</TableHead>
-                          <TableHead>Descrição</TableHead>
-                          <TableHead className="text-right">Qtd</TableHead>
-                          <TableHead className="text-right">Preço Unit.</TableHead>
-                          <TableHead className="text-right">Total</TableHead>
+                          <TableHead className="w-8 md:w-12 text-xs md:text-sm">#</TableHead>
+                          <TableHead className="text-xs md:text-sm">Descrição</TableHead>
+                          <TableHead className="text-right text-xs md:text-sm">Qtd</TableHead>
+                          <TableHead className="text-right hidden md:table-cell text-xs md:text-sm">Preço Unit.</TableHead>
+                          <TableHead className="text-right text-xs md:text-sm">Total</TableHead>
                         </TableRow>
                       </TableHeader>
                       <TableBody>
@@ -154,24 +184,24 @@ export function NotesListPage({ notes }: NotesListPageProps) {
                                 isCategoryFiltered && !matches && 'opacity-40'
                               )}
                             >
-                              <TableCell className="font-mono text-sm text-muted-foreground">
+                              <TableCell className="font-mono text-xs md:text-sm text-muted-foreground">
                                 {item.line_n}
                               </TableCell>
-                              <TableCell className="font-medium text-sm">
+                              <TableCell className="font-medium text-xs md:text-sm">
                                 {item.description}
                                 {matches && item.category && (
-                                  <div className="text-xs text-muted-foreground mt-1">
+                                  <div className="text-[10px] md:text-xs text-muted-foreground mt-1">
                                     {item.category}{item.subcategory ? ` › ${item.subcategory}` : ''}
                                   </div>
                                 )}
                               </TableCell>
-                              <TableCell className="text-right font-mono text-sm">
-                                {item.qty} {item.unit}
+                              <TableCell className="text-right font-mono text-xs md:text-sm">
+                                {item.qty}
                               </TableCell>
-                              <TableCell className="text-right font-mono text-sm">
+                              <TableCell className="text-right font-mono text-xs md:text-sm hidden md:table-cell">
                                 {formatCurrency(item.unit_price)}
                               </TableCell>
-                              <TableCell className="text-right font-mono text-sm font-semibold">
+                              <TableCell className="text-right font-mono text-xs md:text-sm font-semibold">
                                 {formatCurrency(item.line_total)}
                               </TableCell>
                             </TableRow>
@@ -182,7 +212,7 @@ export function NotesListPage({ notes }: NotesListPageProps) {
                   </div>
                 </div>
 
-                <div className="space-y-2 text-sm text-muted-foreground">
+                <div className="space-y-2 text-xs md:text-sm text-muted-foreground">
                   <div className="flex justify-between">
                     <span>Número da Nota:</span>
                     <span className="font-mono">{selectedNote.number}</span>

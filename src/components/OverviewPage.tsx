@@ -88,67 +88,80 @@ export function OverviewPage({ notes }: OverviewPageProps) {
     )
   }
 
+  const topMerchantsDisplay = useMemo(() => {
+    return topMerchants.slice(0, window.innerWidth < 768 ? 5 : 10)
+  }, [topMerchants])
+
   return (
-    <div className="space-y-8">
+    <div className="space-y-6 md:space-y-8">
       <div>
-        <h1 className="text-3xl font-bold tracking-tight">Visão Geral</h1>
-        <p className="text-muted-foreground">Análise das suas despesas</p>
+        <h1 className="text-2xl md:text-3xl font-bold tracking-tight">Visão Geral</h1>
+        <p className="text-sm md:text-base text-muted-foreground">Análise das suas despesas</p>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-3 grid-cols-2 md:gap-4 lg:grid-cols-4">
         <Card>
-          <CardHeader className="pb-3">
-            <CardTitle className="text-sm font-medium text-muted-foreground">Total Gasto</CardTitle>
+          <CardHeader className="pb-2 md:pb-3">
+            <CardTitle className="text-xs md:text-sm font-medium text-muted-foreground">Total Gasto</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold font-mono text-primary">{formatCurrency(stats.total)}</div>
+            <div className="text-xl md:text-3xl font-bold font-mono text-primary">{formatCurrency(stats.total)}</div>
           </CardContent>
         </Card>
 
         <Card>
-          <CardHeader className="pb-3">
-            <CardTitle className="text-sm font-medium text-muted-foreground">Nº de Notas</CardTitle>
+          <CardHeader className="pb-2 md:pb-3">
+            <CardTitle className="text-xs md:text-sm font-medium text-muted-foreground">Nº de Notas</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold font-mono">{stats.count}</div>
+            <div className="text-xl md:text-3xl font-bold font-mono">{stats.count}</div>
           </CardContent>
         </Card>
 
         <Card>
-          <CardHeader className="pb-3">
-            <CardTitle className="text-sm font-medium text-muted-foreground">Ticket Médio</CardTitle>
+          <CardHeader className="pb-2 md:pb-3">
+            <CardTitle className="text-xs md:text-sm font-medium text-muted-foreground">Ticket Médio</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold font-mono text-accent">{formatCurrency(stats.average)}</div>
+            <div className="text-xl md:text-3xl font-bold font-mono text-accent">{formatCurrency(stats.average)}</div>
           </CardContent>
         </Card>
 
         <Card>
-          <CardHeader className="pb-3">
-            <CardTitle className="text-sm font-medium text-muted-foreground">Total de Itens</CardTitle>
+          <CardHeader className="pb-2 md:pb-3">
+            <CardTitle className="text-xs md:text-sm font-medium text-muted-foreground">Total de Itens</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold font-mono">{stats.totalItems}</div>
+            <div className="text-xl md:text-3xl font-bold font-mono">{stats.totalItems}</div>
           </CardContent>
         </Card>
       </div>
 
       <Card>
         <CardHeader>
-          <CardTitle>Top 10 Estabelecimentos por Gastos</CardTitle>
+          <CardTitle className="text-base md:text-lg">
+            <span className="hidden md:inline">Top 10 Estabelecimentos por Gastos</span>
+            <span className="md:hidden">Top 5 Estabelecimentos</span>
+          </CardTitle>
         </CardHeader>
         <CardContent>
-          <ResponsiveContainer width="100%" height={400}>
-            <BarChart data={topMerchants} layout="vertical" margin={{ left: 150, right: 20, top: 20, bottom: 20 }}>
+          <ResponsiveContainer width="100%" height={300} className="md:h-[400px]">
+            <BarChart 
+              data={topMerchantsDisplay} 
+              layout="vertical" 
+              margin={{ left: 100, right: 10, top: 10, bottom: 10 }}
+              className="md:ml-12"
+            >
               <CartesianGrid strokeDasharray="3 3" stroke="oklch(0.88 0.01 250)" />
-              <XAxis type="number" tickFormatter={(value) => formatCurrency(value)} />
-              <YAxis type="category" dataKey="name" width={140} style={{ fontSize: '12px' }} />
+              <XAxis type="number" tickFormatter={(value) => formatCurrency(value)} style={{ fontSize: '11px' }} className="md:text-xs" />
+              <YAxis type="category" dataKey="name" width={90} style={{ fontSize: '10px' }} className="md:w-[140px] md:text-xs" />
               <Tooltip 
                 formatter={(value: number) => formatCurrency(value)}
                 contentStyle={{ 
                   backgroundColor: 'oklch(1 0 0)', 
                   border: '1px solid oklch(0.88 0.01 250)',
-                  borderRadius: '8px'
+                  borderRadius: '8px',
+                  fontSize: '12px'
                 }}
               />
               <Bar dataKey="total" fill="oklch(0.45 0.12 200)" radius={[0, 4, 4, 0]} />
@@ -159,31 +172,36 @@ export function OverviewPage({ notes }: OverviewPageProps) {
 
       <Card>
         <CardHeader>
-          <CardTitle>Gastos Mensais</CardTitle>
+          <CardTitle className="text-base md:text-lg">Gastos Mensais</CardTitle>
         </CardHeader>
         <CardContent>
-          <ResponsiveContainer width="100%" height={300}>
-            <LineChart data={monthlySpending} margin={{ left: 20, right: 20, top: 20, bottom: 20 }}>
-              <CartesianGrid strokeDasharray="3 3" stroke="oklch(0.88 0.01 250)" />
-              <XAxis dataKey="month" style={{ fontSize: '12px' }} />
-              <YAxis tickFormatter={(value) => formatCurrency(value)} />
-              <Tooltip 
-                formatter={(value: number) => formatCurrency(value)}
-                contentStyle={{ 
-                  backgroundColor: 'oklch(1 0 0)', 
-                  border: '1px solid oklch(0.88 0.01 250)',
-                  borderRadius: '8px'
-                }}
-              />
-              <Line 
-                type="monotone" 
-                dataKey="total" 
-                stroke="oklch(0.72 0.15 75)" 
-                strokeWidth={3}
-                dot={{ fill: 'oklch(0.72 0.15 75)', r: 4 }}
-              />
-            </LineChart>
-          </ResponsiveContainer>
+          <div className="overflow-x-auto -mx-2 md:mx-0">
+            <div className="min-w-[400px] md:min-w-full">
+              <ResponsiveContainer width="100%" height={250} className="md:h-[300px]">
+                <LineChart data={monthlySpending} margin={{ left: 10, right: 10, top: 10, bottom: 10 }} className="md:mx-5">
+                  <CartesianGrid strokeDasharray="3 3" stroke="oklch(0.88 0.01 250)" />
+                  <XAxis dataKey="month" style={{ fontSize: '10px' }} className="md:text-xs" />
+                  <YAxis tickFormatter={(value) => formatCurrency(value)} style={{ fontSize: '10px' }} className="md:text-xs" />
+                  <Tooltip 
+                    formatter={(value: number) => formatCurrency(value)}
+                    contentStyle={{ 
+                      backgroundColor: 'oklch(1 0 0)', 
+                      border: '1px solid oklch(0.88 0.01 250)',
+                      borderRadius: '8px',
+                      fontSize: '12px'
+                    }}
+                  />
+                  <Line 
+                    type="monotone" 
+                    dataKey="total" 
+                    stroke="oklch(0.72 0.15 75)" 
+                    strokeWidth={2}
+                    dot={{ fill: 'oklch(0.72 0.15 75)', r: 3 }}
+                  />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
         </CardContent>
       </Card>
     </div>

@@ -233,43 +233,43 @@ export function ItemsPage({ notes }: ItemsPageProps) {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-3xl font-bold tracking-tight">Itens e Preços</h1>
-        <p className="text-muted-foreground">Acompanhe o histórico de preços de produtos específicos</p>
+        <h1 className="text-2xl md:text-3xl font-bold tracking-tight">Itens e Preços</h1>
+        <p className="text-sm md:text-base text-muted-foreground">Acompanhe o histórico de preços de produtos específicos</p>
       </div>
 
-      <div className="relative">
+      <div className="relative sticky top-28 md:top-32 z-30 bg-background pb-2">
         <MagnifyingGlass className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
         <Input
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Buscar por produto (ex: 'ovos', 'leite')..."
-          className="pl-10"
+          placeholder="Buscar por produto..."
+          className="pl-10 h-12 md:h-10"
           id="search-items"
         />
       </div>
 
       {filterMessage && (
-        <div className="bg-accent/20 border border-accent/30 rounded-lg px-4 py-3">
-          <p className="text-sm font-medium text-accent-foreground">
+        <div className="bg-accent/20 border border-accent/30 rounded-lg px-3 md:px-4 py-2 md:py-3">
+          <p className="text-xs md:text-sm font-medium text-accent-foreground">
             {filterMessage}
           </p>
         </div>
       )}
 
       {showEmptyState && (
-        <div className="text-center py-12 text-muted-foreground">
+        <div className="text-center py-12 text-sm md:text-base text-muted-foreground">
           Digite o nome de um produto para pesquisar
         </div>
       )}
 
       {showMinLengthWarning && (
-        <div className="text-center py-12 text-muted-foreground">
+        <div className="text-center py-12 text-sm md:text-base text-muted-foreground">
           Digite pelo menos 2 caracteres para buscar
         </div>
       )}
 
       {showNoResults && (
-        <div className="text-center py-12 text-muted-foreground">
+        <div className="text-center py-12 text-sm md:text-base text-muted-foreground">
           {hasSearch 
             ? `Nenhum item encontrado com "${search}" no período selecionado`
             : 'Nenhum item encontrado com os filtros selecionados'
@@ -279,130 +279,143 @@ export function ItemsPage({ notes }: ItemsPageProps) {
 
       {searchResults.length > 0 && priceStats && (
         <>
-          <div className="grid gap-4 md:grid-cols-4">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base md:text-lg">{chartTitle}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="overflow-x-auto -mx-2 md:mx-0">
+                <div className="min-w-[350px] md:min-w-full">
+                  {hasSearch ? (
+                    <ResponsiveContainer width="100%" height={200} className="md:h-[300px]">
+                      <LineChart data={priceChartData as any[]} margin={{ left: 10, right: 10, top: 10, bottom: 50 }}>
+                        <CartesianGrid strokeDasharray="3 3" stroke="oklch(0.88 0.01 250)" />
+                        <XAxis 
+                          dataKey="date" 
+                          style={{ fontSize: '9px' }}
+                          className="md:text-[11px]"
+                          angle={-45}
+                          textAnchor="end"
+                          height={60}
+                        />
+                        <YAxis 
+                          tickFormatter={(value) => formatCurrency(value)}
+                          domain={['dataMin - 1', 'dataMax + 1']}
+                          style={{ fontSize: '9px' }}
+                          className="md:text-xs"
+                        />
+                        <Tooltip 
+                          formatter={(value: number) => formatCurrency(value)}
+                          contentStyle={{ 
+                            backgroundColor: 'oklch(1 0 0)', 
+                            border: '1px solid oklch(0.88 0.01 250)',
+                            borderRadius: '8px',
+                            fontSize: '11px'
+                          }}
+                        />
+                        <Line 
+                          type="monotone" 
+                          dataKey="price" 
+                          stroke="oklch(0.45 0.12 200)" 
+                          strokeWidth={2}
+                          dot={{ fill: 'oklch(0.45 0.12 200)', r: 3 }}
+                          className="md:r-5"
+                        />
+                      </LineChart>
+                    </ResponsiveContainer>
+                  ) : (
+                    <ResponsiveContainer width="100%" height={200} className="md:h-[300px]">
+                      <LineChart 
+                        data={(priceChartData as any).chartData} 
+                        margin={{ left: 10, right: 10, top: 10, bottom: 50 }}
+                      >
+                        <CartesianGrid strokeDasharray="3 3" stroke="oklch(0.88 0.01 250)" />
+                        <XAxis 
+                          dataKey="month" 
+                          style={{ fontSize: '9px' }}
+                          className="md:text-[11px]"
+                          angle={-45}
+                          textAnchor="end"
+                          height={60}
+                        />
+                        <YAxis 
+                          tickFormatter={(value) => formatCurrency(value)}
+                          style={{ fontSize: '9px' }}
+                          className="md:text-xs"
+                        />
+                        <Tooltip 
+                          formatter={(value: number) => formatCurrency(value)}
+                          contentStyle={{ 
+                            backgroundColor: 'oklch(1 0 0)', 
+                            border: '1px solid oklch(0.88 0.01 250)',
+                            borderRadius: '8px',
+                            fontSize: '11px'
+                          }}
+                        />
+                        <Legend wrapperStyle={{ fontSize: '10px' }} className="md:text-xs" />
+                        {(priceChartData as any).subcategories.map((subcat: string, idx: number) => (
+                          <Line 
+                            key={subcat}
+                            type="monotone" 
+                            dataKey={subcat} 
+                            stroke={CHART_COLORS[idx % CHART_COLORS.length]}
+                            strokeWidth={2}
+                            dot={{ r: 3 }}
+                            connectNulls
+                          />
+                        ))}
+                      </LineChart>
+                    </ResponsiveContainer>
+                  )}
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <div className="grid gap-3 grid-cols-3 md:grid-cols-4 md:gap-4">
             <Card>
-              <CardHeader className="pb-3">
-                <CardTitle className="text-sm font-medium text-muted-foreground">Preço Mínimo</CardTitle>
+              <CardHeader className="pb-2 md:pb-3">
+                <CardTitle className="text-xs md:text-sm font-medium text-muted-foreground">Mínimo</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold font-mono text-success">{formatCurrency(priceStats.min)}</div>
+                <div className="text-base md:text-2xl font-bold font-mono text-success">{formatCurrency(priceStats.min)}</div>
               </CardContent>
             </Card>
 
             <Card>
-              <CardHeader className="pb-3">
-                <CardTitle className="text-sm font-medium text-muted-foreground">Preço Máximo</CardTitle>
+              <CardHeader className="pb-2 md:pb-3">
+                <CardTitle className="text-xs md:text-sm font-medium text-muted-foreground">Máximo</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold font-mono text-destructive">{formatCurrency(priceStats.max)}</div>
+                <div className="text-base md:text-2xl font-bold font-mono text-destructive">{formatCurrency(priceStats.max)}</div>
               </CardContent>
             </Card>
 
             <Card>
-              <CardHeader className="pb-3">
-                <CardTitle className="text-sm font-medium text-muted-foreground">Preço Médio</CardTitle>
+              <CardHeader className="pb-2 md:pb-3">
+                <CardTitle className="text-xs md:text-sm font-medium text-muted-foreground">Média</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold font-mono text-primary">{formatCurrency(priceStats.avg)}</div>
+                <div className="text-base md:text-2xl font-bold font-mono text-primary">{formatCurrency(priceStats.avg)}</div>
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader className="pb-3">
-                <CardTitle className="text-sm font-medium text-muted-foreground">Ocorrências</CardTitle>
+            <Card className="hidden md:block">
+              <CardHeader className="pb-2 md:pb-3">
+                <CardTitle className="text-xs md:text-sm font-medium text-muted-foreground">Ocorrências</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold font-mono">{priceStats.count}</div>
+                <div className="text-base md:text-2xl font-bold font-mono">{priceStats.count}</div>
               </CardContent>
             </Card>
           </div>
 
           <Card>
             <CardHeader>
-              <CardTitle>{chartTitle}</CardTitle>
+              <CardTitle className="text-base md:text-lg">Todas as Ocorrências ({searchResults.length})</CardTitle>
             </CardHeader>
             <CardContent>
-              {hasSearch ? (
-                <ResponsiveContainer width="100%" height={300}>
-                  <LineChart data={priceChartData as any[]} margin={{ left: 20, right: 20, top: 20, bottom: 20 }}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="oklch(0.88 0.01 250)" />
-                    <XAxis 
-                      dataKey="date" 
-                      style={{ fontSize: '11px' }}
-                      angle={-45}
-                      textAnchor="end"
-                      height={80}
-                    />
-                    <YAxis 
-                      tickFormatter={(value) => formatCurrency(value)}
-                      domain={['dataMin - 1', 'dataMax + 1']}
-                    />
-                    <Tooltip 
-                      formatter={(value: number) => formatCurrency(value)}
-                      contentStyle={{ 
-                        backgroundColor: 'oklch(1 0 0)', 
-                        border: '1px solid oklch(0.88 0.01 250)',
-                        borderRadius: '8px'
-                      }}
-                    />
-                    <Line 
-                      type="monotone" 
-                      dataKey="price" 
-                      stroke="oklch(0.45 0.12 200)" 
-                      strokeWidth={2}
-                      dot={{ fill: 'oklch(0.45 0.12 200)', r: 5 }}
-                    />
-                  </LineChart>
-                </ResponsiveContainer>
-              ) : (
-                <ResponsiveContainer width="100%" height={300}>
-                  <LineChart 
-                    data={(priceChartData as any).chartData} 
-                    margin={{ left: 20, right: 20, top: 20, bottom: 20 }}
-                  >
-                    <CartesianGrid strokeDasharray="3 3" stroke="oklch(0.88 0.01 250)" />
-                    <XAxis 
-                      dataKey="month" 
-                      style={{ fontSize: '11px' }}
-                      angle={-45}
-                      textAnchor="end"
-                      height={80}
-                    />
-                    <YAxis 
-                      tickFormatter={(value) => formatCurrency(value)}
-                    />
-                    <Tooltip 
-                      formatter={(value: number) => formatCurrency(value)}
-                      contentStyle={{ 
-                        backgroundColor: 'oklch(1 0 0)', 
-                        border: '1px solid oklch(0.88 0.01 250)',
-                        borderRadius: '8px'
-                      }}
-                    />
-                    <Legend />
-                    {(priceChartData as any).subcategories.map((subcat: string, idx: number) => (
-                      <Line 
-                        key={subcat}
-                        type="monotone" 
-                        dataKey={subcat} 
-                        stroke={CHART_COLORS[idx % CHART_COLORS.length]}
-                        strokeWidth={2}
-                        dot={{ r: 4 }}
-                        connectNulls
-                      />
-                    ))}
-                  </LineChart>
-                </ResponsiveContainer>
-              )}
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Todas as Ocorrências ({searchResults.length})</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="border rounded-lg overflow-x-auto">
+              <div className="hidden md:block border rounded-lg overflow-x-auto">
                 <Table>
                   <TableHeader>
                     <TableRow>
@@ -453,6 +466,55 @@ export function ItemsPage({ notes }: ItemsPageProps) {
                     ))}
                   </TableBody>
                 </Table>
+              </div>
+
+              <div className="md:hidden space-y-2">
+                {searchResults.map((result, idx) => (
+                  <div
+                    key={idx}
+                    className="border rounded-lg p-3 bg-card"
+                  >
+                    <div className="font-semibold text-sm mb-2 line-clamp-2">
+                      {result.item.description}
+                    </div>
+                    <div className="flex items-center gap-2 mb-2">
+                      {result.item.category && (
+                        <button 
+                          onClick={() => handleCategoryClick(result.item.category || 'Todas')}
+                          className="text-[10px] px-2 py-0.5 rounded-full bg-primary/20 text-primary font-medium"
+                        >
+                          {result.item.category}
+                        </button>
+                      )}
+                      {result.item.subcategory && (
+                        <button
+                          onClick={() => handleCategoryClick(result.item.category || 'Todas', result.item.subcategory || 'Todas')}
+                          className="text-[10px] px-2 py-0.5 rounded-full bg-muted text-muted-foreground"
+                        >
+                          {result.item.subcategory}
+                        </button>
+                      )}
+                    </div>
+                    <div className="text-xs text-muted-foreground space-y-1">
+                      <div className="flex justify-between">
+                        <span className="font-semibold">Preço:</span>
+                        <span className="font-mono font-bold text-primary">{formatCurrency(result.item.unit_price)}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>Qtd:</span>
+                        <span className="font-mono">{result.item.qty}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>Total:</span>
+                        <span className="font-mono font-semibold">{formatCurrency(result.item.line_total)}</span>
+                      </div>
+                      <div className="flex justify-between pt-1 border-t">
+                        <span className="truncate max-w-[50%]">{result.note.merchant_name}</span>
+                        <span className="font-mono">{formatDate(result.note.issued_date)}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </CardContent>
           </Card>
