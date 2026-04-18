@@ -13,6 +13,8 @@ export interface NoteItem {
   necessity?: string
   price_rank?: number
   min_price_seen?: number
+  price_percentile?: number
+  is_expensive?: boolean
 }
 
 export interface NecessityBreakdown {
@@ -47,6 +49,9 @@ export interface Note {
   is_outlier?: boolean
   outlier_reason?: string
   savings_opportunity?: number
+  day_of_week?: string
+  hour_of_day?: number
+  spending_vs_avg_pct?: number
 }
 
 export interface NecessityTotals {
@@ -73,6 +78,17 @@ export interface DateRange {
   last: string
 }
 
+export interface DayOfWeekTotal {
+  day: string
+  total: number
+  note_count: number
+}
+
+export interface HourOfDayTotal {
+  hour: number
+  total: number
+}
+
 export interface Summary {
   total_notes: number
   total_spent: number
@@ -86,6 +102,8 @@ export interface Summary {
   necessity_totals: NecessityTotals
   category_totals: CategoryTotal[]
   merchant_totals: MerchantTotal[]
+  day_of_week_totals?: DayOfWeekTotal[]
+  hour_of_day_totals?: HourOfDayTotal[]
 }
 
 export interface MerchantPrice {
@@ -117,9 +135,44 @@ export interface MonthlySummary {
   llm_insight?: string
 }
 
+export interface TopSavingsItem {
+  key: string
+  description: string
+  ean: string
+  category: string
+  min_price_ever: number
+  max_price_ever: number
+  total_overpaid: number
+  occurrences: number
+}
+
+export interface PersonalInflation {
+  category: string
+  first_month: string
+  last_month: string
+  first_avg_price: number
+  last_avg_price: number
+  variation_pct: number
+  months_with_data: number
+}
+
+export interface PriceTrend {
+  key: string
+  description: string
+  ean: string
+  category: string
+  months: string[]
+  avg_prices: number[]
+  variation_pct: number
+  occurrences: number
+}
+
 export interface SparkData {
   summary: Summary
   notes: Note[]
   price_comparison: PriceComparison[]
   monthly_summaries: MonthlySummary[]
+  top_savings_items?: TopSavingsItem[]
+  personal_inflation?: PersonalInflation[]
+  price_trends?: PriceTrend[]
 }
