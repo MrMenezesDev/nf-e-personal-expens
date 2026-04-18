@@ -1,207 +1,215 @@
 import { useMemo, useState } from 'react'
 import { Note, NoteItem } from '@/lib/types'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import {
+  PieChart,
+  Cell,
   PieChart,
   Pie,
   Cell,
   ResponsiveContainer,
-  AreaChart,
-  Area,
-  XAxis,
-  YAxis,
-  Tooltip,
-  CartesianGrid
+import { fil
+import 
+  Table,
+  TableC
+  TableHea
+} from '@/compo
 } from 'recharts'
 import { usePeriodFilter } from '@/contexts/PeriodFilterContext'
-import { filterNotesByPeriod } from '@/lib/utils'
-import { X } from '@phosphor-icons/react'
-import { Button } from '@/components/ui/button'
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '@/components/ui/table'
-import { formatCurrency, formatDate, parseMonthFromDate } from '@/lib/formatters'
+  'oklch(0.45 0
+}
 
-const CHART_COLORS = [
-  'oklch(0.45 0.12 200)',
-  'oklch(0.58 0.16 240)',
+  'oklch(0.58 0.16 240
+
   'oklch(0.72 0.15 75)',
-  'oklch(0.65 0.18 140)',
-  'oklch(0.55 0.22 25)',
-  'oklch(0.68 0.14 290)',
-  'oklch(0.75 0.12 50)',
-  'oklch(0.50 0.20 340)',
-]
-
-interface ItemWithMerchant extends NoteItem {
-  issued_date: string
-  merchant_name: string
 }
+  const { filter } = useP
+  const filteredNotes = u
 
-interface CategoriesPageProps {
-  notes: Note[]
-}
+    const items: ItemWith
+ 
 
-export function CategoriesPage({ notes }: CategoriesPageProps) {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
-  const { filter } = usePeriodFilter()
-  const filteredNotes = useMemo(() => filterNotesByPeriod(notes, filter.startDate, filter.endDate), [notes, filter])
-
-  const allItems = useMemo(() => {
-    const items: ItemWithMerchant[] = []
-    filteredNotes.forEach(note => {
-      note.items.forEach(item => {
-        items.push({
-          ...item,
-          issued_date: note.issued_date,
-          merchant_name: note.merchant_name,
-        })
+          merchant_name: note.merchant_na
       })
-    })
     return items
-  }, [filteredNotes])
+}
 
-  const filteredItems = useMemo(() => {
-    if (!selectedCategory) return allItems
-    return allItems.filter(item => (item.category || 'Sem Categoria') === selectedCategory)
   }, [allItems, selectedCategory])
-
   const kpis = useMemo(() => {
-    const categories = new Set<string>()
     const subcategories = new Set<string>()
-    let categorizedCount = 0
-    let uncategorizedCount = 0
 
     allItems.forEach(item => {
-      if (item.category) {
         categories.add(item.category)
-        categorizedCount++
-      } else {
-        uncategorizedCount++
+  }, [notes, filter])
+
+      if (item.subcategory && item
       }
 
-      if (item.subcategory && item.subcategory.trim() !== '') {
-        subcategories.add(item.subcategory)
-      }
-    })
-
-    return {
-      categoriesCount: categories.size,
-      subcategoriesCount: subcategories.size,
-      categorizedCount,
-      uncategorizedCount,
+      categoriesCount: categories.
+      categorizedCou
     }
-  }, [allItems])
 
-  const categorySpending = useMemo(() => {
-    const categoryTotals = new Map<string, number>()
-    filteredNotes.forEach(note => {
-      note.items.forEach(item => {
-        const category = item.category || 'Sem Categoria'
-        categoryTotals.set(category, (categoryTotals.get(category) || 0) + item.line_total)
-      })
+    const categoryTotals = new Map<string, 
+    filter
+      co
     })
-
-    const data = Array.from(categoryTotals.entries())
-      .map(([name, value]) => ({ name, value }))
-      .sort((a, b) => b.value - a.value)
-
-    const total = data.reduce((sum, item) => sum + item.value, 0)
+    const data =
+  }, [filteredNotes])
 
     return { data, total }
-  }, [filteredNotes])
 
-  const subcategorySpending = useMemo(() => {
     const subcategoryTotals = new Map<string, number>()
-    filteredItems.forEach(item => {
-      const subcategory = item.subcategory || 'Sem Subcategoria'
-      subcategoryTotals.set(subcategory, (subcategoryTotals.get(subcategory) || 0) + item.line_total)
-    })
+    filteredItems.forEach(item => 
 
-    return Array.from(subcategoryTotals.entries())
-      .map(([name, value]) => ({ name, value }))
+    })
+    return Array.from(subcategoryTotals.
       .sort((a, b) => b.value - a.value)
-  }, [filteredItems])
 
-  const categoryOverTime = useMemo(() => {
-    const monthCategoryMap = new Map<string, Map<string, number>>()
+    const monthCategoryMap = n
 
-    filteredNotes.forEach(note => {
-      note.items.forEach(item => {
-        const month = parseMonthFromDate(note.issued_date)
-        const category = item.category || 'Sem Categoria'
+      const category = item.ca
+      if (!monthCategoryMap.has(month)) {
+      }
+      const categoryMap = 
+      category
 
-        if (!monthCategoryMap.has(month)) {
-          monthCategoryMap.set(month, new Map())
-        }
-        const categoryMap = monthCategoryMap.get(month)!
-        categoryMap.set(category, (categoryMap.get(category) || 0) + item.line_total)
-      })
-    })
+      n
 
-    const allCategories = new Set<string>()
-    monthCategoryMap.forEach(categoryMap => {
-      categoryMap.forEach((_, category) => allCategories.add(category))
-    })
-
-    const data = Array.from(monthCategoryMap.entries())
       .sort((a, b) => a[0].localeCompare(b[0]))
-      .map(([month, categoryMap]) => {
-        const entry: { month: string; [key: string]: string | number } = { month }
-        allCategories.forEach(category => {
-          entry[category] = categoryMap.get(category) || 0
-        })
-        return entry
-      })
+        const entry: { month: string; [key:
+       
+    })
 
     return {
-      data,
-      categories: Array.from(allCategories)
-    }
-  }, [filteredNotes])
+  const itemsForCategory = useMemo(() =
+    return filteredItems.filter(item => item.
 
-  const itemsForCategory = useMemo(() => {
-    if (!selectedCategory) return []
-    return filteredItems.filter(item => (item.category || 'Sem Categoria') === selectedCategory)
-  }, [filteredItems, selectedCategory])
+    return (
+     
+            Nenh
 
-  const renderCustomLabel = (entry: { name: string; value: number; percent: number }) => {
-    const percent = entry.percent * 100
-    if (percent < 5) return null
-    return `${percent.toFixed(0)}%`
+  const categorySpending = useMemo(() => {
+      </div>
+
+  const renderCustomLabel = (entry:
+      const category = item.category || 'Sem Categoria'
+  return (
+      <div>
+      
+
+        <div className="flex items-center gap-2 bg-mu
+      .map(([name, value]) => ({ name, value }))
+          <span className="text-sm text-
+
+            size="sm"
+
+            <X />
+  }, [filteredItems])
+
+      <div className="grid gap-4 md:grid-cols
+          <CardHeader>
+
+          </CardHeader>
+            <div className="text-3xl font-bold font-mono">{kpis.
+        </Card>
+        <Card>
+      
+
+          <CardContent>
+          </CardContent>
+
+            <CardTitl
+
+          <CardContent>
+          </CardContent>
+
+          <CardHeader>
+              Itens Não Categorizados
+          </CardHeader>
+
+        </Card>
+
+       
+
+          <CardContent>
+              <PieChart>
+                  data={categorySpending.data}
+      
+
+                  label={renderCus
+                  style={{ cursor: 'pointer' }}
+            
+
+                    />
+                </Pie>
+                  formatter={(value: n
+              </PieChart>
+
+              {categorySpending.data.map((item, index) => 
+          
+        return entry
+        
+
+                    <span class
+                    <
+
+                  </div>
+              ))}
+          </CardContent>
+
+
+          </CardHeader>
+    return (
+                <div key={item.name} className="space-y-1">
+                    <span className="font-mediu
+                      {formatCurrency(item.value)}
+                  </div>
+               
+                      style={{
+                        backgroundColor: CHART_COLORS[index % CHAR
+              
+              
+      </div>
+     
   }
 
-  return (
-    <div className="space-y-6">
-      {selectedCategory && (
-        <div className="flex items-center gap-2 bg-muted p-4 rounded-lg">
-          <span className="text-sm text-muted-foreground">Filtrando por categoria:</span>
-          <span className="font-semibold">{selectedCategory}</span>
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={() => setSelectedCategory(null)}
+            <CardTitle>Categorias ao Longo do Tempo</CardTitle>
+          <CardContent>
+  }
+
+          
+                />
+      <div>
+                    type="monotone"
+                    stackId="1"
+            
+
+            </ResponsiveCont
+        </Card>
+
+        <Card>
+            <Card
+          <CardContent>
+              <TableHeader>
+                 
+                  <TableHea
+                  <Ta
+                  <TableHead className="text-right">T
             className="ml-auto"
-          >
+           
             <X />
-          </Button>
-        </div>
+                    </Tab
+                   
+              
       )}
 
-      <div className="grid gap-4 md:grid-cols-4">
-        <Card>
+                    <TableCell className="text-right font-mono f
+              
           <CardHeader>
-            <CardTitle className="text-sm font-medium text-muted-foreground">
+            </Table>
               Categorias Únicas
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="text-3xl font-bold font-mono">{kpis.categoriesCount}</div>
+    </div>
+}
+
+
           </CardContent>
         </Card>
 
