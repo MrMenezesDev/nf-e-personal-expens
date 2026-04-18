@@ -25,7 +25,7 @@ import {
 import { Button } from '@/components/ui/button'
 import { X } from '@phosphor-icons/react'
 import { usePeriodFilter } from '@/contexts/PeriodFilterContext'
-import { filterNotesByPeriod } from '@/lib/utils'
+import { filterNotesByPeriod, matchesCategoryFilter } from '@/lib/utils'
 
 interface CategoriesPageProps {
   notes: Note[]
@@ -59,15 +59,17 @@ export function CategoriesPage({ notes }: CategoriesPageProps) {
     const items: ItemWithContext[] = []
     filteredNotes.forEach(note => {
       note.items.forEach(item => {
-        items.push({
-          ...item,
-          issued_date: note.issued_date,
-          merchant_name: note.merchant_name
-        })
+        if (matchesCategoryFilter(item, filter.category, filter.subcategory)) {
+          items.push({
+            ...item,
+            issued_date: note.issued_date,
+            merchant_name: note.merchant_name
+          })
+        }
       })
     })
     return items
-  }, [filteredNotes])
+  }, [filteredNotes, filter.category, filter.subcategory])
 
   const kpis = useMemo(() => {
     const categories = new Set<string>()

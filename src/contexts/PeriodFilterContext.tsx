@@ -3,6 +3,8 @@ import { createContext, useContext, useState, ReactNode } from 'react'
 export interface PeriodFilter {
   startDate: string | null
   endDate: string | null
+  category: string
+  subcategory: string
 }
 
 interface PeriodFilterContextType {
@@ -15,7 +17,9 @@ const PeriodFilterContext = createContext<PeriodFilterContextType | undefined>(u
 export function PeriodFilterProvider({ children }: { children: ReactNode }) {
   const [filter, setFilter] = useState<PeriodFilter>({
     startDate: null,
-    endDate: null
+    endDate: null,
+    category: 'Todas',
+    subcategory: 'Todas'
   })
 
   return (

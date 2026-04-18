@@ -4,7 +4,7 @@ import { Note } from '@/lib/types'
 import { formatCurrency, parseMonthFromDate } from '@/lib/formatters'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line } from 'recharts'
 import { usePeriodFilter } from '@/contexts/PeriodFilterContext'
-import { filterNotesByPeriod } from '@/lib/utils'
+import { filterNotesByPeriod, filterNotesByCategory, matchesCategoryFilter, getFilteredItemsTotal } from '@/lib/utils'
 
 interface OverviewPageProps {
   notes: Note[]
@@ -14,45 +14,64 @@ export function OverviewPage({ notes }: OverviewPageProps) {
   const { filter } = usePeriodFilter()
 
   const filteredNotes = useMemo(() => {
-    return filterNotesByPeriod(notes, filter.startDate, filter.endDate)
+    let filtered = filterNotesByPeriod(notes, filter.startDate, filter.endDate)
+    filtered = filterNotesByCategory(filtered, filter.category, filter.subcategory)
+    return filtered
   }, [notes, filter])
 
   const stats = useMemo(() => {
-    const total = filteredNotes.reduce((sum, note) => sum + note.total_amount, 0)
+    const isCategoryFiltered = filter.category !== 'Todas' || filter.subcategory !== 'Todas'
+    
+    let total = 0
+    let totalItems = 0
+    
+    filteredNotes.forEach(note => {
+      total += getFilteredItemsTotal(note, filter.category, filter.subcategory)
+      
+      if (isCategoryFiltered) {
+        totalItems += note.items.filter(item => 
+          matchesCategoryFilter(item, filter.category, filter.subcategory)
+        ).length
+      } else {
+        totalItems += note.items.length
+      }
+    })
+
     const count = filteredNotes.length
     const average = count > 0 ? total / count : 0
-    const totalItems = filteredNotes.reduce((sum, note) => sum + note.items.length, 0)
 
     return { total, count, average, totalItems }
-  }, [filteredNotes])
+  }, [filteredNotes, filter.category, filter.subcategory])
 
   const topMerchants = useMemo(() => {
     const merchantTotals = new Map<string, number>()
     
     filteredNotes.forEach(note => {
+      const merchantTotal = getFilteredItemsTotal(note, filter.category, filter.subcategory)
       const current = merchantTotals.get(note.merchant_name) || 0
-      merchantTotals.set(note.merchant_name, current + note.total_amount)
+      merchantTotals.set(note.merchant_name, current + merchantTotal)
     })
     
     return Array.from(merchantTotals.entries())
       .map(([name, total]) => ({ name, total }))
       .sort((a, b) => b.total - a.total)
       .slice(0, 10)
-  }, [filteredNotes])
+  }, [filteredNotes, filter.category, filter.subcategory])
 
   const monthlySpending = useMemo(() => {
     const monthTotals = new Map<string, number>()
     
     filteredNotes.forEach(note => {
       const month = parseMonthFromDate(note.issued_date)
+      const monthTotal = getFilteredItemsTotal(note, filter.category, filter.subcategory)
       const current = monthTotals.get(month) || 0
-      monthTotals.set(month, current + note.total_amount)
+      monthTotals.set(month, current + monthTotal)
     })
     
     return Array.from(monthTotals.entries())
       .map(([month, total]) => ({ month, total }))
       .sort((a, b) => a.month.localeCompare(b.month))
-  }, [filteredNotes])
+  }, [filteredNotes, filter.category, filter.subcategory])
 
   if (filteredNotes.length === 0) {
     return (

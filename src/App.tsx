@@ -98,7 +98,7 @@ function App() {
           </div>
         </nav>
 
-        <PeriodFilterBar />
+        <PeriodFilterBar notes={notes} />
 
         <main className="container mx-auto px-4 py-8">
           {currentPage === 'overview' && <OverviewPage notes={notes} />}

@@ -1,10 +1,43 @@
 import { usePeriodFilter } from '@/contexts/PeriodFilterContext'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { formatDate } from '@/lib/formatters'
+import { Note } from '@/lib/types'
+import { useMemo } from 'react'
 
-export function PeriodFilterBar() {
+interface PeriodFilterBarProps {
+  notes: Note[]
+}
+
+export function PeriodFilterBar({ notes }: PeriodFilterBarProps) {
   const { filter, setFilter } = usePeriodFilter()
+
+  const categories = useMemo(() => {
+    const categorySet = new Set<string>()
+    notes.forEach(note => {
+      note.items.forEach(item => {
+        if (item.category) {
+          categorySet.add(item.category)
+        }
+      })
+    })
+    return ['Todas', ...Array.from(categorySet).sort()]
+  }, [notes])
+
+  const subcategories = useMemo(() => {
+    const subcategorySet = new Set<string>()
+    notes.forEach(note => {
+      note.items.forEach(item => {
+        if (filter.category === 'Todas' || item.category === filter.category) {
+          if (item.subcategory) {
+            subcategorySet.add(item.subcategory)
+          }
+        }
+      })
+    })
+    return ['Todas', ...Array.from(subcategorySet).sort()]
+  }, [notes, filter.category])
 
   const handlePreset = (preset: '30days' | '90days' | 'thisyear' | 'all') => {
     const today = new Date()
@@ -34,23 +67,43 @@ export function PeriodFilterBar() {
         break
     }
 
-    setFilter({ startDate, endDate })
+    setFilter({ ...filter, startDate, endDate })
   }
 
-  const displayPeriod = () => {
+  const handleCategoryChange = (category: string) => {
+    setFilter({ ...filter, category, subcategory: 'Todas' })
+  }
+
+  const handleSubcategoryChange = (subcategory: string) => {
+    setFilter({ ...filter, subcategory })
+  }
+
+  const displaySummary = () => {
+    const parts: string[] = []
+    
     if (!filter.startDate && !filter.endDate) {
-      return 'Todos os períodos'
+      parts.push('Todos os períodos')
+    } else {
+      const start = filter.startDate ? formatDate(filter.startDate) : '...'
+      const end = filter.endDate ? formatDate(filter.endDate) : '...'
+      parts.push(`${start} – ${end}`)
     }
 
-    const start = filter.startDate ? formatDate(filter.startDate) : '...'
-    const end = filter.endDate ? formatDate(filter.endDate) : '...'
-    return `${start} – ${end}`
+    if (filter.category !== 'Todas') {
+      parts.push(`Categoria: ${filter.category}`)
+    }
+
+    if (filter.subcategory !== 'Todas') {
+      parts.push(`Subcategoria: ${filter.subcategory}`)
+    }
+
+    return parts.join(' | ')
   }
 
   return (
     <div className="border-b bg-card sticky top-16 z-40">
       <div className="container mx-auto px-4 py-3">
-        <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col gap-3">
           <div className="flex flex-wrap items-center gap-2">
             <span className="text-sm font-medium text-muted-foreground">Período:</span>
             <div className="flex items-center gap-2">
@@ -74,6 +127,30 @@ export function PeriodFilterBar() {
                 id="period-end"
               />
             </div>
+
+            <span className="text-sm font-medium text-muted-foreground ml-4">Categoria:</span>
+            <Select value={filter.category} onValueChange={handleCategoryChange}>
+              <SelectTrigger className="w-48 h-9 text-sm">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                {categories.map(cat => (
+                  <SelectItem key={cat} value={cat}>{cat}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+
+            <span className="text-sm font-medium text-muted-foreground">Subcategoria:</span>
+            <Select value={filter.subcategory} onValueChange={handleSubcategoryChange}>
+              <SelectTrigger className="w-48 h-9 text-sm">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                {subcategories.map(sub => (
+                  <SelectItem key={sub} value={sub}>{sub}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
@@ -109,7 +186,7 @@ export function PeriodFilterBar() {
         </div>
 
         <div className="mt-2 text-sm text-muted-foreground">
-          <span className="font-medium">Exibindo:</span> {displayPeriod()}
+          <span className="font-medium">Exibindo:</span> {displaySummary()}
         </div>
       </div>
     </div>

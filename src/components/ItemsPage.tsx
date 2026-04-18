@@ -7,7 +7,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { MagnifyingGlass } from '@phosphor-icons/react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 import { usePeriodFilter } from '@/contexts/PeriodFilterContext'
-import { filterNotesByPeriod } from '@/lib/utils'
+import { filterNotesByPeriod, matchesCategoryFilter } from '@/lib/utils'
 
 interface ItemsPageProps {
   notes: Note[]
@@ -34,7 +34,10 @@ export function ItemsPage({ notes }: ItemsPageProps) {
 
     filteredNotes.forEach(note => {
       note.items.forEach(item => {
-        if (item.description_norm.toLowerCase().includes(searchLower)) {
+        if (
+          item.description_norm.toLowerCase().includes(searchLower) &&
+          matchesCategoryFilter(item, filter.category, filter.subcategory)
+        ) {
           occurrences.push({ item, note })
         }
       })
@@ -43,7 +46,7 @@ export function ItemsPage({ notes }: ItemsPageProps) {
     return occurrences.sort((a, b) => 
       a.note.issued_date.localeCompare(b.note.issued_date)
     )
-  }, [filteredNotes, search])
+  }, [filteredNotes, search, filter.category, filter.subcategory])
 
   const priceStats = useMemo(() => {
     if (searchResults.length === 0) return null

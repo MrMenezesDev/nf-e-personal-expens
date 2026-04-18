@@ -8,7 +8,8 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sh
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { usePeriodFilter } from '@/contexts/PeriodFilterContext'
-import { filterNotesByPeriod } from '@/lib/utils'
+import { filterNotesByPeriod, filterNotesByCategory, getFilteredItemsTotal, matchesCategoryFilter } from '@/lib/utils'
+import { cn } from '@/lib/utils'
 
 interface NotesListPageProps {
   notes: Note[]
@@ -20,7 +21,8 @@ export function NotesListPage({ notes }: NotesListPageProps) {
   const { filter } = usePeriodFilter()
 
   const filteredNotes = useMemo(() => {
-    const periodFiltered = filterNotesByPeriod(notes, filter.startDate, filter.endDate)
+    let periodFiltered = filterNotesByPeriod(notes, filter.startDate, filter.endDate)
+    periodFiltered = filterNotesByCategory(periodFiltered, filter.category, filter.subcategory)
     
     if (!search) return periodFiltered
 
@@ -35,6 +37,8 @@ export function NotesListPage({ notes }: NotesListPageProps) {
       b.issued_date.localeCompare(a.issued_date)
     )
   }, [filteredNotes])
+
+  const isCategoryFiltered = filter.category !== 'Todas' || filter.subcategory !== 'Todas'
 
   return (
     <div className="space-y-6">
@@ -80,8 +84,15 @@ export function NotesListPage({ notes }: NotesListPageProps) {
                 >
                   <TableCell className="font-mono text-sm">{formatDate(note.issued_date)}</TableCell>
                   <TableCell className="font-medium">{note.merchant_name}</TableCell>
-                  <TableCell className="text-right font-mono">{formatCurrency(note.total_amount)}</TableCell>
-                  <TableCell className="text-right">{note.items.length}</TableCell>
+                  <TableCell className="text-right font-mono">
+                    {formatCurrency(getFilteredItemsTotal(note, filter.category, filter.subcategory))}
+                  </TableCell>
+                  <TableCell className="text-right">
+                    {isCategoryFiltered 
+                      ? note.items.filter(item => matchesCategoryFilter(item, filter.category, filter.subcategory)).length
+                      : note.items.length
+                    }
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>
@@ -113,7 +124,14 @@ export function NotesListPage({ notes }: NotesListPageProps) {
                 <Separator />
 
                 <div>
-                  <h3 className="font-semibold mb-4 text-lg">Itens ({selectedNote.items.length})</h3>
+                  <h3 className="font-semibold mb-4 text-lg">
+                    Itens ({selectedNote.items.length})
+                    {isCategoryFiltered && (
+                      <span className="text-sm font-normal text-muted-foreground ml-2">
+                        ({selectedNote.items.filter(item => matchesCategoryFilter(item, filter.category, filter.subcategory)).length} correspondentes)
+                      </span>
+                    )}
+                  </h3>
                   <div className="border rounded-lg overflow-hidden">
                     <Table>
                       <TableHeader>
@@ -126,25 +144,39 @@ export function NotesListPage({ notes }: NotesListPageProps) {
                         </TableRow>
                       </TableHeader>
                       <TableBody>
-                        {selectedNote.items.map((item) => (
-                          <TableRow key={item.line_n}>
-                            <TableCell className="font-mono text-sm text-muted-foreground">
-                              {item.line_n}
-                            </TableCell>
-                            <TableCell className="font-medium text-sm">
-                              {item.description}
-                            </TableCell>
-                            <TableCell className="text-right font-mono text-sm">
-                              {item.qty} {item.unit}
-                            </TableCell>
-                            <TableCell className="text-right font-mono text-sm">
-                              {formatCurrency(item.unit_price)}
-                            </TableCell>
-                            <TableCell className="text-right font-mono text-sm font-semibold">
-                              {formatCurrency(item.line_total)}
-                            </TableCell>
-                          </TableRow>
-                        ))}
+                        {selectedNote.items.map((item) => {
+                          const matches = matchesCategoryFilter(item, filter.category, filter.subcategory)
+                          return (
+                            <TableRow 
+                              key={item.line_n}
+                              className={cn(
+                                isCategoryFiltered && matches && 'bg-accent/10',
+                                isCategoryFiltered && !matches && 'opacity-40'
+                              )}
+                            >
+                              <TableCell className="font-mono text-sm text-muted-foreground">
+                                {item.line_n}
+                              </TableCell>
+                              <TableCell className="font-medium text-sm">
+                                {item.description}
+                                {matches && item.category && (
+                                  <div className="text-xs text-muted-foreground mt-1">
+                                    {item.category}{item.subcategory ? ` › ${item.subcategory}` : ''}
+                                  </div>
+                                )}
+                              </TableCell>
+                              <TableCell className="text-right font-mono text-sm">
+                                {item.qty} {item.unit}
+                              </TableCell>
+                              <TableCell className="text-right font-mono text-sm">
+                                {formatCurrency(item.unit_price)}
+                              </TableCell>
+                              <TableCell className="text-right font-mono text-sm font-semibold">
+                                {formatCurrency(item.line_total)}
+                              </TableCell>
+                            </TableRow>
+                          )
+                        })}
                       </TableBody>
                     </Table>
                   </div>
