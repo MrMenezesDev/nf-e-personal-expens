@@ -10,6 +10,20 @@ export interface NoteItem {
   line_total: number
   category?: string | null
   subcategory?: string | null
+  necessity?: string
+  price_rank?: number
+  min_price_seen?: number
+}
+
+export interface NecessityBreakdown {
+  Essencial?: number
+  Conveniência?: number
+  Supérfluo?: number
+}
+
+export interface CategoryBreakdown {
+  category: string
+  total: number
 }
 
 export interface Note {
@@ -26,4 +40,86 @@ export interface Note {
   total_amount: number
   total_products: number
   items: NoteItem[]
+  item_count?: number
+  avg_item_price?: number
+  necessity_breakdown?: NecessityBreakdown
+  category_breakdown?: CategoryBreakdown[]
+  is_outlier?: boolean
+  outlier_reason?: string
+  savings_opportunity?: number
+}
+
+export interface NecessityTotals {
+  Essencial: number
+  Conveniência: number
+  Supérfluo: number
+  "Não classificado": number
+}
+
+export interface CategoryTotal {
+  category: string
+  total: number
+  item_count: number
+}
+
+export interface MerchantTotal {
+  merchant_name: string
+  total: number
+  note_count: number
+}
+
+export interface DateRange {
+  first: string
+  last: string
+}
+
+export interface Summary {
+  total_notes: number
+  total_spent: number
+  avg_ticket: number
+  median_ticket: number
+  min_ticket: number
+  max_ticket: number
+  outlier_count: number
+  total_savings_opportunity: number
+  date_range: DateRange
+  necessity_totals: NecessityTotals
+  category_totals: CategoryTotal[]
+  merchant_totals: MerchantTotal[]
+}
+
+export interface MerchantPrice {
+  merchant_name: string
+  min_price: number
+  avg_price: number
+  occurrences: number
+}
+
+export interface PriceComparison {
+  key: string
+  description: string
+  ean: string
+  category: string
+  merchants: MerchantPrice[]
+  cheapest_merchant: string
+  most_expensive_merchant: string
+  price_gap_abs: number
+  price_gap_pct: number
+  total_occurrences: number
+}
+
+export interface MonthlySummary {
+  month: string
+  total_spend: number
+  note_count: number
+  top_category: string
+  top_merchant: string
+  llm_insight?: string
+}
+
+export interface SparkData {
+  summary: Summary
+  notes: Note[]
+  price_comparison: PriceComparison[]
+  monthly_summaries: MonthlySummary[]
 }
