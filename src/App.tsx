@@ -3,15 +3,16 @@ import { useKV } from '@github/spark/hooks'
 import { Note } from '@/lib/types'
 import { ImportPage } from '@/components/ImportPage'
 import { OverviewPage } from '@/components/OverviewPage'
+import { CategoriesPage } from '@/components/CategoriesPage'
 import { NotesListPage } from '@/components/NotesListPage'
 import { ItemsPage } from '@/components/ItemsPage'
 import { PeriodFilterBar } from '@/components/PeriodFilterBar'
 import { PeriodFilterProvider } from '@/contexts/PeriodFilterContext'
-import { ChartBar, Receipt, Package } from '@phosphor-icons/react'
+import { ChartBar, Receipt, Package, Tag } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { Toaster } from '@/components/ui/sonner'
 
-type Page = 'overview' | 'extrato' | 'items'
+type Page = 'overview' | 'categorias' | 'extrato' | 'items'
 
 function App() {
   const [notes, setNotes] = useKV<Note[]>('notes', [])
@@ -57,6 +58,18 @@ function App() {
                   Visão Geral
                 </button>
                 <button
+                  onClick={() => setCurrentPage('categorias')}
+                  className={cn(
+                    'flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all',
+                    currentPage === 'categorias'
+                      ? 'bg-primary text-primary-foreground'
+                      : 'hover:bg-muted text-foreground'
+                  )}
+                >
+                  <Tag weight={currentPage === 'categorias' ? 'fill' : 'regular'} />
+                  Categorias
+                </button>
+                <button
                   onClick={() => setCurrentPage('extrato')}
                   className={cn(
                     'flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all',
@@ -89,6 +102,7 @@ function App() {
 
         <main className="container mx-auto px-4 py-8">
           {currentPage === 'overview' && <OverviewPage notes={notes} />}
+          {currentPage === 'categorias' && <CategoriesPage notes={notes} />}
           {currentPage === 'extrato' && <NotesListPage notes={notes} />}
           {currentPage === 'items' && <ItemsPage notes={notes} />}
         </main>

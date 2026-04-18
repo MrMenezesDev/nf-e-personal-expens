@@ -8,6 +8,8 @@ export interface NoteItem {
   unit: string
   unit_price: number
   line_total: number
+  category?: string | null
+  subcategory?: string | null
 }
 
 export interface Note {
