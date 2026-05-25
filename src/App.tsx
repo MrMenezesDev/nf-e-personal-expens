@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { useKV } from '@github/spark/hooks'
+import { useState, useEffect } from 'react'
+import { useLocalStorage } from '@/hooks/use-local-storage'
 import { SparkData } from '@/lib/types'
 import { ImportPage } from '@/components/ImportPage'
 import { OverviewPage } from '@/components/OverviewPage'
@@ -28,7 +28,7 @@ import { Toaster } from '@/components/ui/sonner'
 type Page = 'overview' | 'insights' | 'padroes' | 'inflacao' | 'categorias' | 'extrato' | 'items' | 'precos'
 
 function App() {
-  const [sparkData, setSparkData] = useKV<SparkData | null>('spark_data', null)
+  const [sparkData, setSparkData] = useLocalStorage<SparkData | null>('spark_data', null)
   const [currentPage, setCurrentPage] = useState<Page>('overview')
 
   const handleImport = (importedNotes: any) => {
@@ -62,6 +62,20 @@ function App() {
       setSparkData(null)
     }
   }
+
+  // Tenta carregar spark_data.json do servidor automaticamente se não houver dados locais
+  useEffect(() => {
+    if (sparkData && sparkData.notes && sparkData.notes.length > 0) return
+    fetch(`${import.meta.env.BASE_URL}spark_data.json`)
+      .then((res) => {
+        if (!res.ok) throw new Error('não encontrado')
+        return res.json()
+      })
+      .then((data) => {
+        if (data?.notes?.length > 0) handleImport(data)
+      })
+      .catch(() => { /* arquivo não disponível, usa importação manual */ })
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   if (!sparkData || !sparkData.notes || sparkData.notes.length === 0) {
     return (
