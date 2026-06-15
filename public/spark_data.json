@@ -1,73 +1,73 @@
 {
   "summary": {
-    "total_notes": 87,
-    "total_spent": 9523.51,
-    "avg_ticket": 109.47,
-    "median_ticket": 52.4,
+    "total_notes": 94,
+    "total_spent": 10819.55,
+    "avg_ticket": 115.1,
+    "median_ticket": 56.8,
     "min_ticket": 4.5,
     "max_ticket": 1676.75,
-    "outlier_count": 4,
-    "total_savings_opportunity": 6075.03,
+    "outlier_count": 5,
+    "total_savings_opportunity": 6860.01,
     "date_range": {
       "first": "2021-05-04",
-      "last": "2026-05-21"
+      "last": "2026-06-13"
     },
     "necessity_totals": {
-      "Essencial": 3467.82,
-      "Conveniência": 4436.66,
-      "Supérfluo": 1865.77,
+      "Essencial": 4117.77,
+      "Conveniência": 4864.09,
+      "Supérfluo": 2093.64,
       "Não classificado": 0.0
     },
     "category_totals": [
       {
         "category": "Outros",
-        "total": 3303.13,
-        "item_count": 64
+        "total": 3332.7,
+        "item_count": 69
       },
       {
         "category": "Alimentos",
-        "total": 1453.84,
-        "item_count": 126
+        "total": 1737.74,
+        "item_count": 158
       },
       {
         "category": "Bebidas",
-        "total": 1294.95,
-        "item_count": 125
+        "total": 1466.62,
+        "item_count": 140
       },
       {
         "category": "Laticínios",
-        "total": 880.1,
-        "item_count": 53
-      },
-      {
-        "category": "Padaria e Confeitaria",
-        "total": 736.76,
-        "item_count": 53
+        "total": 1036.42,
+        "item_count": 70
       },
       {
         "category": "Hortifrúti",
-        "total": 694.43,
-        "item_count": 117
+        "total": 825.2,
+        "item_count": 133
       },
       {
-        "category": "Higiene Pessoal",
-        "total": 459.41,
-        "item_count": 20
+        "category": "Padaria e Confeitaria",
+        "total": 771.7,
+        "item_count": 56
       },
       {
         "category": "Carnes e Frios",
-        "total": 457.79,
-        "item_count": 17
+        "total": 670.28,
+        "item_count": 28
+      },
+      {
+        "category": "Higiene Pessoal",
+        "total": 654.09,
+        "item_count": 28
       },
       {
         "category": "Limpeza",
-        "total": 333.08,
-        "item_count": 23
+        "total": 389.09,
+        "item_count": 29
       },
       {
         "category": "Congelados",
-        "total": 156.76,
-        "item_count": 9
+        "total": 191.66,
+        "item_count": 10
       }
     ],
     "merchant_totals": [
@@ -78,8 +78,8 @@
       },
       {
         "merchant_name": "RMIX COMERCIO DE GENEROS ALIMENTICIOS LT",
-        "total": 1767.38,
-        "note_count": 9
+        "total": 2770.93,
+        "note_count": 12
       },
       {
         "merchant_name": "NAILSON MENEZES PEREIRA COLCHOES",
@@ -93,8 +93,13 @@
       },
       {
         "merchant_name": "EMPREENDIMENTOS PAGUE MENOS S/A",
-        "total": 321.94,
-        "note_count": 5
+        "total": 361.92,
+        "note_count": 6
+      },
+      {
+        "merchant_name": "RAIADROGASIL S.A.",
+        "total": 290.19,
+        "note_count": 3
       },
       {
         "merchant_name": "DELICATESSEN SABOR DO PORTO LTDA",
@@ -115,11 +120,6 @@
         "merchant_name": "BOMPRECO BAHIA SUPERMERCADOS LTDA",
         "total": 151.57,
         "note_count": 3
-      },
-      {
-        "merchant_name": "SEMOLA PRODUTOS ARTESANAIS LTDA",
-        "total": 142.45,
-        "note_count": 1
       }
     ],
     "day_of_week_totals": [
@@ -135,8 +135,8 @@
       },
       {
         "day": "Quarta",
-        "total": 520.08,
-        "note_count": 10
+        "total": 1405.1,
+        "note_count": 12
       },
       {
         "day": "Quinta",
@@ -145,13 +145,13 @@
       },
       {
         "day": "Sexta",
-        "total": 2909.81,
-        "note_count": 12
+        "total": 2986.74,
+        "note_count": 13
       },
       {
         "day": "Sábado",
-        "total": 1909.43,
-        "note_count": 16
+        "total": 2243.52,
+        "note_count": 20
       },
       {
         "day": "Domingo",
@@ -178,7 +178,7 @@
       },
       {
         "hour": 12,
-        "total": 569.45
+        "total": 657.09
       },
       {
         "hour": 13,
@@ -190,7 +190,7 @@
       },
       {
         "hour": 15,
-        "total": 493.7
+        "total": 533.68
       },
       {
         "hour": 16,
@@ -198,7 +198,7 @@
       },
       {
         "hour": 17,
-        "total": 1844.4
+        "total": 2090.85
       },
       {
         "hour": 18,
@@ -210,11 +210,11 @@
       },
       {
         "hour": 20,
-        "total": 1264.68
+        "total": 1341.61
       },
       {
         "hour": 21,
-        "total": 22.9
+        "total": 867.94
       }
     ]
   },
@@ -236,7 +236,7 @@
       "avg_item_price": 8.98,
       "day_of_week": "Quarta",
       "hour_of_day": 20,
-      "spending_vs_avg_pct": -83.6,
+      "spending_vs_avg_pct": -84.4,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 2.3,
@@ -307,7 +307,7 @@
       "avg_item_price": 10.92,
       "day_of_week": "Sábado",
       "hour_of_day": 15,
-      "spending_vs_avg_pct": -10.2,
+      "spending_vs_avg_pct": -14.6,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 61.76,
@@ -354,7 +354,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.88,
+          "price_percentile": 0.87,
           "is_expensive": true
         },
         {
@@ -372,7 +372,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.61,
+          "price_percentile": 0.59,
           "is_expensive": false
         },
         {
@@ -498,7 +498,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.12,
+          "price_percentile": 0.11,
           "is_expensive": false
         }
       ]
@@ -520,7 +520,7 @@
       "avg_item_price": 7.48,
       "day_of_week": "Quinta",
       "hour_of_day": 9,
-      "spending_vs_avg_pct": -18.0,
+      "spending_vs_avg_pct": -22.0,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 47.02,
@@ -621,7 +621,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.05,
+          "price_percentile": 0.04,
           "is_expensive": false
         },
         {
@@ -639,7 +639,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.07,
+          "price_percentile": 0.06,
           "is_expensive": false
         },
         {
@@ -657,7 +657,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.4,
+          "price_percentile": 0.38,
           "is_expensive": false
         },
         {
@@ -675,7 +675,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.58,
+          "price_percentile": 0.57,
           "is_expensive": false
         },
         {
@@ -693,7 +693,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.06,
+          "price_percentile": 0.05,
           "is_expensive": false
         },
         {
@@ -729,7 +729,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.39,
+          "price_percentile": 0.37,
           "is_expensive": false
         },
         {
@@ -765,7 +765,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.4,
+          "price_percentile": 0.38,
           "is_expensive": false
         }
       ]
@@ -787,7 +787,7 @@
       "avg_item_price": 5.8,
       "day_of_week": "Terça",
       "hour_of_day": 19,
-      "spending_vs_avg_pct": -73.5,
+      "spending_vs_avg_pct": -74.8,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 54.08,
@@ -844,7 +844,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.59,
+          "price_percentile": 0.58,
           "is_expensive": false
         },
         {
@@ -862,7 +862,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.87,
+          "price_percentile": 0.86,
           "is_expensive": true
         },
         {
@@ -920,7 +920,7 @@
       "avg_item_price": 6.76,
       "day_of_week": "Terça",
       "hour_of_day": 18,
-      "spending_vs_avg_pct": -19.7,
+      "spending_vs_avg_pct": -23.6,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 509.38,
@@ -959,7 +959,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.4,
+          "price_percentile": 0.38,
           "is_expensive": false
         },
         {
@@ -977,7 +977,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.57,
+          "price_percentile": 0.56,
           "is_expensive": false
         },
         {
@@ -995,7 +995,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.67,
+          "price_percentile": 0.65,
           "is_expensive": false
         },
         {
@@ -1013,7 +1013,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.75,
+          "price_percentile": 0.74,
           "is_expensive": false
         },
         {
@@ -1085,7 +1085,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.99,
+          "price_percentile": 0.98,
           "is_expensive": true
         },
         {
@@ -1103,7 +1103,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.89,
+          "price_percentile": 0.88,
           "is_expensive": true
         },
         {
@@ -1121,7 +1121,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.75,
+          "price_percentile": 0.74,
           "is_expensive": false
         },
         {
@@ -1157,7 +1157,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.65,
+          "price_percentile": 0.63,
           "is_expensive": false
         },
         {
@@ -1175,7 +1175,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.44,
+          "price_percentile": 0.42,
           "is_expensive": false
         }
       ]
@@ -1197,7 +1197,7 @@
       "avg_item_price": 6.5,
       "day_of_week": "Sábado",
       "hour_of_day": 11,
-      "spending_vs_avg_pct": -70.3,
+      "spending_vs_avg_pct": -71.7,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 11.78,
@@ -1236,7 +1236,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.26,
+          "price_percentile": 0.24,
           "is_expensive": false
         },
         {
@@ -1308,7 +1308,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.35,
+          "price_percentile": 0.33,
           "is_expensive": false
         }
       ]
@@ -1330,7 +1330,7 @@
       "avg_item_price": 218.0,
       "day_of_week": "Domingo",
       "hour_of_day": 18,
-      "spending_vs_avg_pct": 99.1,
+      "spending_vs_avg_pct": 89.4,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 109.0,
@@ -1383,7 +1383,7 @@
       "avg_item_price": 32.9,
       "day_of_week": "Domingo",
       "hour_of_day": 17,
-      "spending_vs_avg_pct": -39.9,
+      "spending_vs_avg_pct": -42.8,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -1454,7 +1454,7 @@
       "avg_item_price": 12.23,
       "day_of_week": "Domingo",
       "hour_of_day": 9,
-      "spending_vs_avg_pct": -55.3,
+      "spending_vs_avg_pct": -57.5,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 15.9,
@@ -1533,7 +1533,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.67,
+          "price_percentile": 0.65,
           "is_expensive": false
         },
         {
@@ -1573,7 +1573,7 @@
       "avg_item_price": 12.0,
       "day_of_week": "Sexta",
       "hour_of_day": 9,
-      "spending_vs_avg_pct": -89.0,
+      "spending_vs_avg_pct": -89.6,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 2.02,
@@ -1626,7 +1626,7 @@
       "avg_item_price": 6.69,
       "day_of_week": "Sexta",
       "hour_of_day": 20,
-      "spending_vs_avg_pct": -63.3,
+      "spending_vs_avg_pct": -65.1,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 2.02,
@@ -1781,7 +1781,7 @@
       "avg_item_price": 8.67,
       "day_of_week": "Domingo",
       "hour_of_day": 13,
-      "spending_vs_avg_pct": -68.3,
+      "spending_vs_avg_pct": -69.9,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 9.71,
@@ -1856,7 +1856,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.34,
+          "price_percentile": 0.32,
           "is_expensive": false
         },
         {
@@ -1896,7 +1896,7 @@
       "avg_item_price": 4.22,
       "day_of_week": "Sexta",
       "hour_of_day": 9,
-      "spending_vs_avg_pct": -76.9,
+      "spending_vs_avg_pct": -78.0,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 31.04,
@@ -1975,7 +1975,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.57,
+          "price_percentile": 0.56,
           "is_expensive": false
         },
         {
@@ -1993,7 +1993,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.67,
+          "price_percentile": 0.65,
           "is_expensive": false
         },
         {
@@ -2011,7 +2011,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.04,
+          "price_percentile": 0.03,
           "is_expensive": false
         },
         {
@@ -2051,7 +2051,7 @@
       "avg_item_price": 2.87,
       "day_of_week": "Terça",
       "hour_of_day": 12,
-      "spending_vs_avg_pct": -84.3,
+      "spending_vs_avg_pct": -85.1,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 13.82,
@@ -2104,7 +2104,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.07,
+          "price_percentile": 0.06,
           "is_expensive": false
         },
         {
@@ -2122,7 +2122,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.07,
+          "price_percentile": 0.06,
           "is_expensive": false
         },
         {
@@ -2140,7 +2140,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.16,
+          "price_percentile": 0.15,
           "is_expensive": false
         },
         {
@@ -2158,7 +2158,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.27,
+          "price_percentile": 0.25,
           "is_expensive": false
         },
         {
@@ -2198,7 +2198,7 @@
       "avg_item_price": 6.37,
       "day_of_week": "Terça",
       "hour_of_day": 17,
-      "spending_vs_avg_pct": -7.0,
+      "spending_vs_avg_pct": -11.5,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 81.33,
@@ -2245,7 +2245,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.59,
+          "price_percentile": 0.58,
           "is_expensive": false
         },
         {
@@ -2281,7 +2281,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.1,
+          "price_percentile": 0.09,
           "is_expensive": false
         },
         {
@@ -2299,7 +2299,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.33,
+          "price_percentile": 0.31,
           "is_expensive": false
         },
         {
@@ -2317,7 +2317,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.13,
+          "price_percentile": 0.12,
           "is_expensive": false
         },
         {
@@ -2335,7 +2335,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.21,
+          "price_percentile": 0.2,
           "is_expensive": false
         },
         {
@@ -2353,7 +2353,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.1,
+          "price_percentile": 0.09,
           "is_expensive": false
         },
         {
@@ -2371,7 +2371,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.33,
+          "price_percentile": 0.31,
           "is_expensive": false
         },
         {
@@ -2407,7 +2407,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.25,
+          "price_percentile": 0.23,
           "is_expensive": false
         },
         {
@@ -2425,7 +2425,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.36,
+          "price_percentile": 0.33,
           "is_expensive": false
         },
         {
@@ -2443,7 +2443,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.25,
+          "price_percentile": 0.23,
           "is_expensive": false
         },
         {
@@ -2461,7 +2461,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.2,
+          "price_percentile": 0.18,
           "is_expensive": false
         },
         {
@@ -2497,7 +2497,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.51,
+          "price_percentile": 0.48,
           "is_expensive": false
         },
         {
@@ -2515,7 +2515,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.59,
+          "price_percentile": 0.58,
           "is_expensive": false
         }
       ]
@@ -2537,7 +2537,7 @@
       "avg_item_price": 18.33,
       "day_of_week": "Quinta",
       "hour_of_day": 9,
-      "spending_vs_avg_pct": -49.8,
+      "spending_vs_avg_pct": -52.2,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -2630,7 +2630,7 @@
       "avg_item_price": 34.6,
       "day_of_week": "Quinta",
       "hour_of_day": 9,
-      "spending_vs_avg_pct": 58.0,
+      "spending_vs_avg_pct": 50.3,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 39.89,
@@ -2697,7 +2697,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.84,
+          "price_percentile": 0.83,
           "is_expensive": true
         },
         {
@@ -2715,7 +2715,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.16,
+          "price_percentile": 0.15,
           "is_expensive": false
         },
         {
@@ -2755,7 +2755,7 @@
       "avg_item_price": 15.18,
       "day_of_week": "Quinta",
       "hour_of_day": 9,
-      "spending_vs_avg_pct": -58.4,
+      "spending_vs_avg_pct": -60.4,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 7.33,
@@ -2786,7 +2786,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.35,
+          "price_percentile": 0.33,
           "is_expensive": false
         },
         {
@@ -2844,7 +2844,7 @@
       "avg_item_price": 15.56,
       "day_of_week": "Sexta",
       "hour_of_day": 19,
-      "spending_vs_avg_pct": 27.9,
+      "spending_vs_avg_pct": 21.7,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 7.02,
@@ -3057,7 +3057,7 @@
       "avg_item_price": 11.02,
       "day_of_week": "Terça",
       "hour_of_day": 19,
-      "spending_vs_avg_pct": 30.9,
+      "spending_vs_avg_pct": 24.5,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 222.4,
@@ -3346,7 +3346,7 @@
       "avg_item_price": 10.71,
       "day_of_week": "Sexta",
       "hour_of_day": 19,
-      "spending_vs_avg_pct": 46.7,
+      "spending_vs_avg_pct": 39.6,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 34.98,
@@ -3645,7 +3645,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.85,
+          "price_percentile": 0.84,
           "is_expensive": true
         }
       ]
@@ -3667,7 +3667,7 @@
       "avg_item_price": 14.42,
       "day_of_week": "Quinta",
       "hour_of_day": 20,
-      "spending_vs_avg_pct": 18.6,
+      "spending_vs_avg_pct": 12.8,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 93.01,
@@ -3840,7 +3840,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.97,
+          "price_percentile": 0.96,
           "is_expensive": true
         },
         {
@@ -3880,7 +3880,7 @@
       "avg_item_price": 10.38,
       "day_of_week": "Sábado",
       "hour_of_day": 20,
-      "spending_vs_avg_pct": -24.2,
+      "spending_vs_avg_pct": -27.9,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -4067,7 +4067,7 @@
       "avg_item_price": 31.2,
       "day_of_week": "Domingo",
       "hour_of_day": 13,
-      "spending_vs_avg_pct": 14.0,
+      "spending_vs_avg_pct": 8.4,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 129.3,
@@ -4142,7 +4142,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.91,
+          "price_percentile": 0.9,
           "is_expensive": true
         },
         {
@@ -4160,7 +4160,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.39,
+          "price_percentile": 0.37,
           "is_expensive": false
         }
       ]
@@ -4182,7 +4182,7 @@
       "avg_item_price": 11.72,
       "day_of_week": "Domingo",
       "hour_of_day": 16,
-      "spending_vs_avg_pct": 60.6,
+      "spending_vs_avg_pct": 52.8,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 20.38,
@@ -4229,7 +4229,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.24,
+          "price_percentile": 0.22,
           "is_expensive": false
         },
         {
@@ -4463,7 +4463,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.55,
+          "price_percentile": 0.54,
           "is_expensive": false
         },
         {
@@ -4503,7 +4503,7 @@
       "avg_item_price": 12.97,
       "day_of_week": "Quarta",
       "hour_of_day": 19,
-      "spending_vs_avg_pct": 30.3,
+      "spending_vs_avg_pct": 23.9,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 70.99,
@@ -4640,7 +4640,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.91,
+          "price_percentile": 0.9,
           "is_expensive": true
         },
         {
@@ -4676,7 +4676,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.42,
+          "price_percentile": 0.4,
           "is_expensive": false
         },
         {
@@ -4752,9 +4752,9 @@
       "avg_item_price": 8.0,
       "day_of_week": "Sábado",
       "hour_of_day": 19,
-      "spending_vs_avg_pct": 323.7,
+      "spending_vs_avg_pct": 302.9,
       "is_outlier": true,
-      "outlier_reason": "R$ 463.80 — 4.2x acima da média (R$ 109.47)",
+      "outlier_reason": "R$ 463.80 — 4.0x acima da média (R$ 115.10)",
       "savings_opportunity": 291.13,
       "necessity_breakdown": {
         "Essencial": 57.2,
@@ -5009,7 +5009,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.44,
+          "price_percentile": 0.42,
           "is_expensive": false
         },
         {
@@ -5027,7 +5027,7 @@
           "necessity": "Supérfluo",
           "price_rank": 1.0,
           "min_price_seen": 6.79,
-          "price_percentile": 0.67,
+          "price_percentile": 0.5,
           "is_expensive": false
         },
         {
@@ -5135,7 +5135,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.31,
+          "price_percentile": 0.3,
           "is_expensive": false
         },
         {
@@ -5153,7 +5153,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.77,
+          "price_percentile": 0.76,
           "is_expensive": true
         },
         {
@@ -5171,7 +5171,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.61,
+          "price_percentile": 0.59,
           "is_expensive": false
         },
         {
@@ -5279,7 +5279,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.31,
+          "price_percentile": 0.3,
           "is_expensive": false
         },
         {
@@ -5297,7 +5297,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.31,
+          "price_percentile": 0.3,
           "is_expensive": false
         },
         {
@@ -5315,7 +5315,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.19,
+          "price_percentile": 0.18,
           "is_expensive": false
         },
         {
@@ -5333,7 +5333,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.79,
+          "price_percentile": 0.78,
           "is_expensive": true
         },
         {
@@ -5369,7 +5369,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.31,
+          "price_percentile": 0.3,
           "is_expensive": false
         },
         {
@@ -5423,7 +5423,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.71,
+          "price_percentile": 0.69,
           "is_expensive": false
         },
         {
@@ -5441,7 +5441,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.79,
+          "price_percentile": 0.78,
           "is_expensive": true
         },
         {
@@ -5459,7 +5459,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.33,
+          "price_percentile": 0.31,
           "is_expensive": false
         },
         {
@@ -5495,7 +5495,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.42,
+          "price_percentile": 0.4,
           "is_expensive": false
         },
         {
@@ -5513,7 +5513,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.08,
+          "price_percentile": 0.07,
           "is_expensive": false
         },
         {
@@ -5531,7 +5531,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.1,
+          "price_percentile": 0.09,
           "is_expensive": false
         },
         {
@@ -5549,7 +5549,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.12,
+          "price_percentile": 0.1,
           "is_expensive": false
         },
         {
@@ -5567,7 +5567,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.12,
+          "price_percentile": 0.1,
           "is_expensive": false
         },
         {
@@ -5585,7 +5585,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.16,
+          "price_percentile": 0.15,
           "is_expensive": false
         },
         {
@@ -5603,7 +5603,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.19,
+          "price_percentile": 0.18,
           "is_expensive": false
         },
         {
@@ -5639,7 +5639,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.48,
+          "price_percentile": 0.45,
           "is_expensive": false
         },
         {
@@ -5675,7 +5675,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.64,
+          "price_percentile": 0.63,
           "is_expensive": false
         },
         {
@@ -5765,7 +5765,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.83,
+          "price_percentile": 0.82,
           "is_expensive": true
         },
         {
@@ -5783,7 +5783,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.9,
+          "price_percentile": 0.89,
           "is_expensive": true
         },
         {
@@ -5859,9 +5859,9 @@
       "avg_item_price": 8.0,
       "day_of_week": "Sábado",
       "hour_of_day": 19,
-      "spending_vs_avg_pct": 323.7,
+      "spending_vs_avg_pct": 302.9,
       "is_outlier": true,
-      "outlier_reason": "R$ 463.80 — 4.2x acima da média (R$ 109.47)",
+      "outlier_reason": "R$ 463.80 — 4.0x acima da média (R$ 115.10)",
       "savings_opportunity": 291.13,
       "necessity_breakdown": {
         "Essencial": 57.2,
@@ -6116,7 +6116,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.44,
+          "price_percentile": 0.42,
           "is_expensive": false
         },
         {
@@ -6134,7 +6134,7 @@
           "necessity": "Supérfluo",
           "price_rank": 1.0,
           "min_price_seen": 6.79,
-          "price_percentile": 0.67,
+          "price_percentile": 0.5,
           "is_expensive": false
         },
         {
@@ -6242,7 +6242,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.31,
+          "price_percentile": 0.3,
           "is_expensive": false
         },
         {
@@ -6260,7 +6260,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.77,
+          "price_percentile": 0.76,
           "is_expensive": true
         },
         {
@@ -6278,7 +6278,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.61,
+          "price_percentile": 0.59,
           "is_expensive": false
         },
         {
@@ -6386,7 +6386,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.31,
+          "price_percentile": 0.3,
           "is_expensive": false
         },
         {
@@ -6404,7 +6404,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.31,
+          "price_percentile": 0.3,
           "is_expensive": false
         },
         {
@@ -6422,7 +6422,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.19,
+          "price_percentile": 0.18,
           "is_expensive": false
         },
         {
@@ -6440,7 +6440,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.79,
+          "price_percentile": 0.78,
           "is_expensive": true
         },
         {
@@ -6476,7 +6476,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.31,
+          "price_percentile": 0.3,
           "is_expensive": false
         },
         {
@@ -6530,7 +6530,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.71,
+          "price_percentile": 0.69,
           "is_expensive": false
         },
         {
@@ -6548,7 +6548,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.79,
+          "price_percentile": 0.78,
           "is_expensive": true
         },
         {
@@ -6566,7 +6566,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.33,
+          "price_percentile": 0.31,
           "is_expensive": false
         },
         {
@@ -6602,7 +6602,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.42,
+          "price_percentile": 0.4,
           "is_expensive": false
         },
         {
@@ -6620,7 +6620,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.08,
+          "price_percentile": 0.07,
           "is_expensive": false
         },
         {
@@ -6638,7 +6638,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.1,
+          "price_percentile": 0.09,
           "is_expensive": false
         },
         {
@@ -6656,7 +6656,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.12,
+          "price_percentile": 0.1,
           "is_expensive": false
         },
         {
@@ -6674,7 +6674,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.12,
+          "price_percentile": 0.1,
           "is_expensive": false
         },
         {
@@ -6692,7 +6692,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.16,
+          "price_percentile": 0.15,
           "is_expensive": false
         },
         {
@@ -6710,7 +6710,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.19,
+          "price_percentile": 0.18,
           "is_expensive": false
         },
         {
@@ -6746,7 +6746,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.48,
+          "price_percentile": 0.45,
           "is_expensive": false
         },
         {
@@ -6782,7 +6782,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.64,
+          "price_percentile": 0.63,
           "is_expensive": false
         },
         {
@@ -6872,7 +6872,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.83,
+          "price_percentile": 0.82,
           "is_expensive": true
         },
         {
@@ -6890,7 +6890,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.9,
+          "price_percentile": 0.89,
           "is_expensive": true
         },
         {
@@ -6966,7 +6966,7 @@
       "avg_item_price": 23.92,
       "day_of_week": "Quarta",
       "hour_of_day": 13,
-      "spending_vs_avg_pct": -56.3,
+      "spending_vs_avg_pct": -58.4,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 0.3,
@@ -7037,7 +7037,7 @@
       "avg_item_price": 20.97,
       "day_of_week": "Segunda",
       "hour_of_day": 18,
-      "spending_vs_avg_pct": -42.5,
+      "spending_vs_avg_pct": -45.4,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 62.9,
@@ -7076,7 +7076,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.86,
+          "price_percentile": 0.85,
           "is_expensive": true
         },
         {
@@ -7094,7 +7094,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.56,
+          "price_percentile": 0.54,
           "is_expensive": false
         },
         {
@@ -7112,7 +7112,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.62,
+          "price_percentile": 0.61,
           "is_expensive": false
         }
       ]
@@ -7134,7 +7134,7 @@
       "avg_item_price": 14.65,
       "day_of_week": "Sábado",
       "hour_of_day": 14,
-      "spending_vs_avg_pct": -46.5,
+      "spending_vs_avg_pct": -49.1,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 0.3,
@@ -7245,7 +7245,7 @@
       "avg_item_price": 10.48,
       "day_of_week": "Quinta",
       "hour_of_day": 20,
-      "spending_vs_avg_pct": -52.1,
+      "spending_vs_avg_pct": -54.5,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 54.96,
@@ -7310,7 +7310,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.42,
+          "price_percentile": 0.4,
           "is_expensive": false
         },
         {
@@ -7386,10 +7386,10 @@
       "avg_item_price": 10.65,
       "day_of_week": "Sexta",
       "hour_of_day": 9,
-      "spending_vs_avg_pct": 405.7,
+      "spending_vs_avg_pct": 380.9,
       "is_outlier": true,
-      "outlier_reason": "R$ 553.57 — 5.1x acima da média (R$ 109.47)",
-      "savings_opportunity": 194.22,
+      "outlier_reason": "R$ 553.57 — 4.8x acima da média (R$ 115.10)",
+      "savings_opportunity": 196.92,
       "necessity_breakdown": {
         "Essencial": 61.4,
         "Conveniência": 27.9,
@@ -7459,7 +7459,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.71,
+          "price_percentile": 0.69,
           "is_expensive": false
         },
         {
@@ -7495,7 +7495,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.24,
+          "price_percentile": 0.22,
           "is_expensive": false
         },
         {
@@ -7513,7 +7513,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.31,
+          "price_percentile": 0.3,
           "is_expensive": false
         },
         {
@@ -7531,7 +7531,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.13,
+          "price_percentile": 0.12,
           "is_expensive": false
         },
         {
@@ -7549,7 +7549,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.14,
+          "price_percentile": 0.13,
           "is_expensive": false
         },
         {
@@ -7567,7 +7567,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.12,
+          "price_percentile": 0.11,
           "is_expensive": false
         },
         {
@@ -7583,10 +7583,10 @@
           "category": "Laticínios",
           "subcategory": "Iogurtes",
           "necessity": "Conveniência",
-          "price_rank": 1.0,
-          "min_price_seen": 3.19,
-          "price_percentile": null,
-          "is_expensive": null
+          "price_rank": 1.07,
+          "min_price_seen": 2.98,
+          "price_percentile": 1.0,
+          "is_expensive": true
         },
         {
           "line_n": 10,
@@ -7621,7 +7621,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.38,
+          "price_percentile": 0.35,
           "is_expensive": false
         },
         {
@@ -7639,7 +7639,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.06,
+          "price_percentile": 0.05,
           "is_expensive": false
         },
         {
@@ -7657,7 +7657,7 @@
           "necessity": "Essencial",
           "price_rank": 1.0,
           "min_price_seen": 9.98,
-          "price_percentile": 0.25,
+          "price_percentile": 0.2,
           "is_expensive": false
         },
         {
@@ -7675,7 +7675,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.19,
+          "price_percentile": 0.18,
           "is_expensive": false
         },
         {
@@ -7693,7 +7693,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.19,
+          "price_percentile": 0.18,
           "is_expensive": false
         },
         {
@@ -7711,7 +7711,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.31,
+          "price_percentile": 0.3,
           "is_expensive": false
         },
         {
@@ -7727,10 +7727,10 @@
           "category": "Laticínios",
           "subcategory": "Queijos",
           "necessity": "Essencial",
-          "price_rank": 1.0,
-          "min_price_seen": 10.98,
-          "price_percentile": null,
-          "is_expensive": null
+          "price_rank": 1.29,
+          "min_price_seen": 8.49,
+          "price_percentile": 1.0,
+          "is_expensive": true
         },
         {
           "line_n": 18,
@@ -7783,8 +7783,8 @@
           "necessity": "Conveniência",
           "price_rank": 1.0,
           "min_price_seen": 5.98,
-          "price_percentile": 1.0,
-          "is_expensive": true
+          "price_percentile": 0.33,
+          "is_expensive": false
         },
         {
           "line_n": 21,
@@ -7819,8 +7819,8 @@
           "necessity": "Conveniência",
           "price_rank": 1.0,
           "min_price_seen": 5.98,
-          "price_percentile": 1.0,
-          "is_expensive": true
+          "price_percentile": 0.33,
+          "is_expensive": false
         },
         {
           "line_n": 23,
@@ -8071,7 +8071,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.85,
+          "price_percentile": 0.84,
           "is_expensive": true
         },
         {
@@ -8143,7 +8143,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.64,
+          "price_percentile": 0.63,
           "is_expensive": false
         },
         {
@@ -8179,7 +8179,7 @@
           "necessity": "Supérfluo",
           "price_rank": 1.13,
           "min_price_seen": 3.19,
-          "price_percentile": 0.71,
+          "price_percentile": 0.63,
           "is_expensive": false
         },
         {
@@ -8197,7 +8197,7 @@
           "necessity": "Supérfluo",
           "price_rank": 1.13,
           "min_price_seen": 3.19,
-          "price_percentile": 0.71,
+          "price_percentile": 0.63,
           "is_expensive": false
         },
         {
@@ -8215,7 +8215,7 @@
           "necessity": "Supérfluo",
           "price_rank": 1.13,
           "min_price_seen": 3.19,
-          "price_percentile": 0.71,
+          "price_percentile": 0.63,
           "is_expensive": false
         },
         {
@@ -8233,7 +8233,7 @@
           "necessity": "Supérfluo",
           "price_rank": 1.13,
           "min_price_seen": 3.19,
-          "price_percentile": 0.71,
+          "price_percentile": 0.63,
           "is_expensive": false
         },
         {
@@ -8251,7 +8251,7 @@
           "necessity": "Supérfluo",
           "price_rank": 1.13,
           "min_price_seen": 3.19,
-          "price_percentile": 0.71,
+          "price_percentile": 0.63,
           "is_expensive": false
         },
         {
@@ -8269,7 +8269,7 @@
           "necessity": "Supérfluo",
           "price_rank": 1.13,
           "min_price_seen": 3.19,
-          "price_percentile": 0.71,
+          "price_percentile": 0.63,
           "is_expensive": false
         },
         {
@@ -8287,7 +8287,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.55,
+          "price_percentile": 0.53,
           "is_expensive": false
         },
         {
@@ -8381,7 +8381,7 @@
       "avg_item_price": 6.87,
       "day_of_week": "Terça",
       "hour_of_day": 19,
-      "spending_vs_avg_pct": -81.2,
+      "spending_vs_avg_pct": -82.1,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 11.0,
@@ -8434,7 +8434,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.33,
+          "price_percentile": 0.31,
           "is_expensive": false
         },
         {
@@ -8452,7 +8452,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.26,
+          "price_percentile": 0.24,
           "is_expensive": false
         }
       ]
@@ -8474,7 +8474,7 @@
       "avg_item_price": 7.74,
       "day_of_week": "Sexta",
       "hour_of_day": 19,
-      "spending_vs_avg_pct": 90.8,
+      "spending_vs_avg_pct": 81.5,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 90.17,
@@ -8791,7 +8791,7 @@
           "necessity": "Supérfluo",
           "price_rank": 1.03,
           "min_price_seen": 3.19,
-          "price_percentile": 0.12,
+          "price_percentile": 0.11,
           "is_expensive": false
         },
         {
@@ -8953,7 +8953,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.38,
+          "price_percentile": 0.35,
           "is_expensive": false
         },
         {
@@ -8989,7 +8989,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.95,
+          "price_percentile": 0.94,
           "is_expensive": true
         }
       ]
@@ -9011,7 +9011,7 @@
       "avg_item_price": 19.65,
       "day_of_week": "Segunda",
       "hour_of_day": 20,
-      "spending_vs_avg_pct": 43.6,
+      "spending_vs_avg_pct": 36.6,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 68.93,
@@ -9072,7 +9072,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.92,
+          "price_percentile": 0.91,
           "is_expensive": true
         },
         {
@@ -9108,8 +9108,8 @@
           "necessity": "Conveniência",
           "price_rank": 1.0,
           "min_price_seen": 51.98,
-          "price_percentile": null,
-          "is_expensive": null
+          "price_percentile": 1.0,
+          "is_expensive": true
         },
         {
           "line_n": 5,
@@ -9144,8 +9144,8 @@
           "necessity": "Supérfluo",
           "price_rank": 1.0,
           "min_price_seen": 10.89,
-          "price_percentile": null,
-          "is_expensive": null
+          "price_percentile": 0.5,
+          "is_expensive": false
         },
         {
           "line_n": 7,
@@ -9162,7 +9162,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.24,
+          "price_percentile": 0.22,
           "is_expensive": false
         },
         {
@@ -9180,7 +9180,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.24,
+          "price_percentile": 0.22,
           "is_expensive": false
         }
       ]
@@ -9202,7 +9202,7 @@
       "avg_item_price": 14.88,
       "day_of_week": "Segunda",
       "hour_of_day": 20,
-      "spending_vs_avg_pct": 117.5,
+      "spending_vs_avg_pct": 106.8,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 135.64,
@@ -9271,7 +9271,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.86,
+          "price_percentile": 0.85,
           "is_expensive": true
         },
         {
@@ -9307,7 +9307,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.69,
+          "price_percentile": 0.67,
           "is_expensive": false
         },
         {
@@ -9325,7 +9325,7 @@
           "necessity": "Supérfluo",
           "price_rank": 1.13,
           "min_price_seen": 3.19,
-          "price_percentile": 0.71,
+          "price_percentile": 0.63,
           "is_expensive": false
         },
         {
@@ -9343,7 +9343,7 @@
           "necessity": "Supérfluo",
           "price_rank": 1.13,
           "min_price_seen": 3.19,
-          "price_percentile": 0.71,
+          "price_percentile": 0.63,
           "is_expensive": false
         },
         {
@@ -9415,7 +9415,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.52,
+          "price_percentile": 0.51,
           "is_expensive": false
         },
         {
@@ -9433,7 +9433,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.52,
+          "price_percentile": 0.51,
           "is_expensive": false
         },
         {
@@ -9469,7 +9469,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.48,
+          "price_percentile": 0.45,
           "is_expensive": false
         },
         {
@@ -9487,7 +9487,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.68,
+          "price_percentile": 0.65,
           "is_expensive": false
         },
         {
@@ -9505,7 +9505,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.64,
+          "price_percentile": 0.63,
           "is_expensive": false
         },
         {
@@ -9523,7 +9523,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.68,
+          "price_percentile": 0.65,
           "is_expensive": false
         }
       ]
@@ -9545,7 +9545,7 @@
       "avg_item_price": 35.68,
       "day_of_week": "Quinta",
       "hour_of_day": 20,
-      "spending_vs_avg_pct": -2.2,
+      "spending_vs_avg_pct": -7.0,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -9638,7 +9638,7 @@
       "avg_item_price": 26.94,
       "day_of_week": "Quinta",
       "hour_of_day": 12,
-      "spending_vs_avg_pct": 72.3,
+      "spending_vs_avg_pct": 63.8,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 31.96,
@@ -9721,8 +9721,8 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.76,
-          "is_expensive": true
+          "price_percentile": 0.74,
+          "is_expensive": false
         },
         {
           "line_n": 4,
@@ -9815,7 +9815,7 @@
       "avg_item_price": 13.99,
       "day_of_week": "Terça",
       "hour_of_day": 19,
-      "spending_vs_avg_pct": -87.2,
+      "spending_vs_avg_pct": -87.8,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -9868,7 +9868,7 @@
       "avg_item_price": 17.9,
       "day_of_week": "Quinta",
       "hour_of_day": 13,
-      "spending_vs_avg_pct": -67.3,
+      "spending_vs_avg_pct": -68.9,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 35.8,
@@ -9903,7 +9903,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.45,
+          "price_percentile": 0.43,
           "is_expensive": false
         },
         {
@@ -9921,7 +9921,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.77,
+          "price_percentile": 0.76,
           "is_expensive": true
         }
       ]
@@ -9943,7 +9943,7 @@
       "avg_item_price": 13.3,
       "day_of_week": "Terça",
       "hour_of_day": 19,
-      "spending_vs_avg_pct": -63.6,
+      "spending_vs_avg_pct": -65.3,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 39.9,
@@ -9982,7 +9982,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.72,
+          "price_percentile": 0.7,
           "is_expensive": false
         },
         {
@@ -10000,7 +10000,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.2,
+          "price_percentile": 0.19,
           "is_expensive": false
         },
         {
@@ -10018,7 +10018,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.62,
+          "price_percentile": 0.61,
           "is_expensive": false
         }
       ]
@@ -10040,7 +10040,7 @@
       "avg_item_price": 14.99,
       "day_of_week": "Quarta",
       "hour_of_day": 14,
-      "spending_vs_avg_pct": -72.6,
+      "spending_vs_avg_pct": -74.0,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 9.99,
@@ -10093,7 +10093,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.54,
+          "price_percentile": 0.52,
           "is_expensive": false
         }
       ]
@@ -10115,7 +10115,7 @@
       "avg_item_price": 59.8,
       "day_of_week": "Quinta",
       "hour_of_day": 20,
-      "spending_vs_avg_pct": -45.4,
+      "spending_vs_avg_pct": -48.0,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 29.9,
@@ -10146,7 +10146,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.81,
+          "price_percentile": 0.8,
           "is_expensive": true
         }
       ]
@@ -10168,9 +10168,9 @@
       "avg_item_price": 838.38,
       "day_of_week": "Sexta",
       "hour_of_day": 17,
-      "spending_vs_avg_pct": 1431.8,
+      "spending_vs_avg_pct": 1356.8,
       "is_outlier": true,
-      "outlier_reason": "R$ 1676.75 — 15.3x acima da média (R$ 109.47)",
+      "outlier_reason": "R$ 1676.75 — 14.6x acima da média (R$ 115.10)",
       "savings_opportunity": 1765.0,
       "necessity_breakdown": {
         "Essencial": 0.0,
@@ -10239,7 +10239,7 @@
       "avg_item_price": 19.15,
       "day_of_week": "Sábado",
       "hour_of_day": 8,
-      "spending_vs_avg_pct": -30.0,
+      "spending_vs_avg_pct": -33.5,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 76.6,
@@ -10278,7 +10278,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.6,
+          "price_percentile": 0.58,
           "is_expensive": false
         },
         {
@@ -10296,7 +10296,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.81,
+          "price_percentile": 0.8,
           "is_expensive": true
         },
         {
@@ -10314,7 +10314,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.73,
+          "price_percentile": 0.71,
           "is_expensive": false
         },
         {
@@ -10332,7 +10332,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.56,
+          "price_percentile": 0.54,
           "is_expensive": false
         }
       ]
@@ -10354,7 +10354,7 @@
       "avg_item_price": 18.75,
       "day_of_week": "Sábado",
       "hour_of_day": 8,
-      "spending_vs_avg_pct": -65.8,
+      "spending_vs_avg_pct": -67.4,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 58.9,
@@ -10389,7 +10389,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.2,
+          "price_percentile": 0.19,
           "is_expensive": false
         },
         {
@@ -10407,7 +10407,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.9,
+          "price_percentile": 0.89,
           "is_expensive": true
         }
       ]
@@ -10429,7 +10429,7 @@
       "avg_item_price": 39.99,
       "day_of_week": "Domingo",
       "hour_of_day": 9,
-      "spending_vs_avg_pct": -63.5,
+      "spending_vs_avg_pct": -65.3,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -10482,7 +10482,7 @@
       "avg_item_price": 7.59,
       "day_of_week": "Domingo",
       "hour_of_day": 9,
-      "spending_vs_avg_pct": -79.2,
+      "spending_vs_avg_pct": -80.2,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 68.98,
@@ -10539,7 +10539,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.48,
+          "price_percentile": 0.46,
           "is_expensive": false
         },
         {
@@ -10579,7 +10579,7 @@
       "avg_item_price": 15.1,
       "day_of_week": "Domingo",
       "hour_of_day": 8,
-      "spending_vs_avg_pct": -58.6,
+      "spending_vs_avg_pct": -60.7,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 11.98,
@@ -10614,7 +10614,7 @@
           "necessity": "Essencial",
           "price_rank": 1.0,
           "min_price_seen": 19.99,
-          "price_percentile": 0.33,
+          "price_percentile": 0.25,
           "is_expensive": false
         },
         {
@@ -10632,7 +10632,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.38,
+          "price_percentile": 0.36,
           "is_expensive": false
         },
         {
@@ -10650,7 +10650,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.25,
+          "price_percentile": 0.23,
           "is_expensive": false
         }
       ]
@@ -10672,7 +10672,7 @@
       "avg_item_price": 22.1,
       "day_of_week": "Segunda",
       "hour_of_day": 15,
-      "spending_vs_avg_pct": -39.4,
+      "spending_vs_avg_pct": -42.4,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 66.3,
@@ -10707,7 +10707,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.68,
+          "price_percentile": 0.66,
           "is_expensive": false
         },
         {
@@ -10725,7 +10725,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.75,
+          "price_percentile": 0.74,
           "is_expensive": false
         },
         {
@@ -10743,7 +10743,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.74,
+          "price_percentile": 0.73,
           "is_expensive": false
         }
       ]
@@ -10765,7 +10765,7 @@
       "avg_item_price": 9.99,
       "day_of_week": "Quarta",
       "hour_of_day": 16,
-      "spending_vs_avg_pct": -90.9,
+      "spending_vs_avg_pct": -91.3,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 9.99,
@@ -10796,7 +10796,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.54,
+          "price_percentile": 0.52,
           "is_expensive": false
         }
       ]
@@ -10818,7 +10818,7 @@
       "avg_item_price": 26.5,
       "day_of_week": "Quarta",
       "hour_of_day": 19,
-      "spending_vs_avg_pct": -3.2,
+      "spending_vs_avg_pct": -7.9,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 106.0,
@@ -10857,7 +10857,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.8,
+          "price_percentile": 0.78,
           "is_expensive": true
         },
         {
@@ -10875,7 +10875,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.92,
+          "price_percentile": 0.91,
           "is_expensive": true
         },
         {
@@ -10893,7 +10893,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.61,
+          "price_percentile": 0.6,
           "is_expensive": false
         },
         {
@@ -10911,7 +10911,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.44,
+          "price_percentile": 0.42,
           "is_expensive": false
         }
       ]
@@ -10933,7 +10933,7 @@
       "avg_item_price": 8.96,
       "day_of_week": "Sexta",
       "hour_of_day": 12,
-      "spending_vs_avg_pct": -67.2,
+      "spending_vs_avg_pct": -68.9,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 14.4,
@@ -11004,7 +11004,7 @@
           "necessity": "Supérfluo",
           "price_rank": 1.0,
           "min_price_seen": 3.19,
-          "price_percentile": 0.06,
+          "price_percentile": 0.05,
           "is_expensive": false
         },
         {
@@ -11022,7 +11022,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.5,
+          "price_percentile": 0.47,
           "is_expensive": false
         }
       ]
@@ -11044,7 +11044,7 @@
       "avg_item_price": 9.49,
       "day_of_week": "Domingo",
       "hour_of_day": 15,
-      "spending_vs_avg_pct": -91.3,
+      "spending_vs_avg_pct": -91.8,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 9.49,
@@ -11075,7 +11075,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.5,
+          "price_percentile": 0.47,
           "is_expensive": false
         }
       ]
@@ -11097,7 +11097,7 @@
       "avg_item_price": 29.9,
       "day_of_week": "Terça",
       "hour_of_day": 15,
-      "spending_vs_avg_pct": -72.7,
+      "spending_vs_avg_pct": -74.0,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 29.9,
@@ -11128,7 +11128,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.81,
+          "price_percentile": 0.8,
           "is_expensive": true
         }
       ]
@@ -11150,7 +11150,7 @@
       "avg_item_price": 15.95,
       "day_of_week": "Sábado",
       "hour_of_day": 14,
-      "spending_vs_avg_pct": 45.7,
+      "spending_vs_avg_pct": 38.6,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -11319,8 +11319,8 @@
           "necessity": "Supérfluo",
           "price_rank": 1.0,
           "min_price_seen": 13.49,
-          "price_percentile": null,
-          "is_expensive": null
+          "price_percentile": 0.5,
+          "is_expensive": false
         },
         {
           "line_n": 9,
@@ -11377,7 +11377,7 @@
       "avg_item_price": 15.99,
       "day_of_week": "Sábado",
       "hour_of_day": 11,
-      "spending_vs_avg_pct": -56.2,
+      "spending_vs_avg_pct": -58.3,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 8.99,
@@ -11452,7 +11452,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.48,
+          "price_percentile": 0.46,
           "is_expensive": false
         }
       ]
@@ -11474,7 +11474,7 @@
       "avg_item_price": 7.66,
       "day_of_week": "Sábado",
       "hour_of_day": 11,
-      "spending_vs_avg_pct": -79.0,
+      "spending_vs_avg_pct": -80.0,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -11567,7 +11567,7 @@
       "avg_item_price": 22.9,
       "day_of_week": "Sábado",
       "hour_of_day": 21,
-      "spending_vs_avg_pct": -79.1,
+      "spending_vs_avg_pct": -80.1,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 22.9,
@@ -11598,7 +11598,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.73,
+          "price_percentile": 0.72,
           "is_expensive": false
         }
       ]
@@ -11620,7 +11620,7 @@
       "avg_item_price": 6.0,
       "day_of_week": "Terça",
       "hour_of_day": 12,
-      "spending_vs_avg_pct": -78.1,
+      "spending_vs_avg_pct": -79.2,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 58.96,
@@ -11655,7 +11655,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.5,
+          "price_percentile": 0.47,
           "is_expensive": false
         },
         {
@@ -11673,7 +11673,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.5,
+          "price_percentile": 0.47,
           "is_expensive": false
         },
         {
@@ -11691,7 +11691,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.72,
+          "price_percentile": 0.7,
           "is_expensive": false
         },
         {
@@ -11709,7 +11709,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.72,
+          "price_percentile": 0.7,
           "is_expensive": false
         }
       ]
@@ -11731,7 +11731,7 @@
       "avg_item_price": 99.9,
       "day_of_week": "Domingo",
       "hour_of_day": 15,
-      "spending_vs_avg_pct": -8.7,
+      "spending_vs_avg_pct": -13.2,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 99.9,
@@ -11784,7 +11784,7 @@
       "avg_item_price": 9.84,
       "day_of_week": "Quinta",
       "hour_of_day": 10,
-      "spending_vs_avg_pct": -82.0,
+      "spending_vs_avg_pct": -82.9,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -11859,7 +11859,7 @@
       "avg_item_price": 46.82,
       "day_of_week": "Sábado",
       "hour_of_day": 12,
-      "spending_vs_avg_pct": 28.3,
+      "spending_vs_avg_pct": 22.0,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -11952,7 +11952,7 @@
       "avg_item_price": 22.5,
       "day_of_week": "Sexta",
       "hour_of_day": 10,
-      "spending_vs_avg_pct": -79.4,
+      "spending_vs_avg_pct": -80.5,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 44.99,
@@ -11983,7 +11983,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.88,
+          "price_percentile": 0.87,
           "is_expensive": true
         }
       ]
@@ -12005,7 +12005,7 @@
       "avg_item_price": 4.17,
       "day_of_week": "Sexta",
       "hour_of_day": 10,
-      "spending_vs_avg_pct": -84.7,
+      "spending_vs_avg_pct": -85.5,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 16.7,
@@ -12036,7 +12036,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.03,
+          "price_percentile": 0.02,
           "is_expensive": false
         },
         {
@@ -12054,7 +12054,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.34,
+          "price_percentile": 0.32,
           "is_expensive": false
         },
         {
@@ -12072,7 +12072,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.21,
+          "price_percentile": 0.19,
           "is_expensive": false
         },
         {
@@ -12090,7 +12090,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.26,
+          "price_percentile": 0.24,
           "is_expensive": false
         }
       ]
@@ -12112,7 +12112,7 @@
       "avg_item_price": 17.45,
       "day_of_week": "Domingo",
       "hour_of_day": 16,
-      "spending_vs_avg_pct": -68.1,
+      "spending_vs_avg_pct": -69.7,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -12183,7 +12183,7 @@
       "avg_item_price": 12.35,
       "day_of_week": "Terça",
       "hour_of_day": 11,
-      "spending_vs_avg_pct": -77.4,
+      "spending_vs_avg_pct": -78.5,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 12.35,
@@ -12214,7 +12214,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.15,
+          "price_percentile": 0.14,
           "is_expensive": false
         },
         {
@@ -12232,7 +12232,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.45,
+          "price_percentile": 0.43,
           "is_expensive": false
         }
       ]
@@ -12254,7 +12254,7 @@
       "avg_item_price": 17.54,
       "day_of_week": "Sábado",
       "hour_of_day": 19,
-      "spending_vs_avg_pct": -35.9,
+      "spending_vs_avg_pct": -39.0,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -12329,8 +12329,8 @@
           "necessity": "Supérfluo",
           "price_rank": 1.0,
           "min_price_seen": 6.29,
-          "price_percentile": null,
-          "is_expensive": null
+          "price_percentile": 0.33,
+          "is_expensive": false
         },
         {
           "line_n": 4,
@@ -12369,7 +12369,7 @@
       "avg_item_price": 6.05,
       "day_of_week": "Terça",
       "hour_of_day": 13,
-      "spending_vs_avg_pct": -72.4,
+      "spending_vs_avg_pct": -73.7,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 11.29,
@@ -12422,7 +12422,7 @@
           "necessity": "Supérfluo",
           "price_rank": 1.13,
           "min_price_seen": 3.19,
-          "price_percentile": 0.71,
+          "price_percentile": 0.63,
           "is_expensive": false
         },
         {
@@ -12458,7 +12458,7 @@
           "necessity": "Supérfluo",
           "price_rank": 1.13,
           "min_price_seen": 3.19,
-          "price_percentile": 0.71,
+          "price_percentile": 0.63,
           "is_expensive": false
         },
         {
@@ -12476,7 +12476,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.55,
+          "price_percentile": 0.53,
           "is_expensive": false
         }
       ]
@@ -12498,7 +12498,7 @@
       "avg_item_price": 8.71,
       "day_of_week": "Sexta",
       "hour_of_day": 9,
-      "spending_vs_avg_pct": -84.1,
+      "spending_vs_avg_pct": -84.9,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 39.89,
@@ -12533,7 +12533,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.54,
+          "price_percentile": 0.52,
           "is_expensive": false
         },
         {
@@ -12551,7 +12551,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.81,
+          "price_percentile": 0.8,
           "is_expensive": true
         }
       ]
@@ -12573,7 +12573,7 @@
       "avg_item_price": 62.49,
       "day_of_week": "Quinta",
       "hour_of_day": 20,
-      "spending_vs_avg_pct": 14.2,
+      "spending_vs_avg_pct": 8.6,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 2.0,
@@ -12648,7 +12648,7 @@
       "avg_item_price": 24.29,
       "day_of_week": "Quinta",
       "hour_of_day": 13,
-      "spending_vs_avg_pct": 77.5,
+      "spending_vs_avg_pct": 68.8,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 12.79,
@@ -12803,7 +12803,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.56,
+          "price_percentile": 0.55,
           "is_expensive": false
         },
         {
@@ -12843,7 +12843,7 @@
       "avg_item_price": 8.56,
       "day_of_week": "Terça",
       "hour_of_day": 19,
-      "spending_vs_avg_pct": -53.1,
+      "spending_vs_avg_pct": -55.4,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 58.78,
@@ -12886,7 +12886,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.92,
+          "price_percentile": 0.91,
           "is_expensive": true
         },
         {
@@ -12922,8 +12922,8 @@
           "necessity": "Supérfluo",
           "price_rank": 1.0,
           "min_price_seen": 2.49,
-          "price_percentile": null,
-          "is_expensive": null
+          "price_percentile": 1.0,
+          "is_expensive": true
         },
         {
           "line_n": 4,
@@ -12940,7 +12940,7 @@
           "necessity": "Supérfluo",
           "price_rank": 1.19,
           "min_price_seen": 3.19,
-          "price_percentile": 0.88,
+          "price_percentile": 0.89,
           "is_expensive": true
         },
         {
@@ -12958,7 +12958,7 @@
           "necessity": "Supérfluo",
           "price_rank": 1.19,
           "min_price_seen": 3.19,
-          "price_percentile": 0.88,
+          "price_percentile": 0.89,
           "is_expensive": true
         },
         {
@@ -12976,7 +12976,7 @@
           "necessity": "Supérfluo",
           "price_rank": 1.19,
           "min_price_seen": 3.19,
-          "price_percentile": 0.88,
+          "price_percentile": 0.89,
           "is_expensive": true
         }
       ]
@@ -12998,7 +12998,7 @@
       "avg_item_price": 14.99,
       "day_of_week": "Segunda",
       "hour_of_day": 20,
-      "spending_vs_avg_pct": -72.6,
+      "spending_vs_avg_pct": -74.0,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -13069,10 +13069,10 @@
       "avg_item_price": 19.48,
       "day_of_week": "Quarta",
       "hour_of_day": 19,
-      "spending_vs_avg_pct": -64.4,
+      "spending_vs_avg_pct": -66.1,
       "is_outlier": false,
       "outlier_reason": null,
-      "savings_opportunity": 2.3,
+      "savings_opportunity": 3.3,
       "necessity_breakdown": {
         "Essencial": 0.0,
         "Conveniência": 28.2,
@@ -13102,10 +13102,10 @@
           "category": "Alimentos",
           "subcategory": "Gomas de Mascar",
           "necessity": "Supérfluo",
-          "price_rank": 1.0,
-          "min_price_seen": 27.99,
-          "price_percentile": null,
-          "is_expensive": null
+          "price_rank": 1.04,
+          "min_price_seen": 26.99,
+          "price_percentile": 1.0,
+          "is_expensive": true
         },
         {
           "line_n": 2,
@@ -13144,7 +13144,7 @@
       "avg_item_price": 32.99,
       "day_of_week": "Quarta",
       "hour_of_day": 8,
-      "spending_vs_avg_pct": -69.9,
+      "spending_vs_avg_pct": -71.3,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -13197,7 +13197,7 @@
       "avg_item_price": 7.88,
       "day_of_week": "Quarta",
       "hour_of_day": 8,
-      "spending_vs_avg_pct": -85.6,
+      "spending_vs_avg_pct": -86.3,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 7.99,
@@ -13232,7 +13232,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.44,
+          "price_percentile": 0.42,
           "is_expensive": false
         },
         {
@@ -13272,7 +13272,7 @@
       "avg_item_price": 15.79,
       "day_of_week": "Terça",
       "hour_of_day": 15,
-      "spending_vs_avg_pct": -56.7,
+      "spending_vs_avg_pct": -58.8,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -13361,7 +13361,7 @@
       "avg_item_price": 35.61,
       "day_of_week": "Segunda",
       "hour_of_day": 15,
-      "spending_vs_avg_pct": 30.1,
+      "spending_vs_avg_pct": 23.8,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 111.6,
@@ -13400,7 +13400,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.67,
+          "price_percentile": 0.65,
           "is_expensive": false
         },
         {
@@ -13418,7 +13418,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.82,
+          "price_percentile": 0.81,
           "is_expensive": true
         },
         {
@@ -13436,7 +13436,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.69,
+          "price_percentile": 0.67,
           "is_expensive": false
         },
         {
@@ -13454,7 +13454,7 @@
           "necessity": "Supérfluo",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.88,
+          "price_percentile": 0.87,
           "is_expensive": true
         }
       ]
@@ -13476,7 +13476,7 @@
       "avg_item_price": 13.41,
       "day_of_week": "Domingo",
       "hour_of_day": 16,
-      "spending_vs_avg_pct": 157.3,
+      "spending_vs_avg_pct": 144.7,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 159.19,
@@ -13531,7 +13531,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.38,
+          "price_percentile": 0.35,
           "is_expensive": false
         },
         {
@@ -13549,7 +13549,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.14,
+          "price_percentile": 0.13,
           "is_expensive": false
         },
         {
@@ -13567,7 +13567,7 @@
           "necessity": "Essencial",
           "price_rank": 1.3,
           "min_price_seen": 9.98,
-          "price_percentile": 0.5,
+          "price_percentile": 0.6,
           "is_expensive": false
         },
         {
@@ -13585,7 +13585,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.52,
+          "price_percentile": 0.51,
           "is_expensive": false
         },
         {
@@ -13693,7 +13693,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.95,
+          "price_percentile": 0.94,
           "is_expensive": true
         },
         {
@@ -13711,8 +13711,8 @@
           "necessity": "Essencial",
           "price_rank": 1.0,
           "min_price_seen": 5.98,
-          "price_percentile": null,
-          "is_expensive": null
+          "price_percentile": 1.0,
+          "is_expensive": true
         },
         {
           "line_n": 12,
@@ -13783,8 +13783,8 @@
           "necessity": "Essencial",
           "price_rank": 1.0,
           "min_price_seen": 43.98,
-          "price_percentile": null,
-          "is_expensive": null
+          "price_percentile": 1.0,
+          "is_expensive": true
         },
         {
           "line_n": 16,
@@ -13819,7 +13819,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.84,
+          "price_percentile": 0.83,
           "is_expensive": true
         },
         {
@@ -13855,7 +13855,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.48,
+          "price_percentile": 0.45,
           "is_expensive": false
         },
         {
@@ -13873,7 +13873,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.38,
+          "price_percentile": 0.35,
           "is_expensive": false
         },
         {
@@ -13913,7 +13913,7 @@
       "avg_item_price": 7.31,
       "day_of_week": "Sábado",
       "hour_of_day": 20,
-      "spending_vs_avg_pct": -59.9,
+      "spending_vs_avg_pct": -61.9,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 24.98,
@@ -14028,8 +14028,8 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.76,
-          "is_expensive": true
+          "price_percentile": 0.75,
+          "is_expensive": false
         },
         {
           "line_n": 6,
@@ -14068,7 +14068,7 @@
       "avg_item_price": 17.49,
       "day_of_week": "Sábado",
       "hour_of_day": 19,
-      "spending_vs_avg_pct": -20.1,
+      "spending_vs_avg_pct": -24.0,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -14193,7 +14193,7 @@
       "avg_item_price": 32.67,
       "day_of_week": "Quinta",
       "hour_of_day": 12,
-      "spending_vs_avg_pct": 49.2,
+      "spending_vs_avg_pct": 41.9,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -14326,7 +14326,7 @@
       "avg_item_price": 4.5,
       "day_of_week": "Quinta",
       "hour_of_day": 18,
-      "spending_vs_avg_pct": -95.9,
+      "spending_vs_avg_pct": -96.1,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -14379,7 +14379,7 @@
       "avg_item_price": 25.98,
       "day_of_week": "Quarta",
       "hour_of_day": 11,
-      "spending_vs_avg_pct": -28.8,
+      "spending_vs_avg_pct": -32.3,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": null,
@@ -14468,7 +14468,7 @@
       "avg_item_price": 10.02,
       "day_of_week": "Terça",
       "hour_of_day": 20,
-      "spending_vs_avg_pct": 64.8,
+      "spending_vs_avg_pct": 56.7,
       "is_outlier": false,
       "outlier_reason": null,
       "savings_opportunity": 237.2,
@@ -14533,7 +14533,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.69,
+          "price_percentile": 0.67,
           "is_expensive": false
         },
         {
@@ -14569,7 +14569,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.64,
+          "price_percentile": 0.63,
           "is_expensive": false
         },
         {
@@ -14587,7 +14587,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.52,
+          "price_percentile": 0.51,
           "is_expensive": false
         },
         {
@@ -14605,7 +14605,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.38,
+          "price_percentile": 0.35,
           "is_expensive": false
         },
         {
@@ -14623,7 +14623,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.71,
+          "price_percentile": 0.69,
           "is_expensive": false
         },
         {
@@ -14641,7 +14641,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.82,
+          "price_percentile": 0.81,
           "is_expensive": true
         },
         {
@@ -14659,7 +14659,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.48,
+          "price_percentile": 0.45,
           "is_expensive": false
         },
         {
@@ -14677,7 +14677,7 @@
           "necessity": "Essencial",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.24,
+          "price_percentile": 0.22,
           "is_expensive": false
         },
         {
@@ -14695,7 +14695,7 @@
           "necessity": "Conveniência",
           "price_rank": null,
           "min_price_seen": 0.0,
-          "price_percentile": 0.84,
+          "price_percentile": 0.82,
           "is_expensive": true
         },
         {
@@ -14825,6 +14825,2391 @@
           "is_expensive": true
         }
       ]
+    },
+    {
+      "note_id": 312,
+      "source_url": "http://nfe.sefaz.ba.gov.br/servicos/nfce/qrcode.aspx?p=29260606337087001730650080001146561694206281|2|1|1|FC1812EA65D22E1C0DADA53090F76FAFCDF93F7C",
+      "access_key": null,
+      "issued_at": "2026-06-13T17:32:43-03:00",
+      "issued_date": "2026-06-13",
+      "merchant_cnpj": "06.337.087/0017-30",
+      "merchant_name": "RMIX COMERCIO DE GENEROS ALIMENTICIOS LT",
+      "merchant_uf": "BA",
+      "serie": "8",
+      "number": "114656",
+      "total_amount": 81.58,
+      "total_products": null,
+      "item_count": 9,
+      "avg_item_price": 9.06,
+      "day_of_week": "Sábado",
+      "hour_of_day": 17,
+      "spending_vs_avg_pct": -29.1,
+      "is_outlier": false,
+      "outlier_reason": null,
+      "savings_opportunity": 5.0,
+      "necessity_breakdown": {
+        "Essencial": 12.2,
+        "Conveniência": 71.1,
+        "Supérfluo": 16.6
+      },
+      "category_breakdown": [
+        {
+          "category": "Bebidas",
+          "total": 41.5
+        },
+        {
+          "category": "Laticínios",
+          "total": 29.8
+        },
+        {
+          "category": "Padaria e Confeitaria",
+          "total": 9.98
+        },
+        {
+          "category": "Outros",
+          "total": 0.3
+        }
+      ],
+      "items": [
+        {
+          "line_n": 1,
+          "description": "SACOLA PL PEVERDE 43X56",
+          "description_norm": "SACOLA PL PEVERDE 43X56",
+          "ean": "7897037600326",
+          "ncm": "39232190",
+          "qty": 2.0,
+          "unit": "UN",
+          "unit_price": 0.15,
+          "line_total": 0.3,
+          "category": "Outros",
+          "subcategory": "Não classificado",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 0.15,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 2,
+          "description": "BEB LAC YOPRO 15G PROT CHOC 250ML",
+          "description_norm": "BEB LAC YOPRO 15G PROT CHOC 250ML",
+          "ean": "7891025115656",
+          "ncm": "22029900",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 6.98,
+          "line_total": 6.98,
+          "category": "Bebidas",
+          "subcategory": "Laticínios",
+          "necessity": "Conveniência",
+          "price_rank": 1.17,
+          "min_price_seen": 5.98,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 3,
+          "description": "BEB LAC YOPRO 15G PROT CHOC 250ML",
+          "description_norm": "BEB LAC YOPRO 15G PROT CHOC 250ML",
+          "ean": "7891025115656",
+          "ncm": "22029900",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 6.98,
+          "line_total": 6.98,
+          "category": "Bebidas",
+          "subcategory": "Laticínios",
+          "necessity": "Conveniência",
+          "price_rank": 1.17,
+          "min_price_seen": 5.98,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 4,
+          "description": "BEB LAC YOPRO 15G PROT CHOC 250ML",
+          "description_norm": "BEB LAC YOPRO 15G PROT CHOC 250ML",
+          "ean": "7891025115656",
+          "ncm": "22029900",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 6.98,
+          "line_total": 6.98,
+          "category": "Bebidas",
+          "subcategory": "Laticínios",
+          "necessity": "Conveniência",
+          "price_rank": 1.17,
+          "min_price_seen": 5.98,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 5,
+          "description": "BEB LAC YOPRO 15G PROT CHOC 250ML",
+          "description_norm": "BEB LAC YOPRO 15G PROT CHOC 250ML",
+          "ean": "7891025115656",
+          "ncm": "22029900",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 6.98,
+          "line_total": 6.98,
+          "category": "Bebidas",
+          "subcategory": "Laticínios",
+          "necessity": "Conveniência",
+          "price_rank": 1.17,
+          "min_price_seen": 5.98,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 6,
+          "description": "PAO HOT DOG SOL NASCENTE 450G",
+          "description_norm": "PAO HOT DOG SOL NASCENTE 450G",
+          "ean": "7898915980288",
+          "ncm": "19059090",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 9.98,
+          "line_total": 9.98,
+          "category": "Padaria e Confeitaria",
+          "subcategory": "Pães",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 9.98,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 7,
+          "description": "IOG GREGO TRADICIONAL DANONE 90G",
+          "description_norm": "IOG GREGO TRADICIONAL DANONE 90G",
+          "ean": "7891025123064",
+          "ncm": "04032000",
+          "qty": 10.0,
+          "unit": "UN",
+          "unit_price": 2.98,
+          "line_total": 29.8,
+          "category": "Laticínios",
+          "subcategory": "Iogurtes",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 2.98,
+          "price_percentile": 0.5,
+          "is_expensive": false
+        },
+        {
+          "line_n": 8,
+          "description": "REFRIG COCA COLA ORIG 1L",
+          "description_norm": "REFRIG COCA COLA ORIG 1L",
+          "ean": "7894900027044",
+          "ncm": "22021000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 6.79,
+          "line_total": 6.79,
+          "category": "Bebidas",
+          "subcategory": "Refrigerantes",
+          "necessity": "Supérfluo",
+          "price_rank": 1.08,
+          "min_price_seen": 6.29,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 9,
+          "description": "REFRIG COCA COLA ORIG 1L",
+          "description_norm": "REFRIG COCA COLA ORIG 1L",
+          "ean": "7894900027044",
+          "ncm": "22021000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 6.79,
+          "line_total": 6.79,
+          "category": "Bebidas",
+          "subcategory": "Refrigerantes",
+          "necessity": "Supérfluo",
+          "price_rank": 1.08,
+          "min_price_seen": 6.29,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        }
+      ]
+    },
+    {
+      "note_id": 313,
+      "source_url": "http://nfe.sefaz.ba.gov.br/servicos/nfce/qrcode.aspx?p=29260661585865148060650030001493551214535208|3|1",
+      "access_key": null,
+      "issued_at": "2026-06-13T17:24:55-03:00",
+      "issued_date": "2026-06-13",
+      "merchant_cnpj": "61.585.865/1480-60",
+      "merchant_name": "RAIADROGASIL S.A.",
+      "merchant_uf": "BA",
+      "serie": "3",
+      "number": "149355",
+      "total_amount": 164.87,
+      "total_products": null,
+      "item_count": 9,
+      "avg_item_price": 18.32,
+      "day_of_week": "Sábado",
+      "hour_of_day": 17,
+      "spending_vs_avg_pct": 43.2,
+      "is_outlier": false,
+      "outlier_reason": null,
+      "savings_opportunity": null,
+      "necessity_breakdown": {
+        "Essencial": 39.2,
+        "Conveniência": 54.4,
+        "Supérfluo": 9.0
+      },
+      "category_breakdown": [
+        {
+          "category": "Higiene Pessoal",
+          "total": 125.72
+        },
+        {
+          "category": "Outros",
+          "total": 28.67
+        },
+        {
+          "category": "Alimentos",
+          "total": 14.89
+        }
+      ],
+      "items": [
+        {
+          "line_n": 1,
+          "description": "NEEDS KIT ENX 4EM1 HOR",
+          "description_norm": "NEEDS KIT ENX 4EM1 HOR",
+          "ean": "7891066011849",
+          "ncm": "33069000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 29.9,
+          "line_total": 29.9,
+          "category": "Higiene Pessoal",
+          "subcategory": "Higiene Íntima",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 29.9,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 2,
+          "description": "SIMETICONA 40 MEDL 20",
+          "description_norm": "SIMETICONA 40 MEDL 20",
+          "ean": "7896422522823",
+          "ncm": "30039099",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 15.99,
+          "line_total": 15.99,
+          "category": "Outros",
+          "subcategory": "Não classificado",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 15.99,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 3,
+          "description": "NEEDS GEL LUB INT 50GR",
+          "description_norm": "NEEDS GEL LUB INT 50GR",
+          "ean": "7898905620972",
+          "ncm": "30067000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 14.9,
+          "line_total": 14.9,
+          "category": "Higiene Pessoal",
+          "subcategory": "Lubrificantes",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 14.9,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 4,
+          "description": "NATZ CRIS GENG CRJA 20",
+          "description_norm": "NATZ CRIS GENG CRJA 20",
+          "ean": "7891066009464",
+          "ncm": "20060000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 14.89,
+          "line_total": 14.89,
+          "category": "Alimentos",
+          "subcategory": "Snacks",
+          "necessity": "Supérfluo",
+          "price_rank": 1.0,
+          "min_price_seen": 14.89,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 5,
+          "description": "MEN STICK FRESH MIN 16",
+          "description_norm": "MEN STICK FRESH MIN 16",
+          "ean": "80878018",
+          "ncm": "21069050",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 5.13,
+          "line_total": 5.13,
+          "category": "Higiene Pessoal",
+          "subcategory": "Higiene Oral",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 5.13,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 6,
+          "description": "VASENOL GEL 100G",
+          "description_norm": "VASENOL GEL 100G",
+          "ean": "7891150029323",
+          "ncm": "33049990",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 35.99,
+          "line_total": 35.99,
+          "category": "Higiene Pessoal",
+          "subcategory": "Cremes",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 35.99,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 7,
+          "description": "SALONPAS ADES PEQ 10UN",
+          "description_norm": "SALONPAS ADES PEQ 10UN",
+          "ean": "7896227800805",
+          "ncm": "30051010",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 12.68,
+          "line_total": 12.68,
+          "category": "Outros",
+          "subcategory": "Não classificado",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 12.68,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 8,
+          "description": "K-MED GEL ICE 50G",
+          "description_norm": "K MED GEL ICE 50G",
+          "ean": "7896523228440",
+          "ncm": "30067000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 19.9,
+          "line_total": 19.9,
+          "category": "Higiene Pessoal",
+          "subcategory": "Cremes",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 19.9,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 9,
+          "description": "K-MED GEL HOT 50G",
+          "description_norm": "K MED GEL HOT 50G",
+          "ean": "7896523228365",
+          "ncm": "30067000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 19.9,
+          "line_total": 19.9,
+          "category": "Higiene Pessoal",
+          "subcategory": "Cremes",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 19.9,
+          "price_percentile": null,
+          "is_expensive": null
+        }
+      ]
+    },
+    {
+      "note_id": 314,
+      "source_url": "http://nfe.sefaz.ba.gov.br/servicos/nfce/qrcode.aspx?p=29260606337087001730650100001314851794235355|2|1|1|640B968B63CA301DDA433445EC2E087207858C64",
+      "access_key": null,
+      "issued_at": "2026-06-12T20:05:41-03:00",
+      "issued_date": "2026-06-12",
+      "merchant_cnpj": "06.337.087/0017-30",
+      "merchant_name": "RMIX COMERCIO DE GENEROS ALIMENTICIOS LT",
+      "merchant_uf": "BA",
+      "serie": "10",
+      "number": "131485",
+      "total_amount": 76.93,
+      "total_products": null,
+      "item_count": 5,
+      "avg_item_price": 15.39,
+      "day_of_week": "Sexta",
+      "hour_of_day": 20,
+      "spending_vs_avg_pct": -33.2,
+      "is_outlier": false,
+      "outlier_reason": null,
+      "savings_opportunity": 42.96,
+      "necessity_breakdown": {
+        "Essencial": 0.0,
+        "Conveniência": 13.0,
+        "Supérfluo": 87.0
+      },
+      "category_breakdown": [
+        {
+          "category": "Bebidas",
+          "total": 44.93
+        },
+        {
+          "category": "Alimentos",
+          "total": 31.85
+        },
+        {
+          "category": "Outros",
+          "total": 0.15
+        }
+      ],
+      "items": [
+        {
+          "line_n": 1,
+          "description": "CERV CORONITA EXTRA LN 210ML",
+          "description_norm": "CERV CORONITA EXTRA LN 210ML",
+          "ean": "7891149108749",
+          "ncm": "22030000",
+          "qty": 6.0,
+          "unit": "UN",
+          "unit_price": 6.19,
+          "line_total": 37.14,
+          "category": "Bebidas",
+          "subcategory": "Cervejas",
+          "necessity": "Supérfluo",
+          "price_rank": 1.0,
+          "min_price_seen": 6.19,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 2,
+          "description": "AMENDOIM CRU C CASCA KG",
+          "description_norm": "AMENDOIM CRU C CASCA KG",
+          "ean": "SEM GTIN",
+          "ncm": "12024100",
+          "qty": 0.494,
+          "unit": "KG",
+          "unit_price": 19.98,
+          "line_total": 9.87,
+          "category": "Alimentos",
+          "subcategory": "Sementes e Nuts",
+          "necessity": "Conveniência",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.69,
+          "is_expensive": false
+        },
+        {
+          "line_n": 3,
+          "description": "CHOC 60 CHOC FINOS CAST CAJU 80G",
+          "description_norm": "CHOC 60 CHOC FINOS CAST CAJU 80G",
+          "ean": "SEM GTIN",
+          "ncm": "18063210",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 21.98,
+          "line_total": 21.98,
+          "category": "Alimentos",
+          "subcategory": "Doces",
+          "necessity": "Supérfluo",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.72,
+          "is_expensive": false
+        },
+        {
+          "line_n": 4,
+          "description": "REFRIG SCHWEPPES CITRUS 1 5L",
+          "description_norm": "REFRIG SCHWEPPES CITRUS 1 5L",
+          "ean": "7894900321753",
+          "ncm": "22021000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 7.79,
+          "line_total": 7.79,
+          "category": "Bebidas",
+          "subcategory": "Refrigerantes",
+          "necessity": "Supérfluo",
+          "price_rank": 1.15,
+          "min_price_seen": 6.79,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 5,
+          "description": "SACOLA PL PEVERDE 43X56",
+          "description_norm": "SACOLA PL PEVERDE 43X56",
+          "ean": "7897037600326",
+          "ncm": "39232190",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 0.15,
+          "line_total": 0.15,
+          "category": "Outros",
+          "subcategory": "Não classificado",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 0.15,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        }
+      ]
+    },
+    {
+      "note_id": 316,
+      "source_url": "http://nfe.sefaz.ba.gov.br/servicos/nfce/qrcode.aspx?p=29260606337087002036650100000531081329378870|2|1|1|A4BB97A9F74AF7F4CF0BEE9F07994477A345237F",
+      "access_key": null,
+      "issued_at": "2026-06-10T21:49:06-03:00",
+      "issued_date": "2026-06-10",
+      "merchant_cnpj": "06.337.087/0020-36",
+      "merchant_name": "RMIX COMERCIO DE GENEROS ALIMENTICIOS LT",
+      "merchant_uf": "BA",
+      "serie": "10",
+      "number": "53108",
+      "total_amount": 845.04,
+      "total_products": null,
+      "item_count": 79,
+      "avg_item_price": 10.7,
+      "day_of_week": "Quarta",
+      "hour_of_day": 21,
+      "spending_vs_avg_pct": 634.2,
+      "is_outlier": true,
+      "outlier_reason": "R$ 845.04 — 7.3x acima da média (R$ 115.10)",
+      "savings_opportunity": 443.78,
+      "necessity_breakdown": {
+        "Essencial": 64.4,
+        "Conveniência": 28.4,
+        "Supérfluo": 7.2
+      },
+      "category_breakdown": [
+        {
+          "category": "Carnes e Frios",
+          "total": 187.47
+        },
+        {
+          "category": "Alimentos",
+          "total": 178.7
+        },
+        {
+          "category": "Hortifrúti",
+          "total": 130.77
+        },
+        {
+          "category": "Laticínios",
+          "total": 120.41
+        },
+        {
+          "category": "Higiene Pessoal",
+          "total": 68.96
+        },
+        {
+          "category": "Bebidas",
+          "total": 60.47
+        },
+        {
+          "category": "Limpeza",
+          "total": 56.01
+        },
+        {
+          "category": "Congelados",
+          "total": 34.9
+        },
+        {
+          "category": "Padaria e Confeitaria",
+          "total": 6.9
+        },
+        {
+          "category": "Outros",
+          "total": 0.45
+        }
+      ],
+      "items": [
+        {
+          "line_n": 1,
+          "description": "PAP TOALHA SCALA PLUS C 120UN",
+          "description_norm": "PAP TOALHA SCALA PLUS C 120UN",
+          "ean": "7898962794289",
+          "ncm": "48183000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 6.88,
+          "line_total": 6.88,
+          "category": "Limpeza",
+          "subcategory": "Papéis",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 6.88,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 2,
+          "description": "PAP TOALHA SCALA PLUS C 120UN",
+          "description_norm": "PAP TOALHA SCALA PLUS C 120UN",
+          "ean": "7898962794289",
+          "ncm": "48183000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 6.88,
+          "line_total": 6.88,
+          "category": "Limpeza",
+          "subcategory": "Papéis",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 6.88,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 3,
+          "description": "PAP HIG NEVE SUPER FT L16P15 20M",
+          "description_norm": "PAP HIG NEVE SUPER FT L16P15 20M",
+          "ean": "7891172432804",
+          "ncm": "48181000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 43.98,
+          "line_total": 43.98,
+          "category": "Higiene Pessoal",
+          "subcategory": "Papel Higiênico",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 43.98,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 4,
+          "description": "AGUA SANIT QBOA 1L",
+          "description_norm": "AGUA SANIT QBOA 1L",
+          "ean": "7896083800018",
+          "ncm": "28289011",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 3.89,
+          "line_total": 3.89,
+          "category": "Limpeza",
+          "subcategory": "Desinfetantes",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 3.89,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 5,
+          "description": "LIMP GEL BANH PATO LV L750P500ML",
+          "description_norm": "LIMP GEL BANH PATO LV L750P500ML",
+          "ean": "7894650013588",
+          "ncm": "38089419",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 16.9,
+          "line_total": 16.9,
+          "category": "Limpeza",
+          "subcategory": "Produtos de Limpeza",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 16.9,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 6,
+          "description": "LIMP COZ VEJA LAR REF 400ML",
+          "description_norm": "LIMP COZ VEJA LAR REF 400ML",
+          "ean": "7891035285288",
+          "ncm": "34025000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 15.48,
+          "line_total": 15.48,
+          "category": "Limpeza",
+          "subcategory": "Produtos de Limpeza",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 15.48,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 7,
+          "description": "ALVEJ MULT BRILUX 1L",
+          "description_norm": "ALVEJ MULT BRILUX 1L",
+          "ean": "7896013102342",
+          "ncm": "34025000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 5.98,
+          "line_total": 5.98,
+          "category": "Limpeza",
+          "subcategory": "Alvejantes",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 5.98,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 8,
+          "description": "SAB LIQ GRANADO BEBE LAV REF 250ML",
+          "description_norm": "SAB LIQ GRANADO BEBE LAV REF 250ML",
+          "ean": "7896512922472",
+          "ncm": "34013000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 24.98,
+          "line_total": 24.98,
+          "category": "Higiene Pessoal",
+          "subcategory": "Sabonetes",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 24.98,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 9,
+          "description": "PAO FRANCES, RUSTICO, DOCE KG",
+          "description_norm": "PAO FRANCES RUSTICO DOCE KG",
+          "ean": "SEM GTIN",
+          "ncm": "19059090",
+          "qty": 0.315,
+          "unit": "KG",
+          "unit_price": 21.9,
+          "line_total": 6.9,
+          "category": "Padaria e Confeitaria",
+          "subcategory": "Pães",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.71,
+          "is_expensive": false
+        },
+        {
+          "line_n": 10,
+          "description": "REPOLHO VERDE KG",
+          "description_norm": "REPOLHO VERDE KG",
+          "ean": "SEM GTIN",
+          "ncm": "07041000",
+          "qty": 0.518,
+          "unit": "KG",
+          "unit_price": 9.98,
+          "line_total": 5.17,
+          "category": "Hortifrúti",
+          "subcategory": "Verduras",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.51,
+          "is_expensive": false
+        },
+        {
+          "line_n": 11,
+          "description": "UVA S SEMENT THOMPSON NACIONAL 500G",
+          "description_norm": "UVA S SEMENT THOMPSON NACIONAL 500G",
+          "ean": "7898956087014",
+          "ncm": "08061000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 12.98,
+          "line_total": 12.98,
+          "category": "Hortifrúti",
+          "subcategory": "Frutas",
+          "necessity": "Essencial",
+          "price_rank": 1.3,
+          "min_price_seen": 9.98,
+          "price_percentile": 0.6,
+          "is_expensive": false
+        },
+        {
+          "line_n": 12,
+          "description": "BANANA TERRA KG",
+          "description_norm": "BANANA TERRA KG",
+          "ean": "SEM GTIN",
+          "ncm": "08031000",
+          "qty": 0.759,
+          "unit": "KG",
+          "unit_price": 9.98,
+          "line_total": 7.57,
+          "category": "Hortifrúti",
+          "subcategory": "Frutas",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.51,
+          "is_expensive": false
+        },
+        {
+          "line_n": 13,
+          "description": "TANGERINA MEXIRICA IMPORTADA KG",
+          "description_norm": "TANGERINA MEXIRICA IMPORTADA KG",
+          "ean": "SEM GTIN",
+          "ncm": "08052100",
+          "qty": 0.564,
+          "unit": "KG",
+          "unit_price": 9.98,
+          "line_total": 5.63,
+          "category": "Hortifrúti",
+          "subcategory": "Frutas",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.51,
+          "is_expensive": false
+        },
+        {
+          "line_n": 14,
+          "description": "BATATA LISA KG",
+          "description_norm": "BATATA LISA KG",
+          "ean": "SEM GTIN",
+          "ncm": "07019000",
+          "qty": 1.904,
+          "unit": "KG",
+          "unit_price": 12.98,
+          "line_total": 24.71,
+          "category": "Hortifrúti",
+          "subcategory": "Legumes",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.57,
+          "is_expensive": false
+        },
+        {
+          "line_n": 15,
+          "description": "BATATA DOCE BCA KG",
+          "description_norm": "BATATA DOCE BCA KG",
+          "ean": "SEM GTIN",
+          "ncm": "07142000",
+          "qty": 0.534,
+          "unit": "KG",
+          "unit_price": 9.98,
+          "line_total": 5.33,
+          "category": "Hortifrúti",
+          "subcategory": "Legumes",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.51,
+          "is_expensive": false
+        },
+        {
+          "line_n": 16,
+          "description": "MELAO AMARELO KG",
+          "description_norm": "MELAO AMARELO KG",
+          "ean": "SEM GTIN",
+          "ncm": "08071900",
+          "qty": 2.833,
+          "unit": "KG",
+          "unit_price": 4.98,
+          "line_total": 14.11,
+          "category": "Hortifrúti",
+          "subcategory": "Frutas",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.22,
+          "is_expensive": false
+        },
+        {
+          "line_n": 17,
+          "description": "KIWI KG",
+          "description_norm": "KIWI KG",
+          "ean": "SEM GTIN",
+          "ncm": "08105000",
+          "qty": 0.599,
+          "unit": "KG",
+          "unit_price": 29.98,
+          "line_total": 17.96,
+          "category": "Hortifrúti",
+          "subcategory": "Frutas",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.81,
+          "is_expensive": true
+        },
+        {
+          "line_n": 18,
+          "description": "AMEIXA FRESCA KG",
+          "description_norm": "AMEIXA FRESCA KG",
+          "ean": "SEM GTIN",
+          "ncm": "08094000",
+          "qty": 0.284,
+          "unit": "KG",
+          "unit_price": 35.98,
+          "line_total": 10.22,
+          "category": "Hortifrúti",
+          "subcategory": "Frutas",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.85,
+          "is_expensive": true
+        },
+        {
+          "line_n": 19,
+          "description": "BATATA DOCE BCA KG",
+          "description_norm": "BATATA DOCE BCA KG",
+          "ean": "SEM GTIN",
+          "ncm": "07142000",
+          "qty": 0.754,
+          "unit": "KG",
+          "unit_price": 9.98,
+          "line_total": 7.52,
+          "category": "Hortifrúti",
+          "subcategory": "Legumes",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.51,
+          "is_expensive": false
+        },
+        {
+          "line_n": 20,
+          "description": "ABOBRINHA VERDE KG",
+          "description_norm": "ABOBRINHA VERDE KG",
+          "ean": "SEM GTIN",
+          "ncm": "07099300",
+          "qty": 0.474,
+          "unit": "KG",
+          "unit_price": 5.98,
+          "line_total": 2.83,
+          "category": "Hortifrúti",
+          "subcategory": "Legumes",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.3,
+          "is_expensive": false
+        },
+        {
+          "line_n": 21,
+          "description": "CHUCHU KG",
+          "description_norm": "CHUCHU KG",
+          "ean": "SEM GTIN",
+          "ncm": "07099990",
+          "qty": 0.409,
+          "unit": "KG",
+          "unit_price": 2.98,
+          "line_total": 1.22,
+          "category": "Hortifrúti",
+          "subcategory": "Legumes",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.12,
+          "is_expensive": false
+        },
+        {
+          "line_n": 22,
+          "description": "GENGIBRE KG",
+          "description_norm": "GENGIBRE KG",
+          "ean": "SEM GTIN",
+          "ncm": "09101100",
+          "qty": 0.069,
+          "unit": "KG",
+          "unit_price": 24.98,
+          "line_total": 1.72,
+          "category": "Hortifrúti",
+          "subcategory": "Raízes",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.75,
+          "is_expensive": false
+        },
+        {
+          "line_n": 23,
+          "description": "MARACUJA KG",
+          "description_norm": "MARACUJA KG",
+          "ean": "SEM GTIN",
+          "ncm": "08109015",
+          "qty": 0.889,
+          "unit": "KG",
+          "unit_price": 7.98,
+          "line_total": 7.09,
+          "category": "Hortifrúti",
+          "subcategory": "Frutas",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.4,
+          "is_expensive": false
+        },
+        {
+          "line_n": 24,
+          "description": "LIMAO TAITI KG",
+          "description_norm": "LIMAO TAITI KG",
+          "ean": "SEM GTIN",
+          "ncm": "08055000",
+          "qty": 0.769,
+          "unit": "KG",
+          "unit_price": 5.98,
+          "line_total": 4.6,
+          "category": "Hortifrúti",
+          "subcategory": "Frutas",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.3,
+          "is_expensive": false
+        },
+        {
+          "line_n": 25,
+          "description": "LIMAO SICILIANO IMPORTADO KG",
+          "description_norm": "LIMAO SICILIANO IMPORTADO KG",
+          "ean": "SEM GTIN",
+          "ncm": "08055000",
+          "qty": 0.124,
+          "unit": "KG",
+          "unit_price": 16.98,
+          "line_total": 2.11,
+          "category": "Hortifrúti",
+          "subcategory": "Frutas",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.67,
+          "is_expensive": false
+        },
+        {
+          "line_n": 26,
+          "description": "BEB LAC YOPRO 23G UHT CHOC 250ML",
+          "description_norm": "BEB LAC YOPRO 23G UHT CHOC 250ML",
+          "ean": "7891025125167",
+          "ncm": "22029900",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 7.99,
+          "line_total": 7.99,
+          "category": "Laticínios",
+          "subcategory": "Bebidas Lácteas",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 7.99,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 27,
+          "description": "MEL ABELHINHA VIDRO 700G",
+          "description_norm": "MEL ABELHINHA VIDRO 700G",
+          "ean": "7898906739024",
+          "ncm": "04090000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 51.98,
+          "line_total": 51.98,
+          "category": "Alimentos",
+          "subcategory": "Doces",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 51.98,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 28,
+          "description": "REFRIG SCHWEPPES CITRUS LT 350ML",
+          "description_norm": "REFRIG SCHWEPPES CITRUS LT 350ML",
+          "ean": "7894900320015",
+          "ncm": "22021000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 3.79,
+          "line_total": 3.79,
+          "category": "Bebidas",
+          "subcategory": "Refrigerantes",
+          "necessity": "Supérfluo",
+          "price_rank": 1.19,
+          "min_price_seen": 3.19,
+          "price_percentile": 0.89,
+          "is_expensive": true
+        },
+        {
+          "line_n": 29,
+          "description": "REFRIG SCHWEPPES CITRUS LT 350ML",
+          "description_norm": "REFRIG SCHWEPPES CITRUS LT 350ML",
+          "ean": "7894900320015",
+          "ncm": "22021000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 3.79,
+          "line_total": 3.79,
+          "category": "Bebidas",
+          "subcategory": "Refrigerantes",
+          "necessity": "Supérfluo",
+          "price_rank": 1.19,
+          "min_price_seen": 3.19,
+          "price_percentile": 0.89,
+          "is_expensive": true
+        },
+        {
+          "line_n": 30,
+          "description": "BEB LAC YOPRO 23G UHT CHOC 250ML",
+          "description_norm": "BEB LAC YOPRO 23G UHT CHOC 250ML",
+          "ean": "7891025125167",
+          "ncm": "22029900",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 7.99,
+          "line_total": 7.99,
+          "category": "Laticínios",
+          "subcategory": "Bebidas Lácteas",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 7.99,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 31,
+          "description": "BEB LAC YOPRO 23G UHT CHOC 250ML",
+          "description_norm": "BEB LAC YOPRO 23G UHT CHOC 250ML",
+          "ean": "7891025125167",
+          "ncm": "22029900",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 7.99,
+          "line_total": 7.99,
+          "category": "Laticínios",
+          "subcategory": "Bebidas Lácteas",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 7.99,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 32,
+          "description": "BEB LAC YOPRO 23G UHT CHOC 250ML",
+          "description_norm": "BEB LAC YOPRO 23G UHT CHOC 250ML",
+          "ean": "7891025125167",
+          "ncm": "22029900",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 7.99,
+          "line_total": 7.99,
+          "category": "Laticínios",
+          "subcategory": "Bebidas Lácteas",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 7.99,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 33,
+          "description": "OVOS BRANCOS SAO LUIS GDE C30",
+          "description_norm": "OVOS BRANCOS SAO LUIS GDE C30",
+          "ean": "7898914127066",
+          "ncm": "04072100",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 20.98,
+          "line_total": 20.98,
+          "category": "Laticínios",
+          "subcategory": "Ovos",
+          "necessity": "Essencial",
+          "price_rank": 1.05,
+          "min_price_seen": 19.99,
+          "price_percentile": 0.5,
+          "is_expensive": false
+        },
+        {
+          "line_n": 34,
+          "description": "FEIJAO FRADINHO RIO IMPERIAL 500G",
+          "description_norm": "FEIJAO FRADINHO RIO IMPERIAL 500G",
+          "ean": "7898901621034",
+          "ncm": "07133399",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 2.57,
+          "line_total": 2.57,
+          "category": "Alimentos",
+          "subcategory": "Grãos",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 2.57,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 35,
+          "description": "QUEIJO PARM TIROLEZ RALADO 50G",
+          "description_norm": "QUEIJO PARM TIROLEZ RALADO 50G",
+          "ean": "7896030520648",
+          "ncm": "04062000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 7.98,
+          "line_total": 7.98,
+          "category": "Laticínios",
+          "subcategory": "Queijos",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 7.98,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 36,
+          "description": "CHOC CROCANTE GAROTO 80G",
+          "description_norm": "CHOC CROCANTE GAROTO 80G",
+          "ean": "7891008124071",
+          "ncm": "18063210",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 12.98,
+          "line_total": 12.98,
+          "category": "Alimentos",
+          "subcategory": "Doces",
+          "necessity": "Supérfluo",
+          "price_rank": 1.19,
+          "min_price_seen": 10.89,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 37,
+          "description": "CHOC MEIO AMARGO NESTLE CLASSIC 80G",
+          "description_norm": "CHOC MEIO AMARGO NESTLE CLASSIC 80G",
+          "ean": "7891000368572",
+          "ncm": "18063210",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 8.49,
+          "line_total": 8.49,
+          "category": "Alimentos",
+          "subcategory": "Doces",
+          "necessity": "Supérfluo",
+          "price_rank": 1.0,
+          "min_price_seen": 8.49,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 38,
+          "description": "QUEIJO PARM TIROLEZ RALADO 50G",
+          "description_norm": "QUEIJO PARM TIROLEZ RALADO 50G",
+          "ean": "7896030520648",
+          "ncm": "04062000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 7.98,
+          "line_total": 7.98,
+          "category": "Laticínios",
+          "subcategory": "Queijos",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 7.98,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 39,
+          "description": "BISC BAUDUCCO CHOCOLATE 335G",
+          "description_norm": "BISC BAUDUCCO CHOCOLATE 335G",
+          "ean": "7891962068022",
+          "ncm": "19053100",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 8.99,
+          "line_total": 8.99,
+          "category": "Alimentos",
+          "subcategory": "Biscoitos",
+          "necessity": "Supérfluo",
+          "price_rank": 1.0,
+          "min_price_seen": 8.99,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 40,
+          "description": "GRAO BICO POLIGRAOS 500G",
+          "description_norm": "GRAO BICO POLIGRAOS 500G",
+          "ean": "7896752401256",
+          "ncm": "07132090",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 7.49,
+          "line_total": 7.49,
+          "category": "Alimentos",
+          "subcategory": "Grãos",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 7.49,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 41,
+          "description": "BISC WAF BAUDUCCO BRIGADEIRO 70G",
+          "description_norm": "BISC WAF BAUDUCCO BRIGADEIRO 70G",
+          "ean": "7891962071756",
+          "ncm": "19053200",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 2.59,
+          "line_total": 2.59,
+          "category": "Alimentos",
+          "subcategory": "Biscoitos",
+          "necessity": "Supérfluo",
+          "price_rank": 1.0,
+          "min_price_seen": 2.59,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 42,
+          "description": "BISC WAF BAUDUCCO LIMAO 70G",
+          "description_norm": "BISC WAF BAUDUCCO LIMAO 70G",
+          "ean": "7891962071763",
+          "ncm": "19053200",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 2.59,
+          "line_total": 2.59,
+          "category": "Alimentos",
+          "subcategory": "Biscoitos",
+          "necessity": "Supérfluo",
+          "price_rank": 1.0,
+          "min_price_seen": 2.59,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 43,
+          "description": "BISC WAF BAUDUCCO MORANGO 70G",
+          "description_norm": "BISC WAF BAUDUCCO MORANGO 70G",
+          "ean": "7891962071749",
+          "ncm": "19053200",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 2.59,
+          "line_total": 2.59,
+          "category": "Alimentos",
+          "subcategory": "Biscoitos",
+          "necessity": "Supérfluo",
+          "price_rank": 1.0,
+          "min_price_seen": 2.59,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 44,
+          "description": "BISC CR CRACKER FORTALEZA 350G",
+          "description_norm": "BISC CR CRACKER FORTALEZA 350G",
+          "ean": "7891152801446",
+          "ncm": "19053100",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 6.79,
+          "line_total": 6.79,
+          "category": "Alimentos",
+          "subcategory": "Biscoitos",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 6.79,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 45,
+          "description": "GRANOLA JASMINE G FLAK TRAD 250G",
+          "description_norm": "GRANOLA JASMINE G FLAK TRAD 250G",
+          "ean": "7896283000157",
+          "ncm": "19041000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 14.98,
+          "line_total": 14.98,
+          "category": "Alimentos",
+          "subcategory": "Cereais",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 14.98,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 46,
+          "description": "LING CALAB DEF SADIA GRANEL KG",
+          "description_norm": "LING CALAB DEF SADIA GRANEL KG",
+          "ean": "SEM GTIN",
+          "ncm": "16010000",
+          "qty": 0.25,
+          "unit": "KG",
+          "unit_price": 22.98,
+          "line_total": 5.75,
+          "category": "Carnes e Frios",
+          "subcategory": "Salsichas e Linguiças",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.72,
+          "is_expensive": false
+        },
+        {
+          "line_n": 47,
+          "description": "CARNE SOL COXAO MOLE KG",
+          "description_norm": "CARNE SOL COXAO MOLE KG",
+          "ean": "SEM GTIN",
+          "ncm": "02102000",
+          "qty": 0.312,
+          "unit": "KG",
+          "unit_price": 58.98,
+          "line_total": 18.4,
+          "category": "Carnes e Frios",
+          "subcategory": "Carnes",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.92,
+          "is_expensive": true
+        },
+        {
+          "line_n": 48,
+          "description": "CARNE SOL COXAO MOLE KG",
+          "description_norm": "CARNE SOL COXAO MOLE KG",
+          "ean": "SEM GTIN",
+          "ncm": "02102000",
+          "qty": 0.314,
+          "unit": "KG",
+          "unit_price": 58.98,
+          "line_total": 18.52,
+          "category": "Carnes e Frios",
+          "subcategory": "Carnes",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.92,
+          "is_expensive": true
+        },
+        {
+          "line_n": 49,
+          "description": "CAFE TM LOR EQUILIBRADO BAG 250G",
+          "description_norm": "CAFE TM LOR EQUILIBRADO BAG 250G",
+          "ean": "7896089060133",
+          "ncm": "09012100",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 25.9,
+          "line_total": 25.9,
+          "category": "Bebidas",
+          "subcategory": "Café",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 25.9,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 50,
+          "description": "ARROZ MEU BIJU 8GRAOS C AVEIA 500G",
+          "description_norm": "ARROZ MEU BIJU 8GRAOS C AVEIA 500G",
+          "ean": "7893500066545",
+          "ncm": "19049000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 12.59,
+          "line_total": 12.59,
+          "category": "Alimentos",
+          "subcategory": "Grãos",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 12.59,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 51,
+          "description": "SACOLA PL PEVERDE 43X56",
+          "description_norm": "SACOLA PL PEVERDE 43X56",
+          "ean": "7897037600326",
+          "ncm": "39232190",
+          "qty": 3.0,
+          "unit": "UN",
+          "unit_price": 0.15,
+          "line_total": 0.45,
+          "category": "Outros",
+          "subcategory": "Não classificado",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 0.15,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 52,
+          "description": "LEITE LV INT BETANIA C TAMPA 1L",
+          "description_norm": "LEITE LV INT BETANIA C TAMPA 1L",
+          "ean": "7898403782387",
+          "ncm": "04012010",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 6.99,
+          "line_total": 6.99,
+          "category": "Laticínios",
+          "subcategory": "Leite",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 6.99,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 53,
+          "description": "CAFE TM 3 CORACOES GOURM SUL M 250G",
+          "description_norm": "CAFE TM 3 CORACOES GOURM SUL M 250G",
+          "ean": "7896045101665",
+          "ncm": "09012100",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 26.99,
+          "line_total": 26.99,
+          "category": "Bebidas",
+          "subcategory": "Café",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 26.99,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 54,
+          "description": "COXA SOBRECOXA S OSSO SEARA BDJ 1KG",
+          "description_norm": "COXA SOBRECOXA S OSSO SEARA BDJ 1KG",
+          "ean": "7894904255436",
+          "ncm": "02071423",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 22.98,
+          "line_total": 22.98,
+          "category": "Carnes e Frios",
+          "subcategory": "Aves",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 22.98,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 55,
+          "description": "COXA SOBRECOXA S OSSO SEARA BDJ 1KG",
+          "description_norm": "COXA SOBRECOXA S OSSO SEARA BDJ 1KG",
+          "ean": "7894904255436",
+          "ncm": "02071423",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 22.98,
+          "line_total": 22.98,
+          "category": "Carnes e Frios",
+          "subcategory": "Aves",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 22.98,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 56,
+          "description": "COXA SOBRECOXA S OSSO SEARA BDJ 1KG",
+          "description_norm": "COXA SOBRECOXA S OSSO SEARA BDJ 1KG",
+          "ean": "7894904255436",
+          "ncm": "02071423",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 22.98,
+          "line_total": 22.98,
+          "category": "Carnes e Frios",
+          "subcategory": "Aves",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 22.98,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 57,
+          "description": "BATATA MCCAIN FININHAS 1 05KG",
+          "description_norm": "BATATA MCCAIN FININHAS 1 05KG",
+          "ean": "7896105801269",
+          "ncm": "20041000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 34.9,
+          "line_total": 34.9,
+          "category": "Congelados",
+          "subcategory": "Batatas",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 34.9,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 58,
+          "description": "BACON DEFUMADO KG",
+          "description_norm": "BACON DEFUMADO KG",
+          "ean": "SEM GTIN",
+          "ncm": "02101200",
+          "qty": 0.214,
+          "unit": "KG",
+          "unit_price": 34.98,
+          "line_total": 7.49,
+          "category": "Carnes e Frios",
+          "subcategory": "Carnes Processadas",
+          "necessity": "Conveniência",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.84,
+          "is_expensive": true
+        },
+        {
+          "line_n": 59,
+          "description": "MUSCULO BOV ESPECIAL II KG",
+          "description_norm": "MUSCULO BOV ESPECIAL II KG",
+          "ean": "SEM GTIN",
+          "ncm": "02013000",
+          "qty": 1.71,
+          "unit": "KG",
+          "unit_price": 39.98,
+          "line_total": 68.37,
+          "category": "Carnes e Frios",
+          "subcategory": "Carnes",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.86,
+          "is_expensive": true
+        },
+        {
+          "line_n": 60,
+          "description": "MASSA FOLHADA M LEVE 300G",
+          "description_norm": "MASSA FOLHADA M LEVE 300G",
+          "ean": "7896228100928",
+          "ncm": "19021900",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 18.99,
+          "line_total": 18.99,
+          "category": "Alimentos",
+          "subcategory": "Massa",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 18.99,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 61,
+          "description": "IOG GREGO TRAD NATURAL GURT 100G",
+          "description_norm": "IOG GREGO TRAD NATURAL GURT 100G",
+          "ean": "7898141552549",
+          "ncm": "04032000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 2.39,
+          "line_total": 2.39,
+          "category": "Laticínios",
+          "subcategory": "Iogurtes",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 2.39,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 62,
+          "description": "IOG GREGO TRAD NATURAL GURT 100G",
+          "description_norm": "IOG GREGO TRAD NATURAL GURT 100G",
+          "ean": "7898141552549",
+          "ncm": "04032000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 2.39,
+          "line_total": 2.39,
+          "category": "Laticínios",
+          "subcategory": "Iogurtes",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 2.39,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 63,
+          "description": "IOG GREGO TRAD NATURAL GURT 100G",
+          "description_norm": "IOG GREGO TRAD NATURAL GURT 100G",
+          "ean": "7898141552549",
+          "ncm": "04032000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 2.39,
+          "line_total": 2.39,
+          "category": "Laticínios",
+          "subcategory": "Iogurtes",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 2.39,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 64,
+          "description": "IOG GREGO TRAD NATURAL GURT 100G",
+          "description_norm": "IOG GREGO TRAD NATURAL GURT 100G",
+          "ean": "7898141552549",
+          "ncm": "04032000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 2.39,
+          "line_total": 2.39,
+          "category": "Laticínios",
+          "subcategory": "Iogurtes",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 2.39,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 65,
+          "description": "POLPA DOCE MEL ACEROLA 100G",
+          "description_norm": "POLPA DOCE MEL ACEROLA 100G",
+          "ean": "7897553100065",
+          "ncm": "08119000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 1.69,
+          "line_total": 1.69,
+          "category": "Alimentos",
+          "subcategory": "Doces",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 1.69,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 66,
+          "description": "POLPA DOCE MEL ACEROLA 100G",
+          "description_norm": "POLPA DOCE MEL ACEROLA 100G",
+          "ean": "7897553100065",
+          "ncm": "08119000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 1.69,
+          "line_total": 1.69,
+          "category": "Alimentos",
+          "subcategory": "Doces",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 1.69,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 67,
+          "description": "POLPA DOCE MEL ACEROLA 100G",
+          "description_norm": "POLPA DOCE MEL ACEROLA 100G",
+          "ean": "7897553100065",
+          "ncm": "08119000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 1.69,
+          "line_total": 1.69,
+          "category": "Alimentos",
+          "subcategory": "Doces",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 1.69,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 68,
+          "description": "POLPA DOCE MEL ACEROLA 100G",
+          "description_norm": "POLPA DOCE MEL ACEROLA 100G",
+          "ean": "7897553100065",
+          "ncm": "08119000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 1.69,
+          "line_total": 1.69,
+          "category": "Alimentos",
+          "subcategory": "Doces",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 1.69,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 69,
+          "description": "POLPA DOCE MEL ACEROLA 100G",
+          "description_norm": "POLPA DOCE MEL ACEROLA 100G",
+          "ean": "7897553100065",
+          "ncm": "08119000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 1.69,
+          "line_total": 1.69,
+          "category": "Alimentos",
+          "subcategory": "Doces",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 1.69,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 70,
+          "description": "POLPA DOCE MEL ACEROLA 100G",
+          "description_norm": "POLPA DOCE MEL ACEROLA 100G",
+          "ean": "7897553100065",
+          "ncm": "08119000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 1.69,
+          "line_total": 1.69,
+          "category": "Alimentos",
+          "subcategory": "Doces",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 1.69,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 71,
+          "description": "MANTEIGA C SAL TIROLEZ 200G",
+          "description_norm": "MANTEIGA C SAL TIROLEZ 200G",
+          "ean": "7896030519635",
+          "ncm": "04051000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 17.98,
+          "line_total": 17.98,
+          "category": "Laticínios",
+          "subcategory": "Manteigas",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 17.98,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 72,
+          "description": "CR RICOTA TIROLEZ LHT 200G",
+          "description_norm": "CR RICOTA TIROLEZ LHT 200G",
+          "ean": "7896030519611",
+          "ncm": "04061090",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 8.49,
+          "line_total": 8.49,
+          "category": "Laticínios",
+          "subcategory": "Queijos",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 8.49,
+          "price_percentile": 0.67,
+          "is_expensive": false
+        },
+        {
+          "line_n": 73,
+          "description": "CR RICOTA TIROLEZ LHT 200G",
+          "description_norm": "CR RICOTA TIROLEZ LHT 200G",
+          "ean": "7896030519611",
+          "ncm": "04061090",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 8.49,
+          "line_total": 8.49,
+          "category": "Laticínios",
+          "subcategory": "Queijos",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 8.49,
+          "price_percentile": 0.67,
+          "is_expensive": false
+        },
+        {
+          "line_n": 74,
+          "description": "POLPA DOCE MEL CAJA 100G",
+          "description_norm": "POLPA DOCE MEL CAJA 100G",
+          "ean": "7897553100072",
+          "ncm": "08119000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 2.49,
+          "line_total": 2.49,
+          "category": "Alimentos",
+          "subcategory": "Frutas em Conserva",
+          "necessity": "Supérfluo",
+          "price_rank": 1.0,
+          "min_price_seen": 2.49,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 75,
+          "description": "POLPA DOCE MEL CAJA 100G",
+          "description_norm": "POLPA DOCE MEL CAJA 100G",
+          "ean": "7897553100072",
+          "ncm": "08119000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 2.49,
+          "line_total": 2.49,
+          "category": "Alimentos",
+          "subcategory": "Frutas em Conserva",
+          "necessity": "Supérfluo",
+          "price_rank": 1.0,
+          "min_price_seen": 2.49,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 76,
+          "description": "POLPA DOCE MEL CAJA 100G",
+          "description_norm": "POLPA DOCE MEL CAJA 100G",
+          "ean": "7897553100072",
+          "ncm": "08119000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 2.49,
+          "line_total": 2.49,
+          "category": "Alimentos",
+          "subcategory": "Frutas em Conserva",
+          "necessity": "Supérfluo",
+          "price_rank": 1.0,
+          "min_price_seen": 2.49,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 77,
+          "description": "POLPA DOCE MEL CAJA 100G",
+          "description_norm": "POLPA DOCE MEL CAJA 100G",
+          "ean": "7897553100072",
+          "ncm": "08119000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 2.49,
+          "line_total": 2.49,
+          "category": "Alimentos",
+          "subcategory": "Frutas em Conserva",
+          "necessity": "Supérfluo",
+          "price_rank": 1.0,
+          "min_price_seen": 2.49,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 78,
+          "description": "POLPA DOCE MEL CAJA 100G",
+          "description_norm": "POLPA DOCE MEL CAJA 100G",
+          "ean": "7897553100072",
+          "ncm": "08119000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 2.49,
+          "line_total": 2.49,
+          "category": "Alimentos",
+          "subcategory": "Frutas em Conserva",
+          "necessity": "Supérfluo",
+          "price_rank": 1.0,
+          "min_price_seen": 2.49,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 79,
+          "description": "POLPA DOCE MEL CAJA 100G",
+          "description_norm": "POLPA DOCE MEL CAJA 100G",
+          "ean": "7897553100072",
+          "ncm": "08119000",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 2.49,
+          "line_total": 2.49,
+          "category": "Alimentos",
+          "subcategory": "Frutas em Conserva",
+          "necessity": "Supérfluo",
+          "price_rank": 1.0,
+          "min_price_seen": 2.49,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        }
+      ]
+    },
+    {
+      "note_id": 319,
+      "source_url": "http://nfe.sefaz.ba.gov.br/servicos/nfce/qrcode.aspx?p=29260606626253062858651020000884361244853710|3|1",
+      "access_key": null,
+      "issued_at": "2026-06-03T15:45:29-03:00",
+      "issued_date": "2026-06-03",
+      "merchant_cnpj": "06.626.253/0628-58",
+      "merchant_name": "EMPREENDIMENTOS PAGUE MENOS S/A",
+      "merchant_uf": "BA",
+      "serie": "102",
+      "number": "88436",
+      "total_amount": 39.98,
+      "total_products": null,
+      "item_count": 2,
+      "avg_item_price": 19.99,
+      "day_of_week": "Quarta",
+      "hour_of_day": 15,
+      "spending_vs_avg_pct": -65.3,
+      "is_outlier": false,
+      "outlier_reason": null,
+      "savings_opportunity": 4.3,
+      "necessity_breakdown": {
+        "Essencial": 0.0,
+        "Conveniência": 0.0,
+        "Supérfluo": 112.0
+      },
+      "category_breakdown": [
+        {
+          "category": "Alimentos",
+          "total": 26.99
+        },
+        {
+          "category": "Bebidas",
+          "total": 17.79
+        }
+      ],
+      "items": [
+        {
+          "line_n": 1,
+          "description": "ENERG RED BULL 355ML",
+          "description_norm": "ENERG RED BULL 355ML",
+          "ean": "9002490209346",
+          "ncm": "22029900",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 17.79,
+          "line_total": 17.79,
+          "category": "Bebidas",
+          "subcategory": "Energéticos",
+          "necessity": "Supérfluo",
+          "price_rank": 1.32,
+          "min_price_seen": 13.49,
+          "price_percentile": 1.0,
+          "is_expensive": true
+        },
+        {
+          "line_n": 2,
+          "description": "GOMA MASC MENTOS PUR",
+          "description_norm": "GOMA MASC MENTOS PUR",
+          "ean": "80853671",
+          "ncm": "21069050",
+          "qty": 1.0,
+          "unit": "UN",
+          "unit_price": 26.99,
+          "line_total": 26.99,
+          "category": "Alimentos",
+          "subcategory": "Gomas de Mascar",
+          "necessity": "Supérfluo",
+          "price_rank": 1.0,
+          "min_price_seen": 26.99,
+          "price_percentile": 0.5,
+          "is_expensive": false
+        }
+      ]
+    },
+    {
+      "note_id": 320,
+      "source_url": "http://nfe.sefaz.ba.gov.br/servicos/nfce/qrcode.aspx?p=29260558026482000139650020000239671106961317|2|1|1|F057BDE5BFF232788284F8DA46B96730F86B0348",
+      "access_key": null,
+      "issued_at": "2026-05-30T12:14:39-03:00",
+      "issued_date": "2026-05-30",
+      "merchant_cnpj": "58.026.482/0001-39",
+      "merchant_name": "PANIFICADORA E LANCHONETE SERRA CARMO LTDA",
+      "merchant_uf": "BA",
+      "serie": "2",
+      "number": "23967",
+      "total_amount": 65.17,
+      "total_products": null,
+      "item_count": 7,
+      "avg_item_price": 9.31,
+      "day_of_week": "Sábado",
+      "hour_of_day": 12,
+      "spending_vs_avg_pct": -43.4,
+      "is_outlier": false,
+      "outlier_reason": null,
+      "savings_opportunity": 262.77,
+      "necessity_breakdown": {
+        "Essencial": 42.4,
+        "Conveniência": 45.3,
+        "Supérfluo": 12.2
+      },
+      "category_breakdown": [
+        {
+          "category": "Alimentos",
+          "total": 31.47
+        },
+        {
+          "category": "Padaria e Confeitaria",
+          "total": 18.06
+        },
+        {
+          "category": "Laticínios",
+          "total": 6.11
+        },
+        {
+          "category": "Carnes e Frios",
+          "total": 6.04
+        },
+        {
+          "category": "Bebidas",
+          "total": 3.49
+        }
+      ],
+      "items": [
+        {
+          "line_n": 1,
+          "description": "AGUA MIN S GAS MELEVE 1,5L",
+          "description_norm": "AGUA MIN S GAS MELEVE 1 5L",
+          "ean": "0700083273857",
+          "ncm": "22011000",
+          "qty": 1.0,
+          "unit": "Un",
+          "unit_price": 3.49,
+          "line_total": 3.49,
+          "category": "Bebidas",
+          "subcategory": "Água Mineral",
+          "necessity": "Essencial",
+          "price_rank": 1.0,
+          "min_price_seen": 3.49,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 2,
+          "description": "AZEITE OLIVA ANDORINHA 250ML",
+          "description_norm": "AZEITE OLIVA ANDORINHA 250ML",
+          "ean": "5601216120053",
+          "ncm": "15092000",
+          "qty": 1.0,
+          "unit": "Un",
+          "unit_price": 23.49,
+          "line_total": 23.49,
+          "category": "Alimentos",
+          "subcategory": "Óleos e Azeites",
+          "necessity": "Conveniência",
+          "price_rank": 1.0,
+          "min_price_seen": 23.49,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 3,
+          "description": "PAOZINHO S RECH KG",
+          "description_norm": "PAOZINHO S RECH KG",
+          "ean": "SEM GTIN",
+          "ncm": "19059010",
+          "qty": 0.21,
+          "unit": "Kg",
+          "unit_price": 85.99,
+          "line_total": 18.06,
+          "category": "Padaria e Confeitaria",
+          "subcategory": "Pães",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.97,
+          "is_expensive": true
+        },
+        {
+          "line_n": 4,
+          "description": "CROCANTE GAROTO",
+          "description_norm": "CROCANTE GAROTO",
+          "ean": "7891008124583",
+          "ncm": "18069000",
+          "qty": 1.0,
+          "unit": "Un",
+          "unit_price": 3.49,
+          "line_total": 3.49,
+          "category": "Alimentos",
+          "subcategory": "Doces",
+          "necessity": "Supérfluo",
+          "price_rank": 1.0,
+          "min_price_seen": 3.49,
+          "price_percentile": null,
+          "is_expensive": null
+        },
+        {
+          "line_n": 5,
+          "description": "QUEIJO MUSSARELA DAVACA",
+          "description_norm": "QUEIJO MUSSARELA DAVACA",
+          "ean": "SEM GTIN",
+          "ncm": "19059010",
+          "qty": 0.094,
+          "unit": "Kg",
+          "unit_price": 64.99,
+          "line_total": 6.11,
+          "category": "Laticínios",
+          "subcategory": "Queijos",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.93,
+          "is_expensive": true
+        },
+        {
+          "line_n": 6,
+          "description": "SALAME SEARA ITALIANO",
+          "description_norm": "SALAME SEARA ITALIANO",
+          "ean": "SEM GTIN",
+          "ncm": "16010000",
+          "qty": 0.054,
+          "unit": "Kg",
+          "unit_price": 111.79,
+          "line_total": 6.04,
+          "category": "Carnes e Frios",
+          "subcategory": "Embutidos",
+          "necessity": "Conveniência",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.99,
+          "is_expensive": true
+        },
+        {
+          "line_n": 7,
+          "description": "KIT KAT AO LEITE NESLE 41,5G",
+          "description_norm": "KIT KAT AO LEITE NESLE 41 5G",
+          "ean": "7891000248768",
+          "ncm": "19053200",
+          "qty": 1.0,
+          "unit": "Un",
+          "unit_price": 4.49,
+          "line_total": 4.49,
+          "category": "Alimentos",
+          "subcategory": "Doces",
+          "necessity": "Supérfluo",
+          "price_rank": 1.0,
+          "min_price_seen": 4.49,
+          "price_percentile": null,
+          "is_expensive": null
+        }
+      ]
+    },
+    {
+      "note_id": 321,
+      "source_url": "http://nfe.sefaz.ba.gov.br/servicos/nfce/qrcode.aspx?p=29260558026482000139650010000207491249388107|2|1|1|5887E9AFFAEE7AC802434592C820124EED673C28",
+      "access_key": null,
+      "issued_at": "2026-05-30T12:10:23-03:00",
+      "issued_date": "2026-05-30",
+      "merchant_cnpj": "58.026.482/0001-39",
+      "merchant_name": "PANIFICADORA E LANCHONETE SERRA CARMO LTDA",
+      "merchant_uf": "BA",
+      "serie": "1",
+      "number": "20749",
+      "total_amount": 22.47,
+      "total_products": null,
+      "item_count": 3,
+      "avg_item_price": 7.49,
+      "day_of_week": "Sábado",
+      "hour_of_day": 12,
+      "spending_vs_avg_pct": -80.5,
+      "is_outlier": false,
+      "outlier_reason": null,
+      "savings_opportunity": 22.47,
+      "necessity_breakdown": {
+        "Essencial": 15.5,
+        "Conveniência": 0.0,
+        "Supérfluo": 84.5
+      },
+      "category_breakdown": [
+        {
+          "category": "Carnes e Frios",
+          "total": 18.98
+        },
+        {
+          "category": "Bebidas",
+          "total": 3.49
+        }
+      ],
+      "items": [
+        {
+          "line_n": 1,
+          "description": "HAMBURGUER",
+          "description_norm": "HAMBURGUER",
+          "ean": "SEM GTIN",
+          "ncm": "19059010",
+          "qty": 1.0,
+          "unit": "Un",
+          "unit_price": 6.99,
+          "line_total": 6.99,
+          "category": "Carnes e Frios",
+          "subcategory": "Carnes Processadas",
+          "necessity": "Supérfluo",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.36,
+          "is_expensive": false
+        },
+        {
+          "line_n": 2,
+          "description": "X BACON",
+          "description_norm": "X BACON",
+          "ean": "SEM GTIN",
+          "ncm": "19059010",
+          "qty": 1.0,
+          "unit": "Un",
+          "unit_price": 11.99,
+          "line_total": 11.99,
+          "category": "Carnes e Frios",
+          "subcategory": "Carnes Processadas",
+          "necessity": "Supérfluo",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.55,
+          "is_expensive": false
+        },
+        {
+          "line_n": 3,
+          "description": "CAFE 300ML",
+          "description_norm": "CAFE 300ML",
+          "ean": "SEM GTIN",
+          "ncm": "19059010",
+          "qty": 1.0,
+          "unit": "Un",
+          "unit_price": 3.49,
+          "line_total": 3.49,
+          "category": "Bebidas",
+          "subcategory": "Café",
+          "necessity": "Essencial",
+          "price_rank": null,
+          "min_price_seen": 0.0,
+          "price_percentile": 0.13,
+          "is_expensive": false
+        }
+      ]
     }
   ],
   "price_trends": [
@@ -14850,7 +17235,8 @@
         "2026-01",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "avg_prices": [
         40.17,
@@ -14870,12 +17256,13 @@
         12.52,
         24.31,
         20.31,
-        25.12
+        32.2,
+        20.8
       ],
       "min_price": 0.0,
       "max_price": 1325.0,
-      "variation_pct": -37.5,
-      "occurrences": 225
+      "variation_pct": -48.2,
+      "occurrences": 254
     },
     {
       "key": "7894900320015",
@@ -14887,7 +17274,8 @@
         "2026-01",
         "2026-03",
         "2026-04",
-        "2026-05"
+        "2026-05",
+        "2026-06"
       ],
       "avg_prices": [
         3.19,
@@ -14895,12 +17283,13 @@
         3.59,
         3.29,
         4.54,
+        3.79,
         3.79
       ],
       "min_price": 3.19,
       "max_price": 5.49,
       "variation_pct": 18.8,
-      "occurrences": 17
+      "occurrences": 19
     },
     {
       "key": "7896002302203",
@@ -14939,6 +17328,23 @@
       "occurrences": 8
     },
     {
+      "key": "7897553100072",
+      "description": "POLPA DOCE MEL CAJA 100G",
+      "ean": "7897553100072",
+      "months": [
+        "2026-05",
+        "2026-06"
+      ],
+      "avg_prices": [
+        2.49,
+        2.49
+      ],
+      "min_price": 2.49,
+      "max_price": 2.49,
+      "variation_pct": 0.0,
+      "occurrences": 7
+    },
+    {
       "key": "7896445490550",
       "description": "Agua indaia cgas 500ml",
       "ean": "7896445490550",
@@ -14958,6 +17364,63 @@
       "occurrences": 6
     },
     {
+      "key": "7897037600326",
+      "description": "SACOLA PL PEVERDE 43X56",
+      "ean": "7897037600326",
+      "months": [
+        "2026-03",
+        "2026-05",
+        "2026-06"
+      ],
+      "avg_prices": [
+        0.15,
+        0.15,
+        0.15
+      ],
+      "min_price": 0.15,
+      "max_price": 0.15,
+      "variation_pct": 0.0,
+      "occurrences": 6
+    },
+    {
+      "key": "7891025115656",
+      "description": "BEB LAC YOPRO 15G PROT CHOC 250ML",
+      "ean": "7891025115656",
+      "months": [
+        "2026-01",
+        "2026-06"
+      ],
+      "avg_prices": [
+        5.98,
+        6.98
+      ],
+      "min_price": 5.98,
+      "max_price": 6.98,
+      "variation_pct": 16.7,
+      "occurrences": 6
+    },
+    {
+      "key": "7898956087014",
+      "description": "UVA S SEMENT THOMPSON NACIONAL 500G",
+      "ean": "7898956087014",
+      "months": [
+        "2026-01",
+        "2026-04",
+        "2026-05",
+        "2026-06"
+      ],
+      "avg_prices": [
+        9.98,
+        13.48,
+        13.98,
+        12.98
+      ],
+      "min_price": 9.98,
+      "max_price": 13.98,
+      "variation_pct": 30.1,
+      "occurrences": 5
+    },
+    {
       "key": "7898958911874",
       "description": "OVOS BCO OVOS TP GRD C30",
       "ean": "7898958911874",
@@ -14975,56 +17438,60 @@
       "occurrences": 4
     },
     {
-      "key": "7898956087014",
-      "description": "UVA S SEMENT THOMPSON NACIONAL 500G",
-      "ean": "7898956087014",
-      "months": [
-        "2026-01",
-        "2026-04",
-        "2026-05"
-      ],
-      "avg_prices": [
-        9.98,
-        13.48,
-        13.98
-      ],
-      "min_price": 9.98,
-      "max_price": 13.98,
-      "variation_pct": 40.1,
-      "occurrences": 4
-    },
-    {
       "key": "7894900321753",
       "description": "REFRIG SCHWEPPES CITRUS 1 5L",
       "ean": "7894900321753",
       "months": [
         "2022-07",
-        "2026-03"
+        "2026-03",
+        "2026-06"
       ],
       "avg_prices": [
         6.79,
+        7.79,
         7.79
       ],
       "min_price": 6.79,
       "max_price": 7.79,
       "variation_pct": 14.7,
-      "occurrences": 3
+      "occurrences": 4
     },
     {
-      "key": "7897037600326",
-      "description": "SACOLA PL PEVERDE 43X56",
-      "ean": "7897037600326",
+      "key": "7898914127066",
+      "description": "OVOS BRANCOS SAO LUIS GDE C30",
+      "ean": "7898914127066",
       "months": [
+        "2025-05",
         "2026-03",
-        "2026-05"
+        "2026-04",
+        "2026-06"
       ],
       "avg_prices": [
-        0.15,
-        0.15
+        19.99,
+        22.98,
+        22.98,
+        20.98
       ],
-      "min_price": 0.15,
-      "max_price": 0.15,
-      "variation_pct": 0.0,
+      "min_price": 19.99,
+      "max_price": 22.98,
+      "variation_pct": 5.0,
+      "occurrences": 4
+    },
+    {
+      "key": "7896030519611",
+      "description": "CR RICOTA TIROLEZ LHT 200G",
+      "ean": "7896030519611",
+      "months": [
+        "2026-01",
+        "2026-06"
+      ],
+      "avg_prices": [
+        10.98,
+        8.49
+      ],
+      "min_price": 8.49,
+      "max_price": 10.98,
+      "variation_pct": -22.7,
       "occurrences": 3
     },
     {
@@ -15081,25 +17548,6 @@
       "occurrences": 3
     },
     {
-      "key": "7898914127066",
-      "description": "OVOS BRANCOS SAO LUIS GDE C30",
-      "ean": "7898914127066",
-      "months": [
-        "2025-05",
-        "2026-03",
-        "2026-04"
-      ],
-      "avg_prices": [
-        19.99,
-        22.98,
-        22.98
-      ],
-      "min_price": 19.99,
-      "max_price": 22.98,
-      "variation_pct": 15.0,
-      "occurrences": 3
-    },
-    {
       "key": "07908531405987",
       "description": "SACOLA 48X55 VERDE 5",
       "ean": "07908531405987",
@@ -15114,6 +17562,23 @@
       "min_price": 0.22,
       "max_price": 0.22,
       "variation_pct": 0.0,
+      "occurrences": 3
+    },
+    {
+      "key": "7894900027044",
+      "description": "REFRIG COCA COLA ORIG 1L",
+      "ean": "7894900027044",
+      "months": [
+        "2025-08",
+        "2026-06"
+      ],
+      "avg_prices": [
+        6.29,
+        6.79
+      ],
+      "min_price": 6.29,
+      "max_price": 6.79,
+      "variation_pct": 7.9,
       "occurrences": 3
     },
     {
@@ -15168,6 +17633,23 @@
       "occurrences": 2
     },
     {
+      "key": "7891025123064",
+      "description": "IOG GREGO TRADICIONAL DANONE 90G",
+      "ean": "7891025123064",
+      "months": [
+        "2026-01",
+        "2026-06"
+      ],
+      "avg_prices": [
+        3.19,
+        2.98
+      ],
+      "min_price": 2.98,
+      "max_price": 3.19,
+      "variation_pct": -6.6,
+      "occurrences": 2
+    },
+    {
       "key": "7898914127011",
       "description": "OVOS CODORNA SAO LUIS C/30UN",
       "ean": "7898914127011",
@@ -15216,6 +17698,40 @@
       "min_price": 14.98,
       "max_price": 14.98,
       "variation_pct": 0.0,
+      "occurrences": 2
+    },
+    {
+      "key": "7898906739024",
+      "description": "MEL ABELHINHA VIDRO 700G",
+      "ean": "7898906739024",
+      "months": [
+        "2026-03",
+        "2026-06"
+      ],
+      "avg_prices": [
+        51.98,
+        51.98
+      ],
+      "min_price": 51.98,
+      "max_price": 51.98,
+      "variation_pct": 0.0,
+      "occurrences": 2
+    },
+    {
+      "key": "7891008124071",
+      "description": "CHOC CROCANTE GAROTO 80G",
+      "ean": "7891008124071",
+      "months": [
+        "2026-03",
+        "2026-06"
+      ],
+      "avg_prices": [
+        10.89,
+        12.98
+      ],
+      "min_price": 10.89,
+      "max_price": 12.98,
+      "variation_pct": 19.2,
       "occurrences": 2
     },
     {
@@ -15268,40 +17784,6 @@
       "max_price": 47.98,
       "variation_pct": -10.4,
       "occurrences": 2
-    },
-    {
-      "key": "7804414006022",
-      "description": "V TT CHI T VEGA ECO CAB SAUV 187ML",
-      "ean": "7804414006022",
-      "months": [
-        "2025-05",
-        "2025-08"
-      ],
-      "avg_prices": [
-        19.99,
-        19.99
-      ],
-      "min_price": 19.99,
-      "max_price": 19.99,
-      "variation_pct": 0.0,
-      "occurrences": 2
-    },
-    {
-      "key": "7896012881439",
-      "description": "ROUP INC BIGFRAL MOV",
-      "ean": "7896012881439",
-      "months": [
-        "2025-07",
-        "2026-05"
-      ],
-      "avg_prices": [
-        102.99,
-        104.99
-      ],
-      "min_price": 102.99,
-      "max_price": 104.99,
-      "variation_pct": 1.9,
-      "occurrences": 2
     }
   ],
   "price_comparison": [
@@ -15321,8 +17803,8 @@
         {
           "merchant_name": "RMIX COMERCIO DE GENEROS ALIMENTICIOS LT",
           "min_price": 3.29,
-          "avg_price": 3.61,
-          "occurrences": 12
+          "avg_price": 3.64,
+          "occurrences": 14
         },
         {
           "merchant_name": "EMPREENDIMENTOS PAGUE MENOS S/A",
@@ -15335,7 +17817,7 @@
       "most_expensive_merchant": "EMPREENDIMENTOS PAGUE MENOS S/A",
       "price_gap_abs": 2.3,
       "price_gap_pct": 72.1,
-      "total_occurrences": 17
+      "total_occurrences": 19
     },
     {
       "key": "7896445490550",
@@ -15396,6 +17878,32 @@
       "total_occurrences": 2
     },
     {
+      "key": "9002490209346",
+      "description": "ENERG RED BULL LT 355ML",
+      "ean": "9002490209346",
+      "category": "Bebidas",
+      "subcategory": "Energéticos",
+      "merchants": [
+        {
+          "merchant_name": "HIPERIDEAL EMPREENDIMENTOS LTDA",
+          "min_price": 13.49,
+          "avg_price": 13.49,
+          "occurrences": 1
+        },
+        {
+          "merchant_name": "EMPREENDIMENTOS PAGUE MENOS S/A",
+          "min_price": 17.79,
+          "avg_price": 17.79,
+          "occurrences": 1
+        }
+      ],
+      "cheapest_merchant": "HIPERIDEAL EMPREENDIMENTOS LTDA",
+      "most_expensive_merchant": "EMPREENDIMENTOS PAGUE MENOS S/A",
+      "price_gap_abs": 4.3,
+      "price_gap_pct": 31.9,
+      "total_occurrences": 2
+    },
+    {
       "key": "7896002302203",
       "description": "PAO ARTESANO PLUSVITA 500G",
       "ean": "7896002302203",
@@ -15422,32 +17930,6 @@
       "total_occurrences": 15
     },
     {
-      "key": "7898914127066",
-      "description": "OVOS BRANCOS SAO LUIS GDE C30",
-      "ean": "7898914127066",
-      "category": "Laticínios",
-      "subcategory": "Ovos",
-      "merchants": [
-        {
-          "merchant_name": "HIPERIDEAL EMPREENDIMENTOS LTDA",
-          "min_price": 19.99,
-          "avg_price": 19.99,
-          "occurrences": 1
-        },
-        {
-          "merchant_name": "RMIX COMERCIO DE GENEROS ALIMENTICIOS LT",
-          "min_price": 22.98,
-          "avg_price": 22.98,
-          "occurrences": 2
-        }
-      ],
-      "cheapest_merchant": "HIPERIDEAL EMPREENDIMENTOS LTDA",
-      "most_expensive_merchant": "RMIX COMERCIO DE GENEROS ALIMENTICIOS LT",
-      "price_gap_abs": 2.99,
-      "price_gap_pct": 15.0,
-      "total_occurrences": 3
-    },
-    {
       "key": "7894900321753",
       "description": "REFRIG SCHWEPPES CITRUS 1 5L",
       "ean": "7894900321753",
@@ -15464,14 +17946,66 @@
           "merchant_name": "RMIX COMERCIO DE GENEROS ALIMENTICIOS LT",
           "min_price": 7.79,
           "avg_price": 7.79,
-          "occurrences": 1
+          "occurrences": 2
         }
       ],
       "cheapest_merchant": "HIPERIDEAL EMPREENDIMENTOS LTDA",
       "most_expensive_merchant": "RMIX COMERCIO DE GENEROS ALIMENTICIOS LT",
       "price_gap_abs": 1.0,
       "price_gap_pct": 14.7,
+      "total_occurrences": 4
+    },
+    {
+      "key": "7894900027044",
+      "description": "REFRIG COCA COLA ORIG 1L",
+      "ean": "7894900027044",
+      "category": "Bebidas",
+      "subcategory": "Refrigerantes",
+      "merchants": [
+        {
+          "merchant_name": "HIPERIDEAL EMPREENDIMENTOS LTDA",
+          "min_price": 6.29,
+          "avg_price": 6.29,
+          "occurrences": 1
+        },
+        {
+          "merchant_name": "RMIX COMERCIO DE GENEROS ALIMENTICIOS LT",
+          "min_price": 6.79,
+          "avg_price": 6.79,
+          "occurrences": 2
+        }
+      ],
+      "cheapest_merchant": "HIPERIDEAL EMPREENDIMENTOS LTDA",
+      "most_expensive_merchant": "RMIX COMERCIO DE GENEROS ALIMENTICIOS LT",
+      "price_gap_abs": 0.5,
+      "price_gap_pct": 7.9,
       "total_occurrences": 3
+    },
+    {
+      "key": "7898914127066",
+      "description": "OVOS BRANCOS SAO LUIS GDE C30",
+      "ean": "7898914127066",
+      "category": "Laticínios",
+      "subcategory": "Ovos",
+      "merchants": [
+        {
+          "merchant_name": "HIPERIDEAL EMPREENDIMENTOS LTDA",
+          "min_price": 19.99,
+          "avg_price": 19.99,
+          "occurrences": 1
+        },
+        {
+          "merchant_name": "RMIX COMERCIO DE GENEROS ALIMENTICIOS LT",
+          "min_price": 20.98,
+          "avg_price": 22.31,
+          "occurrences": 3
+        }
+      ],
+      "cheapest_merchant": "HIPERIDEAL EMPREENDIMENTOS LTDA",
+      "most_expensive_merchant": "RMIX COMERCIO DE GENEROS ALIMENTICIOS LT",
+      "price_gap_abs": 0.99,
+      "price_gap_pct": 5.0,
+      "total_occurrences": 4
     },
     {
       "key": "7896012881439",
@@ -15571,14 +18105,20 @@
         {
           "merchant_name": "RMIX COMERCIO DE GENEROS ALIMENTICIOS LT",
           "min_price": 1.98,
-          "avg_price": 20.23,
-          "occurrences": 49
+          "avg_price": 20.41,
+          "occurrences": 72
         },
         {
           "merchant_name": "BOMPRECO BAHIA SUPERMERCADOS LTDA",
           "min_price": 1.99,
           "avg_price": 5.63,
           "occurrences": 19
+        },
+        {
+          "merchant_name": "PANIFICADORA E LANCHONETE SERRA CARMO LTDA",
+          "min_price": 3.49,
+          "avg_price": 47.54,
+          "occurrences": 6
         },
         {
           "merchant_name": "ERASMO SUZARTE DAMASCENO",
@@ -15681,99 +18221,99 @@
       "most_expensive_merchant": "NAILSON MENEZES PEREIRA COLCHOES",
       "price_gap_abs": 440.0,
       "price_gap_pct": 0,
-      "total_occurrences": 225
+      "total_occurrences": 254
     }
   ],
   "personal_inflation": [
     {
       "category": "Outros",
       "first_month": "2021-05",
-      "last_month": "2026-05",
+      "last_month": "2026-06",
       "first_avg_price": 1.65,
-      "last_avg_price": 21.54,
-      "variation_pct": 1205.5,
-      "months_with_data": 10
-    },
-    {
-      "category": "Limpeza",
-      "first_month": "2022-03",
-      "last_month": "2026-05",
-      "first_avg_price": 13.51,
-      "last_avg_price": 43.99,
-      "variation_pct": 225.7,
-      "months_with_data": 5
-    },
-    {
-      "category": "Alimentos",
-      "first_month": "2021-05",
-      "last_month": "2026-05",
-      "first_avg_price": 5.14,
-      "last_avg_price": 15.99,
-      "variation_pct": 210.7,
-      "months_with_data": 17
-    },
-    {
-      "category": "Padaria e Confeitaria",
-      "first_month": "2021-07",
-      "last_month": "2026-05",
-      "first_avg_price": 12.0,
-      "last_avg_price": 35.73,
-      "variation_pct": 197.7,
-      "months_with_data": 8
-    },
-    {
-      "category": "Congelados",
-      "first_month": "2022-03",
-      "last_month": "2025-08",
-      "first_avg_price": 12.99,
-      "last_avg_price": 36.89,
-      "variation_pct": 184.0,
-      "months_with_data": 3
-    },
-    {
-      "category": "Hortifrúti",
-      "first_month": "2021-07",
-      "last_month": "2026-05",
-      "first_avg_price": 5.94,
-      "last_avg_price": 12.72,
-      "variation_pct": 114.2,
-      "months_with_data": 8
-    },
-    {
-      "category": "Higiene Pessoal",
-      "first_month": "2022-03",
-      "last_month": "2026-05",
-      "first_avg_price": 14.98,
-      "last_avg_price": 19.99,
-      "variation_pct": 33.4,
-      "months_with_data": 5
+      "last_avg_price": 5.82,
+      "variation_pct": 253.0,
+      "months_with_data": 11
     },
     {
       "category": "Bebidas",
       "first_month": "2021-05",
-      "last_month": "2026-05",
+      "last_month": "2026-06",
       "first_avg_price": 2.99,
-      "last_avg_price": 3.79,
-      "variation_pct": 26.8,
-      "months_with_data": 14
+      "last_avg_price": 10.29,
+      "variation_pct": 244.1,
+      "months_with_data": 15
+    },
+    {
+      "category": "Congelados",
+      "first_month": "2022-03",
+      "last_month": "2026-06",
+      "first_avg_price": 12.99,
+      "last_avg_price": 34.9,
+      "variation_pct": 168.7,
+      "months_with_data": 4
+    },
+    {
+      "category": "Hortifrúti",
+      "first_month": "2021-07",
+      "last_month": "2026-06",
+      "first_avg_price": 5.94,
+      "last_avg_price": 12.98,
+      "variation_pct": 118.5,
+      "months_with_data": 9
+    },
+    {
+      "category": "Higiene Pessoal",
+      "first_month": "2022-03",
+      "last_month": "2026-06",
+      "first_avg_price": 14.98,
+      "last_avg_price": 24.34,
+      "variation_pct": 62.4,
+      "months_with_data": 6
+    },
+    {
+      "category": "Alimentos",
+      "first_month": "2021-05",
+      "last_month": "2026-06",
+      "first_avg_price": 5.14,
+      "last_avg_price": 8.17,
+      "variation_pct": 58.8,
+      "months_with_data": 18
     },
     {
       "category": "Carnes e Frios",
       "first_month": "2022-07",
-      "last_month": "2026-03",
+      "last_month": "2026-06",
       "first_avg_price": 26.49,
-      "last_avg_price": 17.98,
-      "variation_pct": -32.1,
-      "months_with_data": 3
+      "last_avg_price": 22.98,
+      "variation_pct": -13.3,
+      "months_with_data": 4
+    },
+    {
+      "category": "Padaria e Confeitaria",
+      "first_month": "2021-07",
+      "last_month": "2026-06",
+      "first_avg_price": 12.0,
+      "last_avg_price": 9.98,
+      "variation_pct": -16.8,
+      "months_with_data": 9
+    },
+    {
+      "category": "Limpeza",
+      "first_month": "2022-03",
+      "last_month": "2026-06",
+      "first_avg_price": 13.51,
+      "last_avg_price": 9.33,
+      "variation_pct": -30.9,
+      "months_with_data": 6
     },
     {
       "category": "Laticínios",
       "first_month": "2021-05",
-      "last_month": "2026-05",
+      "last_month": "2026-06",
       "first_avg_price": 40.17,
-      "last_avg_price": 22.83,
-      "variation_pct": -43.2,
-      "months_with_data": 18
+      "last_avg_price": 15.43,
+      "variation_pct": -61.6,
+      "months_with_data": 19
     }
   ],
   "top_savings_items": [
@@ -15784,8 +18324,8 @@
       "category": "Laticínios",
       "min_price_ever": 0.0,
       "max_price_ever": 1325.0,
-      "total_overpaid": 5972.69,
-      "occurrences": 225
+      "total_overpaid": 6736.39,
+      "occurrences": 254
     },
     {
       "key": "7896002302203",
@@ -15804,8 +18344,8 @@
       "category": "Hortifrúti",
       "min_price_ever": 9.98,
       "max_price_ever": 13.98,
-      "total_overpaid": 11.0,
-      "occurrences": 4
+      "total_overpaid": 14.0,
+      "occurrences": 5
     },
     {
       "key": "7894900320015",
@@ -15814,8 +18354,8 @@
       "category": "Bebidas",
       "min_price_ever": 3.19,
       "max_price_ever": 5.49,
-      "total_overpaid": 10.5,
-      "occurrences": 17
+      "total_overpaid": 11.7,
+      "occurrences": 19
     },
     {
       "key": "7898958911874",
@@ -15844,8 +18384,8 @@
       "category": "Laticínios",
       "min_price_ever": 19.99,
       "max_price_ever": 22.98,
-      "total_overpaid": 5.98,
-      "occurrences": 3
+      "total_overpaid": 6.97,
+      "occurrences": 4
     },
     {
       "key": "07896353300255",
@@ -15858,6 +18398,26 @@
       "occurrences": 2
     },
     {
+      "key": "9002490209346",
+      "description": "ENERG RED BULL LT 355ML",
+      "ean": "9002490209346",
+      "category": "Bebidas",
+      "min_price_ever": 13.49,
+      "max_price_ever": 17.79,
+      "total_overpaid": 4.3,
+      "occurrences": 2
+    },
+    {
+      "key": "7891025115656",
+      "description": "BEB LAC YOPRO 15G PROT CHOC 250ML",
+      "ean": "7891025115656",
+      "category": "Bebidas",
+      "min_price_ever": 5.98,
+      "max_price_ever": 6.98,
+      "total_overpaid": 4.0,
+      "occurrences": 6
+    },
+    {
       "key": "7893000482401",
       "description": "FILE PEITO FGO SADIA BDJ 1KG",
       "ean": "7893000482401",
@@ -15865,6 +18425,16 @@
       "min_price_ever": 20.98,
       "max_price_ever": 22.98,
       "total_overpaid": 4.0,
+      "occurrences": 3
+    },
+    {
+      "key": "7896030519611",
+      "description": "CR RICOTA TIROLEZ LHT 200G",
+      "ean": "7896030519611",
+      "category": "Laticínios",
+      "min_price_ever": 8.49,
+      "max_price_ever": 10.98,
+      "total_overpaid": 2.49,
       "occurrences": 3
     },
     {
@@ -15878,43 +18448,13 @@
       "occurrences": 6
     },
     {
-      "key": "7898942930461",
-      "description": "TOMATE GRAPE MEL 180G",
-      "ean": "7898942930461",
-      "category": "Hortifrúti",
-      "min_price_ever": 5.98,
-      "max_price_ever": 6.98,
-      "total_overpaid": 2.0,
-      "occurrences": 3
-    },
-    {
-      "key": "7896012881439",
-      "description": "ROUP INC BIGFRAL MOV",
-      "ean": "7896012881439",
-      "category": "Outros",
-      "min_price_ever": 102.99,
-      "max_price_ever": 104.99,
-      "total_overpaid": 2.0,
-      "occurrences": 2
-    },
-    {
-      "key": "07891737316013",
-      "description": "MM LAVA ROUPAS ULTIM",
-      "ean": "07891737316013",
-      "category": "Limpeza",
-      "min_price_ever": 43.99,
-      "max_price_ever": 45.98,
-      "total_overpaid": 1.99,
-      "occurrences": 2
-    },
-    {
-      "key": "7894900530032",
-      "description": "AGUA MIN CRYSTAL PET S GAS 1 5L",
-      "ean": "7894900530032",
-      "category": "Bebidas",
-      "min_price_ever": 2.39,
-      "max_price_ever": 3.39,
-      "total_overpaid": 1.0,
+      "key": "7891008124071",
+      "description": "CHOC CROCANTE GAROTO 80G",
+      "ean": "7891008124071",
+      "category": "Alimentos",
+      "min_price_ever": 10.89,
+      "max_price_ever": 12.98,
+      "total_overpaid": 2.09,
       "occurrences": 2
     },
     {
@@ -15924,8 +18464,8 @@
       "category": "Bebidas",
       "min_price_ever": 6.79,
       "max_price_ever": 7.79,
-      "total_overpaid": 1.0,
-      "occurrences": 3
+      "total_overpaid": 2.0,
+      "occurrences": 4
     }
   ],
   "monthly_summaries": [
@@ -16088,6 +18628,14 @@
       "top_category": "Outros",
       "top_merchant": "WMB SUPERMERCADOS DO BRASIL LTDA.",
       "llm_insight": "O padrão mais relevante do mês é o alto gasto com roupas, que representa R$ 104,99, o que é um valor significativo em comparação aos outros itens. Para economizar, você pode considerar reduzir a compra de roupas e priorizar itens essenciais, como alimentos e produtos de limpeza."
+    },
+    {
+      "month": "2026-06",
+      "total_spend": 1208.3999999999999,
+      "note_count": 5,
+      "top_category": "Alimentos",
+      "top_merchant": "RMIX COMERCIO DE GENEROS ALIMENTICIOS LT",
+      "llm_insight": "O padrão mais relevante do mês é o alto gasto com carnes, totalizando R$ 137,31 apenas em coxas e músculo, o que indica uma despesa significativa. Para economizar, você pode optar por comprar cortes de carne mais baratos ou reduzir a frequência de compras de itens mais caros, como bebidas e produtos de limpeza."
     }
   ]
 }
